@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\GitHub\MVVM-Practice\ArduinoApps\WPFApp\obj\Debug\netcoreapp3.1\
+D:\GitHub\NUCST-Project-FG2\ArduinoApps\WPFApp\obj\Debug\netcoreapp3.1\
 WPFApp
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-D:\GitHub\MVVM-Practice\ArduinoApps\WPFApp\App.xaml
+D:\GitHub\NUCST-Project-FG2\ArduinoApps\WPFApp\App.xaml
 31292498220
 
-11-81181316
-205-580821614
+13-926332055
+207-1317047760
 View\GraphControl.xaml;View\LoggerControl.xaml;View\MainWindow.xaml;
 
-False
+True
 

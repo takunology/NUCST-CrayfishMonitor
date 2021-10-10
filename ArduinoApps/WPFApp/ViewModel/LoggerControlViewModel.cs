@@ -4,7 +4,8 @@ using System.Text;
 
 namespace WPFApp.ViewModel
 {
-    internal class LoggerControlViewModel
+    public class LoggerControlViewModel
     {
+
     }
 }
