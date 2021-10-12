@@ -3,33 +3,33 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO.Ports;
 using System.Text;
+using System.Windows;
 using System.Windows.Threading;
 
 namespace WPFApp.Model
 {
     public class ReceiveDataModel
     {
-        public ObservableCollection<DataLogModel> Data { get; set; }
+        public ObservableCollection<DataLogModel> Data = new ObservableCollection<DataLogModel>();
         private DispatcherTimer dispatcherTimer = new DispatcherTimer();
         private SerialPort serialPort;
 
-        public ReceiveDataModel()
+        public ReceiveDataModel(string portName, int serialRate)
         {
-            
+            portName = "COM6"; 
+            serialPort = new SerialPort(portName, 9600, Parity.None, 8, StopBits.One);
         }
 
-        public void Open(string portName, int serialRate)
+        public void Open()
         {
-            serialPort = new SerialPort("COM6", 9600, Parity.None, 8, StopBits.One);
-
             serialPort.Open();
-
-            DateTime dateTime = DateTime.Now;
-            dispatcherTimer.Interval = new TimeSpan(0, 0, 0, 0, 10);
-            dispatcherTimer.Start();
 
             serialPort.DataReceived += (s, e) =>
             {
+                DateTime dateTime = DateTime.Now;
+                dispatcherTimer.Interval = new TimeSpan(0, 0, 0, 0, 10);
+                dispatcherTimer.Start();
+
                 var readData = serialPort.ReadLine();
 
                 Data.Add(
@@ -41,6 +41,8 @@ namespace WPFApp.Model
                         DigitalData = double.Parse(readData)
                     }
                 );
+
+                MessageBox.Show(readData);
             };
         }
 

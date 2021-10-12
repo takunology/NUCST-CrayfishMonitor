@@ -30,21 +30,19 @@ namespace WPFApp.ViewModel
             SelectedDevice = new ReactiveProperty<string>(DeviceList.First());
 
             this.Connect.Subscribe(() => this.Connection());
-
             this.DisConnect.Subscribe(() => this.DisConnection());
             
         }
 
         private void Connection()
         {
-            ReceiveDataModel receiveDataModel = new ReceiveDataModel();
-            receiveDataModel.Open(SelectedDevice.Value, 9600);
-            this.DataLog = receiveDataModel.Data.ToReadOnlyReactiveCollection();
+            ReceiveDataModel receiveDataModel = new ReceiveDataModel(SelectedDevice.Value, 9600);
+            receiveDataModel.Open();
         }
 
         private void DisConnection()
         {
-            ReceiveDataModel receiveDataModel = new ReceiveDataModel();
+            ReceiveDataModel receiveDataModel = new ReceiveDataModel(SelectedDevice.Value, 9600);
             receiveDataModel.Close();
         }
     }

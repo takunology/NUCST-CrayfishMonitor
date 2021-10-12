@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using System.IO.Ports;
 using System.Management;
 
 namespace WPFApp.Model
@@ -12,6 +13,8 @@ namespace WPFApp.Model
             //COM接続しているデバイスの初期化
             ManagementClass manageDevice = new ManagementClass("Win32_PnPEntity");
             var comChecker = new System.Text.RegularExpressions.Regex("(COM[0-9][0-9]?[0-9]?)");
+            string[] devicePort = SerialPort.GetPortNames();
+            int comNum = 0;
 
             foreach (var deviceInstance in manageDevice.GetInstances())
             {
@@ -26,6 +29,7 @@ namespace WPFApp.Model
                 {
                     Devices.Add(deviceObject.ToString());
                 }
+
             }
 
         }

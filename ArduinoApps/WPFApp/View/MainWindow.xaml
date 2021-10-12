@@ -27,8 +27,10 @@
             <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left">
                 <Button Command="{Binding Connect}" Content="計測開始" Width="70" Margin="5"/>
                 <Button Command="{Binding DisConnect}" Content="計測停止" Width="70" Margin="5"/>
+                <Button Command="{Binding Reset}" Content="リセット" Width="70" Margin="5"/>
             </StackPanel>
-            <local:LoggerControl Grid.Column="0" Height="auto" Margin="5 5 5 5"/>
+            <Label Content="データログ" Grid.Row="0"/>
+            <local:LoggerControl Grid.Column="0" MinHeight="270" Margin="5 5 5 5"/>
         </StackPanel>
         <local:GraphControl Grid.Column="1" Margin="5"/>
         <StatusBar Grid.Column="0" VerticalAlignment="Bottom">

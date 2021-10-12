@@ -12,7 +12,11 @@
         <vm:LoggerControlViewModel/>
     </UserControl.DataContext>
     <Grid>
-        <Label Content="データログ" Margin="5"/>
-        <ListView ItemsSource="{Binding ListView}" SelectedItem="{Binding SelectItem.Value}"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.05*"/>
+        </Grid.RowDefinitions>
+        <DataGrid IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding Data}"/>
+        <Button Content="データの保存" Command="{Binding Save}" Grid.Row="1" Width="100"/>
     </Grid>
 </UserControl>

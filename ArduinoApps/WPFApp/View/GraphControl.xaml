@@ -12,6 +12,11 @@
         <vm:GraphControlViewModel/>
     </UserControl.DataContext>
     <Grid>
-        <oxy:PlotView Model="{Binding Graph}"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.05*"/>
+        </Grid.RowDefinitions>
+        <oxy:PlotView Model="{Binding Graph}" Grid.Row="0"/>
+        <Button Content="グラフの保存" Command="{Binding Save}" Grid.Row="1" Width="100"/>
     </Grid>
 </UserControl>
