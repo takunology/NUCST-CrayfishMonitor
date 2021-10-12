@@ -5,7 +5,22 @@
       "ProjectGuid": "f7d543ed-1462-49ab-8161-deaf17a07da5",
       "DisplayName": "WPFApp",
       "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "bece7067-acea-4286-adb3-84f8c368427e": {
+      "ProjectGuid": "bece7067-acea-4286-adb3-84f8c368427e",
+      "DisplayName": "WinFormsApp",
+      "ColorIndex": 1
+    },
+    "23395d2b-9955-411e-8cb9-0772fa21704d": {
+      "ProjectGuid": "23395d2b-9955-411e-8cb9-0772fa21704d",
+      "DisplayName": "WPFApp-NonMVVM",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 3
 }

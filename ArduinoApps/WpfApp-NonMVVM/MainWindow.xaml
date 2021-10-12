@@ -1,0 +1,44 @@
+﻿<Window x:Class="WpfApp_NonMVVM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp_NonMVVM"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Left">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Label Content="接続先" Margin="3"/>
+                <ComboBox SelectedIndex="0" x:Name="Devices_ComboBox" Width="100" Margin="3"/>
+                <Button x:Name="connect_Button" Click="Connect_Button" Content="接続" Width="50" Margin="3"/>
+                <Button x:Name="disConnect_Button" IsEnabled="False" Click="DisConnect_Button" Content="切断" Width="50" Margin="3"/>
+                <Label x:Name="Connect_Label" Margin="3" Width="100"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Right">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+                <Button x:Name="dataReset_Button" Click="DataReset_Button" IsEnabled="False" Content="データのリセット" Width="80" Margin="3"/>
+                <Button x:Name="dataSave_Button" Click="DataSave_Button" IsEnabled="False" Content="データ書き出し" Width="80" Margin="3"/>
+                <Button x:Name="graphSave_Button" Click="GraphSave_Button" IsEnabled="False" Content="グラフの保存" Width="80" Margin="3"/>
+            </StackPanel>
+        </StackPanel>
+
+        <Grid Grid.Row="1" Grid.Column="0">
+            <DataGrid x:Name="Arduino_DataGrid" Margin="1"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Rectangle Fill="AliceBlue" Margin="1"/>
+            <Label Content="graph area"/>
+        </Grid>
+    </Grid>
+</Window>

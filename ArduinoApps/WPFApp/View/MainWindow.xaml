@@ -12,19 +12,25 @@
     </Window.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="3*"/>
-            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0" Orientation="Vertical">
-            <StackPanel Grid.Row="0" Orientation="Horizontal">
-                <Label Content="Arduino接続ポート" Margin="5"/>
-                <ComboBox ItemsSource="{Binding ComPort}" Margin="5"/>
+            <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left">
+                <Label Content="接続ポート" Margin="5"/>
+                <ComboBox MinWidth="150" ItemsSource="{Binding DeviceList}" SelectedItem="{Binding SelectedDevice.Value, Mode=TwoWay}" SelectedIndex="0" Margin="5"/>
             </StackPanel>
-            <StackPanel Grid.Row="0" Orientation="Horizontal">
-                <Button Content="" Margin="5"/>
-                <ComboBox ItemsSource="{Binding ComPort}" Margin="5"/>
+            <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left">
+                <Label Content="転送レート" Margin="5"/>
+                <ComboBox MinWidth="150" ItemsSource="{Binding RateList}" SelectedItem="{Binding SelectedDevice.Value, Mode=TwoWay}" SelectedIndex="0" Margin="5"/>
             </StackPanel>
-            <local:LoggerControl Grid.Column="0" Height="auto" Margin="5 5 5 5"/>
+            <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left">
+                <Button Command="{Binding Connect}" Content="計測開始" Width="70" Margin="5"/>
+                <Button Command="{Binding DisConnect}" Content="計測停止" Width="70" Margin="5"/>
+                <Button Command="{Binding Reset}" Content="リセット" Width="70" Margin="5"/>
+            </StackPanel>
+            <Label Content="データログ" Grid.Row="0"/>
+            <local:LoggerControl Grid.Column="0" MinHeight="270" Margin="5 5 5 5"/>
         </StackPanel>
         <local:GraphControl Grid.Column="1" Margin="5"/>
         <StatusBar Grid.Column="0" VerticalAlignment="Bottom">
