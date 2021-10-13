@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp_NonMVVM"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Icon="icon.ico"
+        Title="CrayfishMonitor-beta" MinHeight="400" MinWidth="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -34,7 +35,8 @@
         </StackPanel>
 
         <Grid Grid.Row="1" Grid.Column="0">
-            <DataGrid x:Name="Arduino_DataGrid" Margin="1"/>
+            <DataGrid x:Name="Arduino_DataGrid" Margin="1">
+            </DataGrid>
         </Grid>
         <Grid Grid.Row="1" Grid.Column="1">
             <Rectangle Fill="AliceBlue" Margin="1"/>

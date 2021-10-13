@@ -20,7 +20,12 @@
       "ProjectGuid": "23395d2b-9955-411e-8cb9-0772fa21704d",
       "DisplayName": "WPFApp-NonMVVM",
       "ColorIndex": 2
+    },
+    "2e0caa09-53eb-4c45-b652-5d1243663b09": {
+      "ProjectGuid": "2e0caa09-53eb-4c45-b652-5d1243663b09",
+      "DisplayName": "WpfApp-NonMVVM",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }
