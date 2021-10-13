@@ -8,7 +8,7 @@ namespace WpfApp_NonMVVM
     {
         public string Date { get; set; }
         public string Time { get; set; }
-        public string Elapsed { get; set; }
+        public long Elapsed { get; set; }
         public double Voltage { get; set; }
     }
 }

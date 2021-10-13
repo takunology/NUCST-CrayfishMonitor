@@ -5,10 +5,10 @@
   },
   "projects": {
     "D:\\GitHub\\NUCST-Project-FG2\\ArduinoApps\\WpfApp-NonMVVM\\WpfApp-NonMVVM.csproj": {
-      "version": "1.0.0",
+      "version": "1.0.0-beta1",
       "restore": {
         "projectUniqueName": "D:\\GitHub\\NUCST-Project-FG2\\ArduinoApps\\WpfApp-NonMVVM\\WpfApp-NonMVVM.csproj",
-        "projectName": "WpfApp-NonMVVM",
+        "projectName": "CrayfishMonitor",
         "projectPath": "D:\\GitHub\\NUCST-Project-FG2\\ArduinoApps\\WpfApp-NonMVVM\\WpfApp-NonMVVM.csproj",
         "packagesPath": "C:\\Users\\takun\\.nuget\\packages\\",
         "outputPath": "D:\\GitHub\\NUCST-Project-FG2\\ArduinoApps\\WpfApp-NonMVVM\\obj\\",
@@ -48,6 +48,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "OxyPlot.Wpf": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
             "System.IO.Ports": {
               "target": "Package",
               "version": "[5.0.1, )"

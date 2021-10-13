@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "2tQesUgeuI70Uz1UGKabH1C+GDl20DLPwZqClKyeUm5rbo9xQ+R9OHY9TC83FNbXoB9gZAoN0fzE2pQsJCD2EA==",
+  "dgSpecHash": "H0Jjn44hPTNiPQIV9ICkuLD5givQVZiKzY78bGOBPbNbJ9+sDRYiKN5fb7TQ7UEhviinUl5qlvpRM5/s+57Wuw==",
   "success": true,
   "projectFilePath": "D:\\GitHub\\NUCST-Project-FG2\\ArduinoApps\\WpfApp-NonMVVM\\WpfApp-NonMVVM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\takun\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\takun\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "C:\\Users\\takun\\.nuget\\packages\\oxyplot.core\\2.1.0\\oxyplot.core.2.1.0.nupkg.sha512",
+    "C:\\Users\\takun\\.nuget\\packages\\oxyplot.wpf\\2.1.0\\oxyplot.wpf.2.1.0.nupkg.sha512",
+    "C:\\Users\\takun\\.nuget\\packages\\oxyplot.wpf.shared\\2.1.0\\oxyplot.wpf.shared.2.1.0.nupkg.sha512",
     "C:\\Users\\takun\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\5.0.0\\runtime.linux-arm.runtime.native.system.io.ports.5.0.0.nupkg.sha512",
     "C:\\Users\\takun\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\5.0.0\\runtime.linux-arm64.runtime.native.system.io.ports.5.0.0.nupkg.sha512",
     "C:\\Users\\takun\\.nuget\\packages\\runtime.linux-x64.runtime.native.system.io.ports\\5.0.0\\runtime.linux-x64.runtime.native.system.io.ports.5.0.0.nupkg.sha512",

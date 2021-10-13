@@ -5,6 +5,13 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>WpfApp_NonMVVM</RootNamespace>
     <UseWPF>true</UseWPF>
+    <Authors>Takumi Okawa</Authors>
+    <Version>1.0.0-beta1</Version>
+    <PackageId>CrayfishMonitor</PackageId>
+    <Product>CrayfishMonitor</Product>
+    <RepositoryUrl>https://github.com/takunology/NUCST-Project-FG2</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>arduino</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="OxyPlot.Wpf" Version="2.1.0" />
     <PackageReference Include="System.IO.Ports" Version="5.0.1" />
   </ItemGroup>
 

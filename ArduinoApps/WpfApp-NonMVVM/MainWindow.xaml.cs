@@ -1,29 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO.Ports;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Threading;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Collections.ObjectModel;
 using Microsoft.Win32;
 using System.IO;
 using System.Diagnostics;
+
 
 namespace WpfApp_NonMVVM
 {
     public partial class MainWindow : Window
     {
         private SerialPort serialPort;
+
         private Stopwatch stopWatch = new Stopwatch();
         private ObservableCollection<Data> Datas = new ObservableCollection<Data>();
         private string SelectedPort { get; set; }
@@ -46,7 +38,6 @@ namespace WpfApp_NonMVVM
             dataSave_Button.IsEnabled = true;
             graphSave_Button.IsEnabled = true;
         }
-
         private void Connect_Button(object sender, RoutedEventArgs e)
         {
             SelectedPort = Devices_ComboBox.SelectedValue.ToString();
@@ -73,7 +64,6 @@ namespace WpfApp_NonMVVM
                 dataReset_Button.IsEnabled = false;
                 Connect_Label.Content = SelectedPort + "と接続中";
                 serialPort.DataReceived += new SerialDataReceivedEventHandler(GetData);
-
             }
             catch (Exception ex)
             {
@@ -81,7 +71,6 @@ namespace WpfApp_NonMVVM
             }
             
         }
-
         private void DataReset_Button(object sender, RoutedEventArgs e)
         {
             connect_Button.IsEnabled = true;
@@ -124,11 +113,6 @@ namespace WpfApp_NonMVVM
                 MessageBox.Show(ex.ToString(), "エラー");
             }
         }
-        private void GraphSave_Button(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void GetData(object sender, SerialDataReceivedEventArgs e)
         {
             if (serialPort == null) return;
@@ -138,7 +122,7 @@ namespace WpfApp_NonMVVM
             DateTime dateTime = DateTime.Now;
             ArduinoData.Date = dateTime.ToString("yyyy/MM/dd");
             ArduinoData.Time = dateTime.ToString("HH:mm:ss:fff");
-            ArduinoData.Elapsed = stopWatch.ElapsedMilliseconds.ToString();
+            ArduinoData.Elapsed = stopWatch.ElapsedMilliseconds;
             ArduinoData.Voltage = double.Parse(serialPort.ReadLine());
             
             Task.Run(() => {
@@ -150,10 +134,15 @@ namespace WpfApp_NonMVVM
                     Arduino_DataGrid.Dispatcher.Invoke(() =>
                     Arduino_DataGrid.ScrollIntoView(Arduino_DataGrid.Items.GetItemAt(Arduino_DataGrid.Items.Count - 1)));
                 }
-            });        
+            });
 
         }
-
+        private void DrawGraph_Button(object sender, RoutedEventArgs e)
+        {
+            var window = new GraphWindow(this, Datas);
+            window.Datas = this.Datas;
+            window.Show();
+        }
         private void PortInit()
         {
             try
