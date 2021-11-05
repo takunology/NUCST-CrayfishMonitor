@@ -35,6 +35,4 @@ D:\GitHub\NUCST-Project-FG2\ArduinoApps\WpfApp-NonMVVM\obj\Debug\netcoreapp3.1\W
 D:\GitHub\NUCST-Project-FG2\ArduinoApps\WpfApp-NonMVVM\bin\Debug\netcoreapp3.1\OxyPlot.dll
 D:\GitHub\NUCST-Project-FG2\ArduinoApps\WpfApp-NonMVVM\bin\Debug\netcoreapp3.1\OxyPlot.Wpf.dll
 D:\GitHub\NUCST-Project-FG2\ArduinoApps\WpfApp-NonMVVM\bin\Debug\netcoreapp3.1\OxyPlot.Wpf.Shared.dll
-D:\GitHub\NUCST-Project-FG2\ArduinoApps\WpfApp-NonMVVM\obj\Debug\netcoreapp3.1\GraphWindow.g.cs
-D:\GitHub\NUCST-Project-FG2\ArduinoApps\WpfApp-NonMVVM\obj\Debug\netcoreapp3.1\GraphWindow.baml
 D:\GitHub\NUCST-Project-FG2\ArduinoApps\WpfApp-NonMVVM\obj\Debug\netcoreapp3.1\WpfApp-NonMVVM.csproj.CopyComplete
