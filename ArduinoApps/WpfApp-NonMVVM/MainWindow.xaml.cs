@@ -8,22 +8,27 @@ using System.Collections.ObjectModel;
 using Microsoft.Win32;
 using System.IO;
 using System.Diagnostics;
-
+using OxyPlot;
+using OxyPlot.Series;
+using OxyPlot.Axes;
+using System.Threading;
 
 namespace WpfApp_NonMVVM
 {
     public partial class MainWindow : Window
     {
         private SerialPort serialPort;
-
-        private Stopwatch stopWatch = new Stopwatch();
+        PlotModel plotModel { get; } = new PlotModel() {  Background = OxyColors.White };
+        LineSeries lineSeries = new LineSeries();
         private ObservableCollection<Data> Datas = new ObservableCollection<Data>();
+        private Stopwatch stopWatch = new Stopwatch();
         private string SelectedPort { get; set; }
 
         public MainWindow()
         {
             InitializeComponent();
             PortInit();
+            GraphSetup();
         }
         private void DisConnect_Button(object sender, RoutedEventArgs e)
         {
@@ -80,7 +85,11 @@ namespace WpfApp_NonMVVM
             Datas.Clear();
             stopWatch.Reset();
             Arduino_DataGrid.ItemsSource = Datas;
+            lineSeries.Points.Clear();
+            plotModel.InvalidatePlot(true);
             MessageBox.Show("計測データをリセットしました。", "リセット", MessageBoxButton.OK, MessageBoxImage.Information);
+            plotModel.InvalidatePlot(false);
+
         }
         private void DataSave_Button(object sender, RoutedEventArgs e)
         {
@@ -124,8 +133,9 @@ namespace WpfApp_NonMVVM
             ArduinoData.Time = dateTime.ToString("HH:mm:ss:fff");
             ArduinoData.Elapsed = stopWatch.ElapsedMilliseconds;
             ArduinoData.Voltage = double.Parse(serialPort.ReadLine());
-            
+
             Task.Run(() => {
+
                 Arduino_DataGrid.Dispatcher.Invoke(() => Datas.Add(ArduinoData));
                 Arduino_DataGrid.Dispatcher.Invoke(() => Arduino_DataGrid.ItemsSource = Datas);
                 //自動スクロール
@@ -134,14 +144,19 @@ namespace WpfApp_NonMVVM
                     Arduino_DataGrid.Dispatcher.Invoke(() =>
                     Arduino_DataGrid.ScrollIntoView(Arduino_DataGrid.Items.GetItemAt(Arduino_DataGrid.Items.Count - 1)));
                 }
-            });
 
-        }
-        private void DrawGraph_Button(object sender, RoutedEventArgs e)
-        {
-            var window = new GraphWindow(this, Datas);
-            window.Datas = this.Datas;
-            window.Show();
+                //グラフの自動水平移動を行うプロット数
+                if (lineSeries.Points.Count >= 2000)
+                {
+                    lineSeries.Points.RemoveAt(0);
+                }
+                lock (plotModel.SyncRoot)
+                {
+                    lineSeries.Points.Add(new DataPoint(ArduinoData.Elapsed, ArduinoData.Voltage));
+                    plotModel.InvalidatePlot(true);
+                }
+            });
+            
         }
         private void PortInit()
         {
@@ -158,6 +173,57 @@ namespace WpfApp_NonMVVM
                 MessageBox.Show(ex.Message, "COMポートを読み込めません", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+        private void GraphSetup()
+        {
+            var Axes_x = new OxyPlot.Axes.LinearAxis()
+            {
+                Position = AxisPosition.Bottom,
+                TickStyle = TickStyle.Inside,
+                AbsoluteMinimum = 0,
+                MajorGridlineStyle = LineStyle.Automatic,
+                MinorGridlineStyle = LineStyle.Dash,
+                TitleFontSize = 16,
+                Title = "Time [ms]"
+            };
 
+            var Axes_y = new LinearAxis()
+            {
+                Position = AxisPosition.Left,
+                MajorTickSize=10,
+                TickStyle = TickStyle.Inside,
+                AbsoluteMinimum = 0,
+                MajorGridlineStyle = LineStyle.Automatic,
+                MinorGridlineStyle = LineStyle.Dash,
+                TitleFontSize = 16,
+                Title = "Voltage [V]"
+            };
+
+            plotModel.Axes.Add(Axes_x);
+            plotModel.Axes.Add(Axes_y);
+
+            lineSeries.StrokeThickness = 1.5;
+            lineSeries.Color = OxyColor.FromRgb(0, 100, 205);
+
+            plotModel.Series.Add(lineSeries);
+            GraphView.Model = plotModel;
+        }
+        private void GraphSave_Button(object sender, RoutedEventArgs e)
+        {
+            var dlg = new SaveFileDialog
+            {
+                Filter = "PNG形式|*.png",
+                DefaultExt = ".png"
+            };
+            if (dlg.ShowDialog(this).Value)
+            {
+                var ext = Path.GetExtension(dlg.FileName).ToLower();
+                switch (ext)
+                {
+                    case ".png":
+                        GraphView.SaveBitmap(dlg.FileName, 0, 0);
+                        break;
+                }
+            }
+        }
     }
 }

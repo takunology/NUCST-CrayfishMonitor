@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "WpfApp-NonMVVM/1.0.0-beta1": {
+      "WpfApp-NonMVVM/1.0.0": {
         "dependencies": {
           "OxyPlot.Wpf": "2.1.0",
           "System.IO.Ports": "5.0.1"
@@ -188,7 +188,7 @@
     }
   },
   "libraries": {
-    "WpfApp-NonMVVM/1.0.0-beta1": {
+    "WpfApp-NonMVVM/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

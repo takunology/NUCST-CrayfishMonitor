@@ -6,7 +6,7 @@
     <RootNamespace>WpfApp_NonMVVM</RootNamespace>
     <UseWPF>true</UseWPF>
     <Authors>Takumi Okawa</Authors>
-    <Version>1.0.0-beta1</Version>
+    <Version>1.0.0</Version>
     <PackageId>CrayfishMonitor</PackageId>
     <Product>CrayfishMonitor</Product>
     <RepositoryUrl>https://github.com/takunology/NUCST-Project-FG2</RepositoryUrl>

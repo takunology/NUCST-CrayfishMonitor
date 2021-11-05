@@ -535,7 +535,7 @@
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
-    "version": "1.0.0-beta1",
+    "version": "1.0.0",
     "restore": {
       "projectUniqueName": "D:\\GitHub\\NUCST-Project-FG2\\ArduinoApps\\WpfApp-NonMVVM\\WpfApp-NonMVVM.csproj",
       "projectName": "CrayfishMonitor",
@@ -605,7 +605,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.1.21463.6\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
       }
     }
   }
