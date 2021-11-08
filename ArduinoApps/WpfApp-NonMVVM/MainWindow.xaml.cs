@@ -144,7 +144,6 @@ namespace WpfApp_NonMVVM
                     Arduino_DataGrid.Dispatcher.Invoke(() =>
                     Arduino_DataGrid.ScrollIntoView(Arduino_DataGrid.Items.GetItemAt(Arduino_DataGrid.Items.Count - 1)));
                 }
-
                 //グラフの自動水平移動を行うプロット数
                 if (lineSeries.Points.Count >= 2000)
                 {
