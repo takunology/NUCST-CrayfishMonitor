@@ -25,7 +25,12 @@
       "ProjectGuid": "2e0caa09-53eb-4c45-b652-5d1243663b09",
       "DisplayName": "WpfApp-NonMVVM",
       "ColorIndex": 3
+    },
+    "29e1256f-52cc-47ed-a9de-6350accbc18d": {
+      "ProjectGuid": "29e1256f-52cc-47ed-a9de-6350accbc18d",
+      "DisplayName": "CrayfishMonitor-WPF5",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }
