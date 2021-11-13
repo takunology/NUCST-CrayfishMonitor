@@ -11,5 +11,5 @@ void loop() {
   float digitalVal = (float)(5 * analogVal)/1024;
   Serial.println(String(digitalVal, 3));
   
-  delay(20);
+  delay(5);
 }
