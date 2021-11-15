@@ -6,11 +6,12 @@
              xmlns:local="clr-namespace:CrayfishMonitor.Views"
              xmlns:oxy="http://oxyplot.org/wpf"
              xmlns:vm="clr-namespace:CrayfishMonitor.ViewModels"
-             mc:Ignorable="d">
+             mc:Ignorable="d"
+             >
     <UserControl.DataContext>
         <vm:ChartControlViewModel/>
     </UserControl.DataContext>
     <Grid>
-        <oxy:PlotView Model="{Binding PlotView.Value}" x:Name="GraphView" />
+        <oxy:PlotView Model="{Binding PlotView.Value}" x:Name="GraphView"/>
     </Grid>
 </UserControl>

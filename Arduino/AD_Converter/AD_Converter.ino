@@ -12,4 +12,5 @@ void loop() {
   Serial.println(String(digitalVal, 3));
   
   delay(5);
+  //delayMicroseconds(10);
 }

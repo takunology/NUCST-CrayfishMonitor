@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using CrayfishMonitor.Models;
 using OxyPlot;
@@ -15,6 +11,7 @@ namespace CrayfishMonitor.ViewModels
     public class ChartControlViewModel
     {
         public ReactiveProperty<PlotModel> PlotView { get; private set; } = new ReactiveProperty<PlotModel>();
+
         private PlotModel _PlotModel { get; } = new PlotModel(){ Background = OxyColors.White };
         private LineSeries _LineSeries = new LineSeries();
 

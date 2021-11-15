@@ -8,7 +8,9 @@
         mc:Ignorable="d"
         Icon="/Resources/icon.ico"
         Title="CrayfishMonitor v1.2.0"
-        MinHeight="400" MinWidth="600">
+        MinHeight="400" MinWidth="600"
+        Height="500" Width="800"
+        >
     <Window.DataContext>
         <vm:MainWindowViewModel/>
     </Window.DataContext>
@@ -22,36 +24,55 @@
             <MenuItem Header="ファイル">
                 <MenuItem Header="データの保存" Command="{Binding DataSaveCommand}"/>
                 <MenuItem Header="グラフの保存" Command="{Binding GraphSaveCommand}"/>
-            </MenuItem>
-            <MenuItem Header="設定">
-                <MenuItem Header="Arduino との通信設定" Command="{Binding ArduinoSettingCommand}"/>
+                <Separator/>
+                <MenuItem Header="解析データの保存" Command="{Binding AnalysisDataSaveCommand}"/>
+                <MenuItem Header="解析グラフの保存" Command="{Binding AnalysisGraphSaveCommand}"/>
             </MenuItem>
             <MenuItem Header="ヘルプ">
                 <MenuItem Header="バージョン情報" Command="{Binding VersionCommand}"/>
             </MenuItem>
         </Menu>
-        <Grid Grid.Row="1">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <StackPanel Orientation="Vertical">
-                <StackPanel Orientation="Horizontal">
-                    <ComboBox SelectedIndex="0"
-                              ItemsSource="{Binding SerialPortList}"
-                              SelectedItem="{Binding SelectedPort.Value}"
-                              IsEnabled="{Binding IsEnabledSerialPortList.Value}"
-                              Width="Auto" Height="Auto" Margin="5"/>
-                    <Button Content="{Binding ConnectButtonText.Value}"
+        <TabControl Grid.Row="1">
+            <TabItem Header="データ測定" Width="80">
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Vertical" Margin="10">
+                        <StackPanel Orientation="Horizontal">
+                            <ComboBox SelectedIndex="0"
+                             ItemsSource="{Binding SerialPortList}"
+                             SelectedItem="{Binding SelectedPort.Value}"
+                             IsEnabled="{Binding IsEnabledSerialPortList.Value}"
+                             Width="Auto" Height="Auto" Margin="5"/>
+                            <Button Content="{Binding ConnectButtonText.Value}"
                             Command="{Binding ConnectCommand}"
                             Width="60" Margin="5"/>
-                    <Button Content="リセット"
+                            <Button Content="リセット"
                             Command="{Binding ResetCommand}"
                             Width="60" Margin="5"/>
-                </StackPanel>
-            </StackPanel>
-            <local:ChartControl Grid.Row="1" Margin="10"/>
-        </Grid>
+                        </StackPanel>
+                    </StackPanel>
+                    <local:ChartControl Grid.Row="1" Margin="10 0 10 10" x:Name="GraphView"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="データ履歴" Width="80">
+                <Grid Grid.Row="1">
+                    <local:DataGridControl Margin="10"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="データ解析" Width="80">
+                <Grid Grid.Row="1">
+                    <local:DataAnalysisControl Margin="10"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="設定" Width="60">
+                <Grid Grid.Row="1">
+                    <local:ArduinoSettingsControl Margin="10"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
         <StatusBar Grid.Row="2" Background="{Binding StatusColor.Value}">
             <StatusBarItem>
                 <TextBlock Text="{Binding StatusText.Value}"/>

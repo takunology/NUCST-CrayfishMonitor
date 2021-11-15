@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\App.xaml
-4-1180612411
+537783542
 
-12-266329810
-201-2050976560
-Views\ArduinoSettingsWindow.xaml;Views\ChartControl.xaml;Views\DataGridView.xaml;Views\MainWindow.xaml;
+161245632043
+202-1197986549
+Views\ArduinoSettingsControl.xaml;Views\ChartControl.xaml;Views\DataAnalysisControl.xaml;Views\DataGridControl.xaml;Views\MainWindow.xaml;
 
 False
 

@@ -1,0 +1,101 @@
+﻿<UserControl x:Class="CrayfishMonitor.Views.ArduinoSettingsControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CrayfishMonitor.Views"
+             xmlns:vm="clr-namespace:CrayfishMonitor.ViewModels"
+             mc:Ignorable="d" >
+    <UserControl.DataContext>
+        <vm:ArduinoSettingsViewModel/>
+    </UserControl.DataContext>
+    
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical" Grid.Column="0" Margin="0 0 10 0">
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                <Label Content="通信速度" Margin="0 0 0 0"/>
+                <ComboBox SelectedIndex="0"
+                              ItemsSource="{Binding BaudRate}"
+                              SelectedItem="{Binding SelectedBaudRate}"
+                              IsEnabled="{Binding IsEnableApplyButton.Value}"
+                              Width="Auto" Height="Auto" Margin="5"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                <Label Content="ビットサイズ" />
+                <TextBox Text="{Binding DataBits}" Margin="5" Width="50"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                <Label Content="パリティビット"/>
+                <ComboBox SelectedIndex="0"
+                              ItemsSource="{Binding Parity}"
+                              SelectedItem="{Binding SelectedParity}"
+                              IsEnabled="{Binding IsEnableApplyButton.Value}"
+                              Width="Auto" Height="Auto" Margin="5"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                <Label Content="ストップビット"/>
+                <ComboBox SelectedIndex="0"
+                              ItemsSource="{Binding StopBits}"
+                              SelectedItem="{Binding SelectedStopBits}"
+                              IsEnabled="{Binding IsEnableApplyButton.Value}"
+                              Width="Auto" Height="Auto" Margin="5"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                <Label Content="エンコード"/>
+                <ComboBox SelectedIndex="0"
+                              ItemsSource="{Binding Encoding}"
+                              SelectedItem="{Binding SelectedEncoding}"
+                              IsEnabled="{Binding IsEnableApplyButton.Value}"
+                              Width="Auto" Height="Auto" Margin="5"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                    <Label Content="DTRシグナル"/>
+                    <ComboBox SelectedIndex="0"
+                                  ItemsSource="{Binding DtrEnable}"
+                                  SelectedItem="{Binding SelectedDtrEnable}"
+                                  IsEnabled="{Binding IsEnableApplyButton.Value}"
+                                  Width="Auto" Height="Auto" Margin="5"/>
+            </StackPanel>
+        </StackPanel>
+        <!--各設定値の説明-->
+        <ScrollViewer Grid.Column="1">
+            <StackPanel Orientation="Vertical" Margin="5 0">
+                <StackPanel Orientation="Vertical" Margin="5 0">
+                    <Label Content="通信速度" FontWeight="Bold"/>
+                    <TextBlock TextWrapping="WrapWithOverflow" Text="{Binding BaudRate_Disctiption}" Width="Auto" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="5">
+                    <Label Content="ビットサイズ" FontWeight="Bold"/>
+                    <TextBlock TextWrapping="WrapWithOverflow" Text="{Binding DataBits_Disctiption}" Width="Auto" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="5">
+                    <Label Content="パリティビット" FontWeight="Bold"/>
+                    <TextBlock TextWrapping="WrapWithOverflow" Text="{Binding Parity_Disctiption}" Width="Auto" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="5">
+                    <Label Content="ストップビット" FontWeight="Bold"/>
+                    <TextBlock TextWrapping="WrapWithOverflow" Text="{Binding StopBits_Disctiption}" Width="Auto" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="5">
+                    <Label Content="エンコード" FontWeight="Bold"/>
+                    <TextBlock TextWrapping="WrapWithOverflow" Text="{Binding Encoding_Disctiption}" Width="Auto" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="5">
+                    <Label Content="DTRシグナル" FontWeight="Bold"/>
+                    <TextBlock TextWrapping="WrapWithOverflow" Text="{Binding DtrEnable_Disctiption}" Width="Auto" />
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Bottom">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Button Content="適用" Command="{Binding ApplyCommand}"
+                        IsEnabled="{Binding IsEnableApplyButton.Value}"
+                        Width="70" Margin="0 0 10 0"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ftPTXewe4Yunfm7sYRtCnuXA9FhRU8H8Vn+Z4mRAToVeVoyzEaTcSWjEIiJLLuKAkSLJGNASDWCNT0XOtAh/tg==",
+  "dgSpecHash": "t4/IopjUt82G+VvxTAsvSTA9fbapPrnvjBsq4vA4X1rvTM4NkfnbvpAwpI3nUMK834a4ZH1tOOoSJthlyP6WTA==",
   "success": true,
   "projectFilePath": "D:\\GitHub\\NUCST-Project-FG2\\CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\takun\\.nuget\\packages\\mathnet.numerics\\4.15.0\\mathnet.numerics.4.15.0.nupkg.sha512",
     "C:\\Users\\takun\\.nuget\\packages\\oxyplot.core\\2.1.0\\oxyplot.core.2.1.0.nupkg.sha512",
     "C:\\Users\\takun\\.nuget\\packages\\oxyplot.wpf\\2.1.0\\oxyplot.wpf.2.1.0.nupkg.sha512",
     "C:\\Users\\takun\\.nuget\\packages\\oxyplot.wpf.shared\\2.1.0\\oxyplot.wpf.shared.2.1.0.nupkg.sha512",
