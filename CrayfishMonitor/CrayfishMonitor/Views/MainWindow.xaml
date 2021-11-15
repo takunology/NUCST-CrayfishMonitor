@@ -57,7 +57,7 @@
                     <local:ChartControl Grid.Row="1" Margin="10 0 10 10" x:Name="GraphView"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="データ履歴" Width="80">
+            <TabItem Header="計測履歴" Width="80">
                 <Grid Grid.Row="1">
                     <local:DataGridControl Margin="10"/>
                 </Grid>

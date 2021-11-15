@@ -19,7 +19,7 @@ namespace CrayfishMonitor.ViewModels
 {
     public class DataAnalysisViewModel
     {
-        public ReactivePropertySlim<string> FilePathContent { get; private set; } = new ReactivePropertySlim<string>("未選択");
+        public ReactivePropertySlim<string> FilePathContent { get; private set; } = new ReactivePropertySlim<string>("データが参照されていません");
         public ReactivePropertySlim<bool> IsEnableFFT { get; private set; } = new ReactivePropertySlim<bool>(false);
 
         public ReactiveCommand DataLoadFromLocalCommand { get; private set; } = new ReactiveCommand();
@@ -33,7 +33,7 @@ namespace CrayfishMonitor.ViewModels
         private StemSeries _StemSeries = new StemSeries();
         private LineSeries _LineSeries = new LineSeries();
 
-        private double _sampling = 200; //1秒間に何回データ測定できるか
+        private double _sampling = 200; //サンプリング数
         private List<double> VoltageDataSource = new List<double>(); 
 
         public DataAnalysisViewModel()
@@ -83,6 +83,7 @@ namespace CrayfishMonitor.ViewModels
                     }
                     VoltageDataSource = Voltage;
                 }
+                IsEnableFFT.Value = true;
             }
             catch(Exception ex)
             {
@@ -90,19 +91,29 @@ namespace CrayfishMonitor.ViewModels
             }
         }
 
+        // log_2 Nを取得し、2^Nを返す
+        private int GetExpDatas(int dataCount)
+        {
+            var val = Math.Round(Math.Log2(dataCount));
+            MessageBox.Show($"2の{val}乗={Math.Pow(2, val)}");
+            return (int)(Math.Pow(2, val));
+        }
+
         private async void FFT()
         {
             AnalysisDataCollection.AnalysisDatas.Clear();
             PlotClear();
 
+            var dataCount = GetExpDatas(VoltageDataSource.Count);
+            // 不足データを0で埋めるとノイズがひどい
             var complex = new Complex[VoltageDataSource.Count];
-            complex = VoltageDataSource.Select(x => new Complex(x, 0.0)).ToArray();    
+            complex = VoltageDataSource.Select(x => new Complex(x, 0.0)).ToArray();
             
             // フーリエ変換の実部、虚部、位相、絶対値を取得
             Fourier.Forward(complex, FourierOptions.Default);
-            
+
             // 周波数変換も行う
-            for(int i = 0; i < complex.Length; i++)
+            for (int i = 0; i < complex.Length; i++)
             {
                 AnalysisDataCollection.AnalysisDatas.Add(new FFTData()
                 {
@@ -111,8 +122,10 @@ namespace CrayfishMonitor.ViewModels
                     Phase = complex[i].Phase,
                     Magnitude = complex[i].Magnitude,
                     //周波数 = 次数 * サンプリング周波数 / データ数 (2^N)
-                    Frequency = i * _sampling / VoltageDataSource.Count,
-                    Amplitude = complex[i].Magnitude / (VoltageDataSource.Count / 2)
+                    Frequency = i * _sampling / dataCount,
+                    Amplitude = complex[i].Magnitude / (dataCount / 2)
+                    //Frequency = i * _sampling / VoltageDataSource.Count,
+                    //Amplitude = complex[i].Magnitude / (VoltageDataSource.Count / 2)
                 });
             }
             MessageBox.Show("解析が完了しました。", "", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -137,7 +150,7 @@ namespace CrayfishMonitor.ViewModels
                 Position = AxisPosition.Bottom,
                 TickStyle = TickStyle.Inside,
                 AbsoluteMinimum = 0,
-                Maximum = 10,
+                Maximum = 100,
                 Minimum = 0,
                 MajorGridlineStyle = LineStyle.Automatic,
                 MinorGridlineStyle = LineStyle.Dash,
@@ -149,7 +162,7 @@ namespace CrayfishMonitor.ViewModels
             {
                 Position = AxisPosition.Left,
                 MajorTickSize = 10,
-                Maximum = 0.00005,
+                Maximum = 0.000005,
                 Minimum = 0,
                 AbsoluteMinimum = 0,
                 TickStyle = TickStyle.Inside,
@@ -171,7 +184,7 @@ namespace CrayfishMonitor.ViewModels
             _LineSeries.Color = OxyColor.FromRgb(0, 100, 205);
 
             _PlotModel.Series.Add(_LineSeries);
-            _PlotModel.Series.Add(_StemSeries);
+            //_PlotModel.Series.Add(_StemSeries);
             PlotView.Value = _PlotModel;
         }
 

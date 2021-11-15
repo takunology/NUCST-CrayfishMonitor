@@ -28,9 +28,9 @@
             </StackPanel>
             <Label Content="{Binding FilePathContent.Value}" Margin="5 0 0 5"/>
             <StackPanel Orientation="Horizontal" Margin="5">
-                <Button Content="フーリエ変換" Width="80" Margin="5"
+                <Button Content="フーリエ変換" Width="80" Height="Auto" Margin="5"
                         Command="{Binding FourierCommand}"
-                        IsEnabled="{Binding IsEnableFFT}"
+                        IsEnabled="{Binding IsEnableFFT.Value}"
                         />
             </StackPanel>
         </StackPanel>
