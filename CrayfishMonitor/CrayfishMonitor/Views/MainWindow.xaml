@@ -22,11 +22,14 @@
         </Grid.RowDefinitions>
         <Menu Grid.Row="0">
             <MenuItem Header="ファイル">
-                <MenuItem Header="データの保存" Command="{Binding DataSaveCommand}"/>
+                <MenuItem Header="計測データの保存" Command="{Binding DataSaveCommand}"/>
                 <MenuItem Header="グラフの保存" Command="{Binding GraphSaveCommand}"/>
                 <Separator/>
-                <MenuItem Header="解析データの保存" Command="{Binding AnalysisDataSaveCommand}"/>
-                <MenuItem Header="解析グラフの保存" Command="{Binding AnalysisGraphSaveCommand}"/>
+                <MenuItem Header="FFTデータの保存" Command="{Binding FFTDataSaveCommand}"/>
+                <MenuItem Header="FFTグラフの保存" Command="{Binding FFTGraphSaveCommand}"/>
+                <Separator/>
+                <MenuItem Header="微分データの保存" Command="{Binding DiffDataSaveCommand}"/>
+                <MenuItem Header="微分グラフの保存" Command="{Binding DiffGraphSaveCommand}"/>
             </MenuItem>
             <MenuItem Header="ヘルプ">
                 <MenuItem Header="バージョン情報" Command="{Binding VersionCommand}"/>
@@ -54,17 +57,12 @@
                             Width="60" Margin="5"/>
                         </StackPanel>
                     </StackPanel>
-                    <local:ChartControl Grid.Row="1" Margin="10 0 10 10" x:Name="GraphView"/>
-                </Grid>
-            </TabItem>
-            <TabItem Header="計測履歴" Width="80">
-                <Grid Grid.Row="1">
-                    <local:DataGridControl Margin="10"/>
+                    <local:ArduinoChartControl Grid.Row="1" Margin="10 0 10 10" x:Name="ArduinoChart"/>
                 </Grid>
             </TabItem>
             <TabItem Header="データ解析" Width="80">
                 <Grid Grid.Row="1">
-                    <local:DataAnalysisControl Margin="10"/>
+                    <local:AnalysisControl Margin="10"/>
                 </Grid>
             </TabItem>
             <TabItem Header="設定" Width="60">

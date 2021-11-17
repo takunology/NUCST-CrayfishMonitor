@@ -11,7 +11,6 @@ namespace CrayfishMonitor.ViewModels
     public class ArduinoSettingsViewModel
     {
         public ReactiveCommand ApplyCommand { get; private set; } = new ReactiveCommand();
-        public ReactivePropertySlim<bool> IsEnableApplyButton { get; set; } = new ReactivePropertySlim<bool>(Flags.ApplySettingsFlag.Value);
 
         // 設定用バインディング
         public List<int> BaudRate { get; set; } = new List<int>(ArduinoSettings.BaudRateList);

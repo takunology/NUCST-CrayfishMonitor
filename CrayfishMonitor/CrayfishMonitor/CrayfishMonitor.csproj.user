@@ -7,30 +7,30 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\AnalysisChartControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\ArduinoSettingsControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\ChartControl.xaml.cs">
+    <Compile Update="Views\ArduinoChartControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\DataAnalysisControl.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="Views\DataGridControl.xaml.cs">
+    <Compile Update="Views\AnalysisControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Views\AnalysisChartControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\ArduinoSettingsControl.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\ChartControl.xaml">
+    <Page Update="Views\ArduinoChartControl.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\DataAnalysisControl.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Views\DataGridControl.xaml">
+    <Page Update="Views\AnalysisControl.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\MainWindow.xaml">

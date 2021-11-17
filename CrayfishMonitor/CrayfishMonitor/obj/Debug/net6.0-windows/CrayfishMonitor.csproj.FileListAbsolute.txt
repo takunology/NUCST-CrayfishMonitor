@@ -25,8 +25,6 @@ D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\bin\Debug\net6.0-win
 D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\bin\Debug\net6.0-windows\ReactiveProperty.dll
 D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\bin\Debug\net6.0-windows\ReactiveProperty.Core.dll
 D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\bin\Debug\net6.0-windows\System.Reactive.dll
-D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\obj\Debug\net6.0-windows\Views\ChartControl.g.cs
-D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\obj\Debug\net6.0-windows\Views\ChartControl.baml
 D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\obj\Debug\net6.0-windows\CrayfishMonitor.csproj.CopyComplete
 D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\bin\Debug\net6.0-windows\System.IO.Ports.dll
 D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\bin\Debug\net6.0-windows\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
@@ -37,10 +35,11 @@ D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\bin\Debug\net6.0-win
 D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\bin\Debug\net6.0-windows\runtimes\unix\lib\net6.0\System.IO.Ports.dll
 D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.IO.Ports.dll
 D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\obj\Debug\net6.0-windows\Views\ArduinoSettingsControl.g.cs
-D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\obj\Debug\net6.0-windows\Views\DataGridControl.g.cs
 D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\obj\Debug\net6.0-windows\Views\ArduinoSettingsControl.baml
-D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\obj\Debug\net6.0-windows\Views\DataGridControl.baml
-D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\obj\Debug\net6.0-windows\Views\DataAnalysisControl.g.cs
-D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\obj\Debug\net6.0-windows\Views\DataAnalysisControl.baml
 D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\bin\Debug\net6.0-windows\MathNet.Numerics.dll
-D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\obj\Debug\net6.0-windows\CrayfishMonitor.csproj.AssemblyReference.cache
+D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\obj\Debug\net6.0-windows\Views\AnalysisChartControl.g.cs
+D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\obj\Debug\net6.0-windows\Views\AnalysisControl.g.cs
+D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\obj\Debug\net6.0-windows\Views\ArduinoChartControl.g.cs
+D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\obj\Debug\net6.0-windows\Views\AnalysisChartControl.baml
+D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\obj\Debug\net6.0-windows\Views\AnalysisControl.baml
+D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\obj\Debug\net6.0-windows\Views\ArduinoChartControl.baml

@@ -28,8 +28,10 @@ namespace CrayfishMonitor.ViewModels
         public ReactiveCommand GraphSaveCommand { get; private set; } = new ReactiveCommand();
         public ReactiveCommand ResetCommand { get; private set; } = new ReactiveCommand();
         public ReactiveCommand VersionCommand { get; private set; } = new ReactiveCommand();
-        public ReactiveCommand AnalysisDataSaveCommand { get; private set; } = new ReactiveCommand();
-        public ReactiveCommand AnalysisGraphSaveCommand { get; private set; } = new ReactiveCommand();
+        public ReactiveCommand FFTDataSaveCommand { get; private set; } = new ReactiveCommand();
+        public ReactiveCommand FFTGraphSaveCommand { get; private set; } = new ReactiveCommand();
+        public ReactiveCommand DiffDataSaveCommand { get; private set; } = new ReactiveCommand();
+        public ReactiveCommand DiffGraphSaveCommand { get; private set; } = new ReactiveCommand();
 
         private SerialPort _serialPort = new SerialPort();
         private Stopwatch _stopWatch = new Stopwatch();
@@ -48,7 +50,7 @@ namespace CrayfishMonitor.ViewModels
             this.GraphSaveCommand.Subscribe(_ => SaveGraph());
             this.ResetCommand.Subscribe(_ => DataReset());
             this.VersionCommand.Subscribe(_ => ShowVersion());
-            this.AnalysisDataSaveCommand.Subscribe(_ => SaveAnalysisData());
+            this.FFTDataSaveCommand.Subscribe(_ => SaveAnalysisData());
         }
 
         // 接続ポート取得 
@@ -86,7 +88,7 @@ namespace CrayfishMonitor.ViewModels
         // ポートの接続 -> 計測
         private void Connect()
         {
-            ArduinoDataCollection.ArduinoDatas.Clear();
+            DataCollections.ArduinoDatas.Clear();
 
             _serialPort = new SerialPort
             {
@@ -107,7 +109,7 @@ namespace CrayfishMonitor.ViewModels
                 this.IsEnabledSerialPortList.Value = false;
                 this.StatusDialogText.Value = "準備完了";
                 this.StatusColor.Value = new SolidColorBrush(Colors.MistyRose);
-                Flags.ApplySettingsFlag.Value = false;
+                ControlStatus.IsEnableArduinoSettingsControl.Value = false;
                 _stopWatch.Start();
                 _serialPort.DataReceived += new SerialDataReceivedEventHandler(GetData);
             }
@@ -130,7 +132,7 @@ namespace CrayfishMonitor.ViewModels
 
                 this.ConnectButtonText.Value = "接続";
                 this.StatusText.Value = "切断中";
-                Flags.ApplySettingsFlag.Value = false;
+                ControlStatus.IsEnableArduinoSettingsControl.Value = true;
                 this.StatusColor.Value = new SolidColorBrush(Colors.WhiteSmoke);
                 this.IsEnabledSerialPortList.Value = true;
             }
@@ -157,7 +159,7 @@ namespace CrayfishMonitor.ViewModels
                 arduinoData.Elapsed = _stopWatch.ElapsedMilliseconds;
                 arduinoData.Voltage = double.Parse(_serialPort.ReadLine());
                 // データの保存
-                ArduinoDataCollection.ArduinoDatas.Add(arduinoData);
+                DataCollections.ArduinoDatas.Add(arduinoData);
             }
             catch(Exception ex)
             {
@@ -182,7 +184,7 @@ namespace CrayfishMonitor.ViewModels
                     using (StreamWriter streamWriter = new StreamWriter(stream, Encoding.GetEncoding("UTF-8")))
                     {
                         streamWriter.WriteLine("Date,Time,Elapsed[ms],Voltage[V]");
-                        foreach (var data in ArduinoDataCollection.ArduinoDatas)
+                        foreach (var data in DataCollections.ArduinoDatas)
                         {
                             streamWriter.WriteLine($"{data.Date},{data.Time},{data.Elapsed},{data.Voltage}");
                         }
@@ -213,7 +215,7 @@ namespace CrayfishMonitor.ViewModels
                     switch (ext)
                     {
                         case ".png":
-                            _mainWindow.GraphView.GraphView.SaveBitmap(dlg.FileName, 0, 0);
+                            _mainWindow.ArduinoChart.GraphView.SaveBitmap(dlg.FileName, 0, 0);
                             break;
                     }
                     StatusDialogText.Value = "グラフを保存しました";
@@ -242,7 +244,7 @@ namespace CrayfishMonitor.ViewModels
                     using (StreamWriter streamWriter = new StreamWriter(stream, Encoding.GetEncoding("UTF-8")))
                     {
                         streamWriter.WriteLine("Real,Imaginary,Phase,Magnitude,Frequency,Amplitude");
-                        foreach (var data in AnalysisDataCollection.AnalysisDatas)
+                        foreach (var data in DataCollections.FFTDatas)
                         {
                             streamWriter.WriteLine($"{data.Real},{data.Imaginary},{data.Phase},{data.Magnitude},{data.Frequency},{data.Amplitude}");
                         }
@@ -261,7 +263,7 @@ namespace CrayfishMonitor.ViewModels
         {
             try
             {
-                ArduinoDataCollection.ArduinoDatas.Clear();
+                DataCollections.ArduinoDatas.Clear();
                 _stopWatch.Reset();
                 StatusDialogText.Value = "リセット完了";
             }
