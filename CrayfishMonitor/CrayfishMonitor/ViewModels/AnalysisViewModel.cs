@@ -1,17 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using MathNet.Numerics.IntegralTransforms;
 using Reactive.Bindings;
 using CrayfishMonitor.Models;
 using System.Numerics;
 using System.Windows;
-using System.Collections.ObjectModel;
-using OxyPlot;
-using OxyPlot.Series;
-using OxyPlot.Axes;
 using Microsoft.Win32;
 using System.IO;
 
@@ -30,7 +25,6 @@ namespace CrayfishMonitor.ViewModels
         private double _sampling = 200; //サンプリング数
         private List<double> _voltageDataSource = new List<double>();
         private List<long> _elapsedDataSource = new List<long>();
-        //private List<ArduinoData> _arduinoDataList = new List<ArduinoData>();
 
         public AnalysisViewModel()
         {
@@ -46,8 +40,6 @@ namespace CrayfishMonitor.ViewModels
             {
                 _elapsedDataSource = DataCollections.ArduinoDatas.Select(x => x.Elapsed).ToList();
                 _voltageDataSource = DataCollections.ArduinoDatas.Select(x => x.Voltage).ToList();
-
-                //_arduinoDataList = DataCollections.ArduinoDatas.Select(x => x).ToList();
 
                 FilePathContent.Value = "取得した測定データを解析対象にします。";
                 IsEnableAnalysis.Value = true;

@@ -16,8 +16,8 @@ namespace CrayfishMonitor.ViewModels
 
         public AnalysisChartViewModel()
         {
-            DataCollections.FFTDatas.CollectionChanged += (s, e) => DrowFFTChart();
-            DataCollections.DiffDatas.CollectionChanged += (s, e) => DrowDiffChart();
+            DataCollections.FFTDatas.CollectionChanged += (s, e) => DrawFFTChart();
+            DataCollections.DiffDatas.CollectionChanged += (s, e) => DrawDiffChart();
             ControlStatus.IsGetCSVDatas.PropertyChanged += (s, e) => ChartClear();
         }
 
@@ -29,7 +29,7 @@ namespace CrayfishMonitor.ViewModels
             IsChartSetting = false;
         }   
 
-        private void DrowFFTChart()
+        private void DrawFFTChart()
         {
             if (!IsChartSetting)
             {
@@ -48,7 +48,7 @@ namespace CrayfishMonitor.ViewModels
             }
         }
 
-        private void DrowDiffChart()
+        private void DrawDiffChart()
         {
             if (!IsChartSetting)
             {

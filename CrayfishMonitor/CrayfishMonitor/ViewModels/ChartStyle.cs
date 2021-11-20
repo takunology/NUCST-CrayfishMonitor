@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OxyPlot;
+﻿using OxyPlot;
 using OxyPlot.Axes;
 using OxyPlot.Series;
 
@@ -98,7 +93,7 @@ namespace CrayfishMonitor.ViewModels
                 Position = AxisPosition.Bottom,
                 TickStyle = TickStyle.Inside,
                 AbsoluteMinimum = 0,
-                Minimum = 100,
+                Maximum = 10000,
                 MajorGridlineStyle = LineStyle.Automatic,
                 MinorGridlineStyle = LineStyle.Dash,
                 TitleFontSize = 16,

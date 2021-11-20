@@ -43,3 +43,4 @@ D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\obj\Debug\net6.0-win
 D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\obj\Debug\net6.0-windows\Views\AnalysisChartControl.baml
 D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\obj\Debug\net6.0-windows\Views\AnalysisControl.baml
 D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\obj\Debug\net6.0-windows\Views\ArduinoChartControl.baml
+D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\obj\Debug\net6.0-windows\CrayfishMonitor.csproj.AssemblyReference.cache
