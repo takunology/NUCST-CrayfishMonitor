@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "CrayfishMonitor-Desktop (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "CrayfishMonitor-Desktop (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
