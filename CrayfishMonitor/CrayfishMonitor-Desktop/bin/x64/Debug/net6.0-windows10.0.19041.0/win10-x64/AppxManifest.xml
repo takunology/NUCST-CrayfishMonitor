@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" IgnorableNamespaces="uap rescap build" xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" xmlns:iot="http://schemas.microsoft.com/appx/manifest/iot/windows10" IgnorableNamespaces="uap rescap iot build" xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
   <!--
     このパッケージ マニフェスト ファイルは、ビルド処理で生成されたものです。
 
@@ -31,6 +31,7 @@
   </Applications>
   <Capabilities>
     <rescap:Capability Name="runFullTrust" />
+    <iot:Capability Name="lowLevelDevices" />
   </Capabilities>
   <build:Metadata>
     <build:Item Name="Microsoft.UI.Xaml.Markup.Compiler.dll" Version="1.0.0.0" />

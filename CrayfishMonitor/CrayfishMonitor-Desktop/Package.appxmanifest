@@ -4,7 +4,8 @@
   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
   xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
-  IgnorableNamespaces="uap rescap">
+  xmlns:iot="http://schemas.microsoft.com/appx/manifest/iot/windows10"
+  IgnorableNamespaces="uap rescap iot">
 
   <Identity
     Name="05a6cc62-1a0c-4126-87b0-3ffefd38e4b8"
@@ -44,5 +45,6 @@
 
   <Capabilities>
     <rescap:Capability Name="runFullTrust" />
+    <iot:Capability Name="lowLevelDevices"/>
   </Capabilities>
 </Package>

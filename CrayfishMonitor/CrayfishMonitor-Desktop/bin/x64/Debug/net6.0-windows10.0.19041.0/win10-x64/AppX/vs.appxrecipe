@@ -18,7 +18,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
-    <RegisteredManifestChecksum>C5E4AA705002D2CBD45860E350BCAD15325014FBFB49C171E4A192CF505241C0</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>A9C16FB459D3EAA855311313FB653CB9559CB424B50DD2D1EAAD6DD28A88CCFB</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>05a6cc62-1a0c-4126-87b0-3ffefd38e4b8_2.0.0.0_x64__g1kjrf5fje26p</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>05a6cc62-1a0c-4126-87b0-3ffefd38e4b8_g1kjrf5fje26p!App</RegisteredUserModeAppID>
     <RegisteredPackageID>05a6cc62-1a0c-4126-87b0-3ffefd38e4b8</RegisteredPackageID>
@@ -29,29 +29,29 @@
     <AppXManifest Include="D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-04-12T10:46:18.460</Modified>
+      <Modified>2022-04-13T11:02:02.954</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-04-12T10:46:17.588</Modified>
+      <Modified>2022-04-13T11:02:02.076</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\CrayfishMonitor-Desktop.runtimeconfig.json">
       <PackagePath>CrayfishMonitor-Desktop.runtimeconfig.json</PackagePath>
-      <Modified>2022-04-12T08:26:09.665</Modified>
+      <Modified>2022-04-13T06:28:01.979</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\CrayfishMonitor-Desktop.dll">
       <PackagePath>CrayfishMonitor-Desktop.dll</PackagePath>
-      <Modified>2022-04-12T10:46:17.398</Modified>
+      <Modified>2022-04-13T11:02:01.916</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CrayfishMonitor-Desktop.exe</PackagePath>
-      <Modified>2022-04-12T10:46:17.408</Modified>
+      <Modified>2022-04-13T11:02:01.925</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\CrayfishMonitor-Desktop.deps.json">
       <PackagePath>CrayfishMonitor-Desktop.deps.json</PackagePath>
-      <Modified>2022-04-12T10:37:19.626</Modified>
+      <Modified>2022-04-13T06:28:01.649</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\takun\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.3\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -2092,6 +2092,14 @@
     <AppxPackagedFile Include="C:\Users\takun\.nuget\packages\reactiveproperty.core\8.0.5\lib\net6.0\ReactiveProperty.Core.dll">
       <PackagePath>ReactiveProperty.Core.dll</PackagePath>
       <Modified>2022-03-24T02:55:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\takun\.nuget\packages\system.io.ports\6.0.0\runtimes\win\lib\net6.0\System.IO.Ports.dll">
+      <PackagePath>System.IO.Ports.dll</PackagePath>
+      <Modified>2021-10-22T23:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\takun\.nuget\packages\system.management\6.0.0\runtimes\win\lib\net6.0\System.Management.dll">
+      <PackagePath>System.Management.dll</PackagePath>
+      <Modified>2021-10-22T23:51:24.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\takun\.nuget\packages\system.reactive\5.0.0\lib\net5.0-windows10.0.19041\System.Reactive.dll">
       <PackagePath>System.Reactive.dll</PackagePath>
