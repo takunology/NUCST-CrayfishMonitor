@@ -1,46 +1,81 @@
 ﻿using CrayfishMonitor_Desktop.Models;
 using CrayfishMonitor_Desktop.Services;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
 using Reactive.Bindings;
-using Reactive.Bindings.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace CrayfishMonitor_Desktop.ViewModels
 {
     public class MonitorPageViewModel
-    {
+    { 
         public List<string> DeviceName { get; private set; } = new List<string>();
         public List<SerialDeviceData>Devices { get; private set; } = new List<SerialDeviceData>(SerialDeviceService.GetDevices());
         public ReactivePropertySlim<int> SelectedDeviceIndex { get; private set; } = new ReactivePropertySlim<int>(0);
         public ReactiveProperty<bool> MeasureButtonState { get; } = new ReactiveProperty<bool>(false);
-        public ReactiveCommand MeasureButton { get; set; } = new ReactiveCommand();
+        public ReactiveCommand MeasureCommand { get; set; } = new ReactiveCommand();
+        public ReactiveCommand ShowDataCommand { get; set; } = new ReactiveCommand();
 
-        private CancellationTokenSource _tokenSource;
+        private Views.MonitorPage _monitorPage;
 
-        public MonitorPageViewModel()
+        public MonitorPageViewModel(Views.MonitorPage monitorPage)
         {
+            this._monitorPage = monitorPage;
             DeviceName = Devices.Select(x => x.DeviceName).ToList();
-            MeasureButton.Subscribe(_ => SerialConnect(MeasureButtonState.Value));
+            MeasureCommand.Subscribe(_ => SerialConnect(MeasureButtonState.Value));
+            ShowDataCommand.Subscribe(_ => ShowDataDialog());
         }
 
-        private async void SerialConnect(bool toggleState)
+        private void SerialConnect(bool toggleState)
         {
             if (toggleState is true)
             {
-                //SerialDeviceService.SerialOpen(Devices[SelectedDeviceIndex.Value].DeviceId);
-                _tokenSource = new CancellationTokenSource();
-                await MeasurementService.Measurement(Devices[SelectedDeviceIndex.Value].DeviceId, _tokenSource.Token);
+                MeasureButtonState.Value = SerialDeviceService.SerialOpen(Devices[SelectedDeviceIndex.Value].DeviceId);
             }
             else
             {
-                _tokenSource.Cancel();
-                //SerialDeviceService.SerialClose();
+                MeasureButtonState.Value = SerialDeviceService.SerialClose();
             }
         }
             
+        private async void ShowDataDialog()
+        {
+            if (DataCollections.Measurements.Count > 0)
+            {
+                string datas = "";
+                foreach(var measurement in DataCollections.Measurements)
+                {
+                    datas += $"{measurement.Time.ToString("hh:mm:ss")} \t {measurement.Elapsed} : {measurement.Voltage} [V]\n";
+                }
+
+                ContentDialog dialog = new ContentDialog()
+                {
+                    Title = "計測データ",
+                    Content = new ScrollViewer()
+                    {
+                        Content = new TextBlock() { Text = datas}
+                    },
+                    CloseButtonText = "閉じる",
+                    XamlRoot = _monitorPage.Content.XamlRoot
+                };
+                await dialog.ShowAsync();
+            }
+            else
+            {
+                ContentDialog dialog = new ContentDialog()
+                {
+                    Title = "計測データがありません",
+                    Content = "測定ボタンを押して測定を行ってください。",
+                    CloseButtonText = "OK",
+                    XamlRoot = _monitorPage.Content.XamlRoot
+                };
+                await dialog.ShowAsync();
+            }
+           
+        }
     }
 }

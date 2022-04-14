@@ -5,10 +5,11 @@ namespace CrayfishMonitor_Desktop.Views
 {
     public sealed partial class MonitorPage : Page
     {
-        ViewModels.MonitorPageViewModel ViewModel { get; } = new ViewModels.MonitorPageViewModel();
+        ViewModels.MonitorPageViewModel ViewModel { get; }
         public MonitorPage()
         {
             this.InitializeComponent();
+            ViewModel = new ViewModels.MonitorPageViewModel(this);
         }
     }
 }

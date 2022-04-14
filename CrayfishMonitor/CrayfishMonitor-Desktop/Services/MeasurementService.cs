@@ -32,7 +32,7 @@ namespace CrayfishMonitor_Desktop.Services
                     {
                         _serialDevice.WriteTimeout = TimeSpan.FromMilliseconds(1000);
                         _serialDevice.ReadTimeout = TimeSpan.FromMilliseconds(1000);
-                        _serialDevice.BaudRate = 115200;
+                        _serialDevice.BaudRate = 9600;
                         _serialDevice.Parity = SerialParity.None;
                         _serialDevice.StopBits = SerialStopBitCount.One;
                         _serialDevice.DataBits = 8;
@@ -67,9 +67,29 @@ namespace CrayfishMonitor_Desktop.Services
                         return;
                     }
 
-                    var bytesToRead = await dataReader.LoadAsync(256);
-                    rxBuffer = dataReader.ReadString(bytesToRead);
-                    Debug.Write(rxBuffer);
+                    var bytesToRead = await dataReader.LoadAsync(3);
+                    //rxBuffer = dataReader.ReadString(bytesToRead);
+                    Debug.WriteLine(dataReader.ReadString(bytesToRead));
+                    //var splitstr = rxBuffer.Split("\r\n");
+
+                    /*foreach(var split in splitstr)
+                    {
+                        var value = split.Split(' ');
+
+                        MeasurementData data = new MeasurementData();
+                        DateTime dateTime = DateTime.Now;
+                        data.Time = dateTime;
+                        foreach (var item in value)
+                        {
+                            Debug.Write($"{item}");
+
+                        }
+                        Debug.WriteLine("");
+                        //data.Elapsed = long.Parse(value[0]);
+                        //data.Voltage = double.Parse(value[1]);
+                        //Debug.WriteLine($"{value[0]}\t{value[1]}");
+                    }
+                    
 
                     /*await Task.Run(async () =>
                     {

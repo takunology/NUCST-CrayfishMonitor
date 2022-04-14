@@ -19,8 +19,10 @@
                 <ToggleButton Content="計測" IsEnabled="true"
                               Margin="10 0"
                               Width="80"
-                              Command="{x:Bind ViewModel.MeasureButton}"
+                              Command="{x:Bind ViewModel.MeasureCommand}"
                               IsChecked="{x:Bind ViewModel.MeasureButtonState.Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <Button Content="結果の表示" Margin="10 0"
+                        Command="{x:Bind ViewModel.ShowDataCommand}"/>
             </StackPanel>
         </StackPanel>
     </Grid>

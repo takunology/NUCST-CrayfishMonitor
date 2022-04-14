@@ -19,8 +19,10 @@
                 <ToggleButton x:ConnectionId='3' Content="計測" IsEnabled="true"
                               Margin="10 0"
                               Width="80"
-                                                                        
+                                                                         
                                                                                                                                        />
+                <Button x:ConnectionId='4' Content="結果の表示" Margin="10 0"
+                                                                    />
             </StackPanel>
         </StackPanel>
     </Grid>
