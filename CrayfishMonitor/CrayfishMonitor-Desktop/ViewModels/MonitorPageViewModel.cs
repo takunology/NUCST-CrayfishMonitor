@@ -14,7 +14,7 @@ namespace CrayfishMonitor_Desktop.ViewModels
     public class MonitorPageViewModel
     {
         public List<string> DeviceName { get; private set; } = new List<string>();
-        public List<SerialDevice>Devices { get; private set; } = new List<SerialDevice>(SerialDeviceService.GetDevices());
+        public List<SerialDeviceData>Devices { get; private set; } = new List<SerialDeviceData>(SerialDeviceService.GetDevices());
         public ReactivePropertySlim<int> SelectedDeviceIndex { get; private set; } = new ReactivePropertySlim<int>(0);
         public ReactiveProperty<bool> MeasureButtonState { get; } = new ReactiveProperty<bool>(false);
         public ReactiveCommand MeasureButton { get; set; } = new ReactiveCommand();
@@ -31,16 +31,14 @@ namespace CrayfishMonitor_Desktop.ViewModels
         {
             if (toggleState is true)
             {
+                //SerialDeviceService.SerialOpen(Devices[SelectedDeviceIndex.Value].DeviceId);
                 _tokenSource = new CancellationTokenSource();
-                //ConnectToggleButton.Value = SerialDeviceService.SerialOpen(Devices[SelectedDeviceIndex.Value].DeviceId);
-                //Task.Run(() => MeasurementService.Measurement(Devices[SelectedDeviceIndex.Value].DeviceId, cancelToken), cancelToken);
                 await MeasurementService.Measurement(Devices[SelectedDeviceIndex.Value].DeviceId, _tokenSource.Token);
             }
             else
             {
                 _tokenSource.Cancel();
-                //Task.Run(() => MeasurementService.Measurement(Devices[SelectedDeviceIndex.Value].DeviceId, cancelToken));
-                //ConnectToggleButton.Value = SerialDeviceService.SerialClose();
+                //SerialDeviceService.SerialClose();
             }
         }
             

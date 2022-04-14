@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CrayfishMonitor_Desktop.Models
 {
-    public class SerialDevice
+    public class SerialDeviceData
     {
         public string DeviceId { get; set; }
         public string DeviceName { get; set; }

@@ -16,9 +16,9 @@ namespace CrayfishMonitor_Desktop.Services
         private static SerialPort _serialPort = null;
         private static Stopwatch _stopWatch = new Stopwatch();
 
-        public static List<SerialDevice> GetDevices()
+        public static List<SerialDeviceData> GetDevices()
         {
-            var deviceList = new List<Models.SerialDevice>();
+            var deviceList = new List<Models.SerialDeviceData>();
             var regexCheck =  new Regex("(COM[1-9][0-9]?[0-9]?)");
             var Win32_PnPEntity = new ManagementClass("Win32_SerialPort");
             var deviceInstances = Win32_PnPEntity.GetInstances();
@@ -33,7 +33,7 @@ namespace CrayfishMonitor_Desktop.Services
                 {
                     if (regexCheck.IsMatch(deviceName.ToString()))
                     {
-                        deviceList.Add(new Models.SerialDevice
+                        deviceList.Add(new Models.SerialDeviceData
                         {
                             DeviceId = device.GetPropertyValue("DeviceID").ToString(),
                             DeviceName = deviceName.ToString(),
@@ -113,7 +113,7 @@ namespace CrayfishMonitor_Desktop.Services
                     data.Voltage = double.Parse(_serialPort.ReadLine());
                     DataCollections.Measurements.Add(data);
 #if DEBUG
-                    Debug.WriteLine($"{_serialPort.ReadChar()}");
+                    Debug.WriteLine($"{_serialPort.ReadLine()}");
 #endif
                 }
                 catch (Exception ex)
