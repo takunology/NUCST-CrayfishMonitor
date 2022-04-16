@@ -2,6 +2,55 @@
   "version": 3,
   "targets": {
     "net6.0-windows10.0.19041": {
+      "CommunityToolkit.Common/7.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/CommunityToolkit.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/CommunityToolkit.Common.dll": {}
+        }
+      },
+      "CommunityToolkit.WinUI/7.1.2": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Common": "7.1.2",
+          "Microsoft.WindowsAppSDK": "1.0.0"
+        },
+        "compile": {
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {}
+        }
+      },
+      "CommunityToolkit.WinUI.UI/7.1.2": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.WinUI": "7.1.2",
+          "Microsoft.WindowsAppSDK": "1.0.0"
+        },
+        "compile": {
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {}
+        }
+      },
+      "H.OxyPlot.WinUI/0.9.21": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.WinUI.UI": "7.1.2",
+          "Microsoft.WindowsAppSDK": "1.0.1",
+          "OxyPlot.Core": "2.1.0"
+        },
+        "compile": {
+          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {}
+        }
+      },
       "Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
         "type": "package",
         "build": {
@@ -51,6 +100,15 @@
             "assetType": "native",
             "rid": "win10-x86"
           }
+        }
+      },
+      "OxyPlot.Core/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/OxyPlot.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OxyPlot.dll": {}
         }
       },
       "ReactiveProperty/8.0.5": {
@@ -215,6 +273,55 @@
       }
     },
     "net6.0-windows10.0.19041/win10-arm64": {
+      "CommunityToolkit.Common/7.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/CommunityToolkit.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/CommunityToolkit.Common.dll": {}
+        }
+      },
+      "CommunityToolkit.WinUI/7.1.2": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Common": "7.1.2",
+          "Microsoft.WindowsAppSDK": "1.0.0"
+        },
+        "compile": {
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {}
+        }
+      },
+      "CommunityToolkit.WinUI.UI/7.1.2": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.WinUI": "7.1.2",
+          "Microsoft.WindowsAppSDK": "1.0.0"
+        },
+        "compile": {
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {}
+        }
+      },
+      "H.OxyPlot.WinUI/0.9.21": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.WinUI.UI": "7.1.2",
+          "Microsoft.WindowsAppSDK": "1.0.1",
+          "OxyPlot.Core": "2.1.0"
+        },
+        "compile": {
+          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {}
+        }
+      },
       "Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
         "type": "package",
         "build": {
@@ -253,6 +360,15 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "OxyPlot.Core/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/OxyPlot.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OxyPlot.dll": {}
         }
       },
       "ReactiveProperty/8.0.5": {
@@ -371,6 +487,55 @@
       }
     },
     "net6.0-windows10.0.19041/win10-x64": {
+      "CommunityToolkit.Common/7.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/CommunityToolkit.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/CommunityToolkit.Common.dll": {}
+        }
+      },
+      "CommunityToolkit.WinUI/7.1.2": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Common": "7.1.2",
+          "Microsoft.WindowsAppSDK": "1.0.0"
+        },
+        "compile": {
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {}
+        }
+      },
+      "CommunityToolkit.WinUI.UI/7.1.2": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.WinUI": "7.1.2",
+          "Microsoft.WindowsAppSDK": "1.0.0"
+        },
+        "compile": {
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {}
+        }
+      },
+      "H.OxyPlot.WinUI/0.9.21": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.WinUI.UI": "7.1.2",
+          "Microsoft.WindowsAppSDK": "1.0.1",
+          "OxyPlot.Core": "2.1.0"
+        },
+        "compile": {
+          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {}
+        }
+      },
       "Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
         "type": "package",
         "build": {
@@ -409,6 +574,15 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "OxyPlot.Core/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/OxyPlot.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OxyPlot.dll": {}
         }
       },
       "ReactiveProperty/8.0.5": {
@@ -527,6 +701,55 @@
       }
     },
     "net6.0-windows10.0.19041/win10-x86": {
+      "CommunityToolkit.Common/7.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/CommunityToolkit.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/CommunityToolkit.Common.dll": {}
+        }
+      },
+      "CommunityToolkit.WinUI/7.1.2": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Common": "7.1.2",
+          "Microsoft.WindowsAppSDK": "1.0.0"
+        },
+        "compile": {
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {}
+        }
+      },
+      "CommunityToolkit.WinUI.UI/7.1.2": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.WinUI": "7.1.2",
+          "Microsoft.WindowsAppSDK": "1.0.0"
+        },
+        "compile": {
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {}
+        }
+      },
+      "H.OxyPlot.WinUI/0.9.21": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.WinUI.UI": "7.1.2",
+          "Microsoft.WindowsAppSDK": "1.0.1",
+          "OxyPlot.Core": "2.1.0"
+        },
+        "compile": {
+          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {}
+        }
+      },
       "Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
         "type": "package",
         "build": {
@@ -565,6 +788,15 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
+        }
+      },
+      "OxyPlot.Core/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/OxyPlot.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OxyPlot.dll": {}
         }
       },
       "ReactiveProperty/8.0.5": {
@@ -684,6 +916,87 @@
     }
   },
   "libraries": {
+    "CommunityToolkit.Common/7.1.2": {
+      "sha512": "KnHnukN+Sc26YT98OWYTp8mvaYlLc61lzDh0RrVRNQXm01hZ+iXAjCgKM59vAojqxNVrlbcXj22LYOyXWDItgg==",
+      "type": "package",
+      "path": "communitytoolkit.common/7.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "License.md",
+        "ThirdPartyNotices.txt",
+        "communitytoolkit.common.7.1.2.nupkg.sha512",
+        "communitytoolkit.common.nuspec",
+        "lib/net5.0/CommunityToolkit.Common.dll",
+        "lib/net5.0/CommunityToolkit.Common.pdb",
+        "lib/net5.0/CommunityToolkit.Common.xml",
+        "lib/netstandard1.4/CommunityToolkit.Common.dll",
+        "lib/netstandard1.4/CommunityToolkit.Common.pdb",
+        "lib/netstandard1.4/CommunityToolkit.Common.xml",
+        "lib/netstandard2.0/CommunityToolkit.Common.dll",
+        "lib/netstandard2.0/CommunityToolkit.Common.pdb",
+        "lib/netstandard2.0/CommunityToolkit.Common.xml",
+        "lib/netstandard2.1/CommunityToolkit.Common.dll",
+        "lib/netstandard2.1/CommunityToolkit.Common.pdb",
+        "lib/netstandard2.1/CommunityToolkit.Common.xml"
+      ]
+    },
+    "CommunityToolkit.WinUI/7.1.2": {
+      "sha512": "0O6hCHy+/adJygcROD3r3yA41gRq972i/r6uGUfo8lfEbr/I1YGePTClAh1P9JYT7DdoI2IqeUhX05lq+rwrHg==",
+      "type": "package",
+      "path": "communitytoolkit.winui/7.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "License.md",
+        "ThirdPartyNotices.txt",
+        "communitytoolkit.winui.7.1.2.nupkg.sha512",
+        "communitytoolkit.winui.nuspec",
+        "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll",
+        "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.pdb",
+        "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.pri",
+        "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.xml"
+      ]
+    },
+    "CommunityToolkit.WinUI.UI/7.1.2": {
+      "sha512": "jF1GdEJsZX5o81ZfLjSjgC5RuYwQneuW2mdFIb7FDFzITsgqCn7mfn7BglpNiXvjExkocmAKbBgmCcbp0Nypmw==",
+      "type": "package",
+      "path": "communitytoolkit.winui.ui/7.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "License.md",
+        "ThirdPartyNotices.txt",
+        "communitytoolkit.winui.ui.7.1.2.nupkg.sha512",
+        "communitytoolkit.winui.ui.nuspec",
+        "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll",
+        "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.pdb",
+        "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.pri",
+        "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.xml"
+      ]
+    },
+    "H.OxyPlot.WinUI/0.9.21": {
+      "sha512": "UdCkWPL8M44eNHhI6kfyXU6ehlqrp551onMXOC8wPDmroS5lLHn5x39S0TMGWkDor2LSXLM2JI6fjYCrG43hcg==",
+      "type": "package",
+      "path": "h.oxyplot.winui/0.9.21",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "h.oxyplot.winui.0.9.21.nupkg.sha512",
+        "h.oxyplot.winui.nuspec",
+        "lib/net5.0-windows10.0.18362/H.OxyPlot.WinUI.dll",
+        "lib/net5.0-windows10.0.18362/H.OxyPlot.WinUI.pri",
+        "lib/net5.0-windows10.0.18362/H.OxyPlot.WinUI.xml",
+        "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll",
+        "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.pri",
+        "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.xml",
+        "nuget_icon.png"
+      ]
+    },
     "Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
       "sha512": "4L0P3zqut466SIqT3VBeLTNUQTxCBDOrTRymRuROCRJKazcK7ibLz9yAO1nKWRt50ttCj39oAa2Iuz9ZTDmLlg==",
       "type": "package",
@@ -1410,6 +1723,26 @@
         "tools/x86/GenXbf.dll"
       ]
     },
+    "OxyPlot.Core/2.1.0": {
+      "sha512": "jG+Ct3T59fXDG2LE1hyUaXqH7i+h5Nfway1iB0+0NaY2mvDsz8Row/BKjiBWCt5NHp3+q9JSMiD2wpin2hh3kw==",
+      "type": "package",
+      "path": "oxyplot.core/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "OxyPlot_128.png",
+        "lib/net40/OxyPlot.dll",
+        "lib/net40/OxyPlot.xml",
+        "lib/net45/OxyPlot.dll",
+        "lib/net45/OxyPlot.xml",
+        "lib/netstandard1.0/OxyPlot.dll",
+        "lib/netstandard1.0/OxyPlot.xml",
+        "lib/netstandard2.0/OxyPlot.dll",
+        "lib/netstandard2.0/OxyPlot.xml",
+        "oxyplot.core.2.1.0.nupkg.sha512",
+        "oxyplot.core.nuspec"
+      ]
+    },
     "ReactiveProperty/8.0.5": {
       "sha512": "5cd7oImUq3xwbMQWI1XyA7K9Sg5nKMW97SKo00VKJW31ejy+HP/RGQi7d4cseHQeigyFJR20fJdvlKr6MVfbng==",
       "type": "package",
@@ -1753,6 +2086,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows10.0.19041": [
+      "H.OxyPlot.WinUI >= 0.9.21",
       "Microsoft.Windows.SDK.BuildTools >= 10.0.22000.194",
       "Microsoft.WindowsAppSDK >= 1.0.2",
       "ReactiveProperty >= 8.0.5",
@@ -1809,6 +2143,10 @@
       "net6.0-windows10.0.19041": {
         "targetAlias": "net6.0-windows10.0.19041.0",
         "dependencies": {
+          "H.OxyPlot.WinUI": {
+            "target": "Package",
+            "version": "[0.9.21, )"
+          },
           "Microsoft.Windows.SDK.BuildTools": {
             "target": "Package",
             "version": "[10.0.22000.194, )"

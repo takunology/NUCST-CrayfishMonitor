@@ -2,10 +2,15 @@
 using CrayfishMonitor_Desktop.Services;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
+using OxyPlot;
+using OxyPlot.Series;
 using Reactive.Bindings;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Threading;
+using Windows.UI.Core;
 
 namespace CrayfishMonitor_Desktop.ViewModels
 {
@@ -17,7 +22,10 @@ namespace CrayfishMonitor_Desktop.ViewModels
         public ReactiveProperty<bool> MeasureButtonState { get; private set; } = new ReactiveProperty<bool>(false);
         public ReactiveCommand MeasureCommand { get; } = new ReactiveCommand();
         public ReactiveCommand ShowDataCommand { get; } = new ReactiveCommand();
+        public ReactiveProperty<PlotModel> MeasurementChart { get; private set; } = new ReactiveProperty<PlotModel>();
 
+        private PlotModel _plotModel = new PlotModel();
+        private LineSeries _lineSeries = new LineSeries();
         private Views.MonitorPage _monitorPage;
 
         public MonitorPageViewModel(Views.MonitorPage monitorPage)

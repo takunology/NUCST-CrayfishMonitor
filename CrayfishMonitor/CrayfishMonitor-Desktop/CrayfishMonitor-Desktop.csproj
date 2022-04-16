@@ -13,6 +13,7 @@
     <DefaultLanguage>ja-JP</DefaultLanguage>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Views\Controls\MeasurementChartControl.xaml" />
     <None Remove="Views\DataPage.xaml" />
     <None Remove="Views\MonitorPage.xaml" />
     <None Remove="Views\SettingsPage.xaml" />
@@ -29,6 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="H.OxyPlot.WinUI" Version="0.9.21" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.0.2" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.22000.194" />
     <PackageReference Include="ReactiveProperty" Version="8.0.5" />
@@ -55,6 +57,11 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\MonitorPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\Controlls\MeasurementChartControl.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

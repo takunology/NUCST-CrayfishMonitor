@@ -9,6 +9,7 @@
     ".NETCoreApp,Version=v6.0/win10-x64": {
       "CrayfishMonitor-Desktop/1.0.0": {
         "dependencies": {
+          "H.OxyPlot.WinUI": "0.9.21",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194",
           "Microsoft.WindowsAppSDK": "1.0.2",
           "ReactiveProperty": "8.0.5",
@@ -1092,6 +1093,51 @@
           }
         }
       },
+      "CommunityToolkit.Common/7.1.2": {
+        "runtime": {
+          "lib/net5.0/CommunityToolkit.Common.dll": {
+            "assemblyVersion": "7.1.0.0",
+            "fileVersion": "7.1.2.1"
+          }
+        }
+      },
+      "CommunityToolkit.WinUI/7.1.2": {
+        "dependencies": {
+          "CommunityToolkit.Common": "7.1.2",
+          "Microsoft.WindowsAppSDK": "1.0.2"
+        },
+        "runtime": {
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {
+            "assemblyVersion": "7.1.0.0",
+            "fileVersion": "7.1.2.1"
+          }
+        }
+      },
+      "CommunityToolkit.WinUI.UI/7.1.2": {
+        "dependencies": {
+          "CommunityToolkit.WinUI": "7.1.2",
+          "Microsoft.WindowsAppSDK": "1.0.2"
+        },
+        "runtime": {
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {
+            "assemblyVersion": "7.1.0.0",
+            "fileVersion": "7.1.2.1"
+          }
+        }
+      },
+      "H.OxyPlot.WinUI/0.9.21": {
+        "dependencies": {
+          "CommunityToolkit.WinUI.UI": "7.1.2",
+          "Microsoft.WindowsAppSDK": "1.0.2",
+          "OxyPlot.Core": "2.1.0"
+        },
+        "runtime": {
+          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {
+            "assemblyVersion": "0.9.21.0",
+            "fileVersion": "0.9.21.0"
+          }
+        }
+      },
       "Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {},
       "Microsoft.WindowsAppSDK/1.0.2": {
         "dependencies": {
@@ -1134,6 +1180,14 @@
         "native": {
           "runtimes/win10-x64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll": {
             "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "OxyPlot.Core/2.1.0": {
+        "runtime": {
+          "lib/netstandard2.0/OxyPlot.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
           }
         }
       },
@@ -1227,6 +1281,34 @@
       "serviceable": false,
       "sha512": ""
     },
+    "CommunityToolkit.Common/7.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KnHnukN+Sc26YT98OWYTp8mvaYlLc61lzDh0RrVRNQXm01hZ+iXAjCgKM59vAojqxNVrlbcXj22LYOyXWDItgg==",
+      "path": "communitytoolkit.common/7.1.2",
+      "hashPath": "communitytoolkit.common.7.1.2.nupkg.sha512"
+    },
+    "CommunityToolkit.WinUI/7.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0O6hCHy+/adJygcROD3r3yA41gRq972i/r6uGUfo8lfEbr/I1YGePTClAh1P9JYT7DdoI2IqeUhX05lq+rwrHg==",
+      "path": "communitytoolkit.winui/7.1.2",
+      "hashPath": "communitytoolkit.winui.7.1.2.nupkg.sha512"
+    },
+    "CommunityToolkit.WinUI.UI/7.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jF1GdEJsZX5o81ZfLjSjgC5RuYwQneuW2mdFIb7FDFzITsgqCn7mfn7BglpNiXvjExkocmAKbBgmCcbp0Nypmw==",
+      "path": "communitytoolkit.winui.ui/7.1.2",
+      "hashPath": "communitytoolkit.winui.ui.7.1.2.nupkg.sha512"
+    },
+    "H.OxyPlot.WinUI/0.9.21": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UdCkWPL8M44eNHhI6kfyXU6ehlqrp551onMXOC8wPDmroS5lLHn5x39S0TMGWkDor2LSXLM2JI6fjYCrG43hcg==",
+      "path": "h.oxyplot.winui/0.9.21",
+      "hashPath": "h.oxyplot.winui.0.9.21.nupkg.sha512"
+    },
     "Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {
       "type": "package",
       "serviceable": true,
@@ -1240,6 +1322,13 @@
       "sha512": "sha512-1frlcyTPP8l+6GfslYXveEvkL9w0JuugSVUeKxmrZNS0Dg2uuNAczasuEqNd8M+nFFjlmAVMz9CsbQSFyb2Q4A==",
       "path": "microsoft.windowsappsdk/1.0.2",
       "hashPath": "microsoft.windowsappsdk.1.0.2.nupkg.sha512"
+    },
+    "OxyPlot.Core/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jG+Ct3T59fXDG2LE1hyUaXqH7i+h5Nfway1iB0+0NaY2mvDsz8Row/BKjiBWCt5NHp3+q9JSMiD2wpin2hh3kw==",
+      "path": "oxyplot.core/2.1.0",
+      "hashPath": "oxyplot.core.2.1.0.nupkg.sha512"
     },
     "ReactiveProperty/8.0.5": {
       "type": "package",

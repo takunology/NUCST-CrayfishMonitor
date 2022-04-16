@@ -1,11 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "BtUsOdokChGxwuVcLjRyklnsS1v+7SbAcrKAeagEvRJmkp88vodhCxmMW0HE8rk+nuftpQUVUwEZtLjTnNPrCQ==",
+  "dgSpecHash": "8zCGQd0XeQq38KVaYxHDYvg+yVY1z7j+JFAz5mH03uNsvwpZCxZZeKs9W3JQQCbVnx2TQrQtF0h3rPkmQ3a+hw==",
   "success": true,
   "projectFilePath": "D:\\GitHub\\NUCST-CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor-Desktop\\CrayfishMonitor-Desktop.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\takun\\.nuget\\packages\\communitytoolkit.common\\7.1.2\\communitytoolkit.common.7.1.2.nupkg.sha512",
+    "C:\\Users\\takun\\.nuget\\packages\\communitytoolkit.winui\\7.1.2\\communitytoolkit.winui.7.1.2.nupkg.sha512",
+    "C:\\Users\\takun\\.nuget\\packages\\communitytoolkit.winui.ui\\7.1.2\\communitytoolkit.winui.ui.7.1.2.nupkg.sha512",
+    "C:\\Users\\takun\\.nuget\\packages\\h.oxyplot.winui\\0.9.21\\h.oxyplot.winui.0.9.21.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\microsoft.windows.sdk.buildtools\\10.0.22000.194\\microsoft.windows.sdk.buildtools.10.0.22000.194.nupkg.sha512",
     "C:\\Users\\takun\\.nuget\\packages\\microsoft.windowsappsdk\\1.0.2\\microsoft.windowsappsdk.1.0.2.nupkg.sha512",
+    "C:\\Users\\takun\\.nuget\\packages\\oxyplot.core\\2.1.0\\oxyplot.core.2.1.0.nupkg.sha512",
     "C:\\Users\\takun\\.nuget\\packages\\reactiveproperty\\8.0.5\\reactiveproperty.8.0.5.nupkg.sha512",
     "C:\\Users\\takun\\.nuget\\packages\\reactiveproperty.core\\8.0.5\\reactiveproperty.core.8.0.5.nupkg.sha512",
     "C:\\Users\\takun\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\6.0.0\\runtime.linux-arm.runtime.native.system.io.ports.6.0.0.nupkg.sha512",

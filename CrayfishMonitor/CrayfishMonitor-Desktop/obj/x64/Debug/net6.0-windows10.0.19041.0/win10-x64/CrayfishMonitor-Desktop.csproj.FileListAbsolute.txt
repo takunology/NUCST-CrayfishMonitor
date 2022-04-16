@@ -573,3 +573,13 @@ D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\obj\x64\
 D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Common.dll
+D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\CommunityToolkit.WinUI.dll
+D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\CommunityToolkit.WinUI.UI.dll
+D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\H.OxyPlot.WinUI.dll
+D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\OxyPlot.dll
+D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Views\Controls\MeasurementChartControl.g.i.cs
+D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Views\Controls\MeasurementChartControl.g.cs
+D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Views\Controls\MeasurementChartControl.xaml
+D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Views\Controls\MeasurementChartControl.xbf
+D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Views\Controls\MeasurementChartControl.xbf
