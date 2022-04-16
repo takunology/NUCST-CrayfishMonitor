@@ -16,9 +16,9 @@ namespace CrayfishMonitor_Desktop.ViewModels
         public List<string> DeviceName { get; private set; } = new List<string>();
         public List<SerialDeviceData>Devices { get; private set; } = new List<SerialDeviceData>(SerialDeviceService.GetDevices());
         public ReactivePropertySlim<int> SelectedDeviceIndex { get; private set; } = new ReactivePropertySlim<int>(0);
-        public ReactiveProperty<bool> MeasureButtonState { get; } = new ReactiveProperty<bool>(false);
-        public ReactiveCommand MeasureCommand { get; set; } = new ReactiveCommand();
-        public ReactiveCommand ShowDataCommand { get; set; } = new ReactiveCommand();
+        public ReactiveProperty<bool> MeasureButtonState { get; private set; } = new ReactiveProperty<bool>(false);
+        public ReactiveCommand MeasureCommand { get; } = new ReactiveCommand();
+        public ReactiveCommand ShowDataCommand { get; } = new ReactiveCommand();
 
         private Views.MonitorPage _monitorPage;
 
@@ -34,7 +34,15 @@ namespace CrayfishMonitor_Desktop.ViewModels
         {
             if (toggleState is true)
             {
-                MeasureButtonState.Value = SerialDeviceService.SerialOpen(Devices[SelectedDeviceIndex.Value].DeviceId);
+                try
+                {
+                    MeasureButtonState.Value = SerialDeviceService.SerialOpen(Devices[SelectedDeviceIndex.Value].DeviceId);
+                }
+                catch (Exception ex)
+                {
+                    ExceptionDialog(ex);
+                    MeasureButtonState.Value = false;
+                }
             }
             else
             {
@@ -57,7 +65,7 @@ namespace CrayfishMonitor_Desktop.ViewModels
                     Title = "計測データ",
                     Content = new ScrollViewer()
                     {
-                        Content = new TextBlock() { Text = datas}
+                        Content = new TextBlock() { Text = datas }
                     },
                     CloseButtonText = "閉じる",
                     XamlRoot = _monitorPage.Content.XamlRoot
@@ -76,6 +84,18 @@ namespace CrayfishMonitor_Desktop.ViewModels
                 await dialog.ShowAsync();
             }
            
+        }
+
+        private async void ExceptionDialog(Exception ex)
+        {
+            ContentDialog dialog = new ContentDialog()
+            {
+                Title = "エラー",
+                Content = ex.Message,
+                CloseButtonText = "閉じる",
+                XamlRoot = _monitorPage.Content.XamlRoot
+            };
+            await dialog.ShowAsync();
         }
     }
 }

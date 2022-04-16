@@ -47,6 +47,57 @@ namespace CrayfishMonitor_Desktop.Services
         public static bool SerialOpen(string portId)
         {
             DataCollections.Measurements.Clear();
+
+            InitializeSerialSetting(portId);
+            _stopWatch.Start();
+            _serialPort.DataReceived -= DataReceive;
+            _serialPort.DataReceived += DataReceive;
+            _serialPort.Open();
+#if DEBUG
+            Debug.WriteLine("Serial Open");
+#endif
+            return true;
+        }
+
+        public static bool SerialClose()
+        {
+            _serialPort?.Close();
+            _serialPort?.Dispose();
+            _stopWatch.Stop();
+            _stopWatch.Reset();
+#if DEBUG
+            Debug.WriteLine("Serial Close.");
+#endif
+            return false;
+        }
+
+        public static void DataReceive(object sender, SerialDataReceivedEventArgs e)
+        {
+            if (_serialPort is null) return;
+            if (_serialPort.IsOpen.Equals(null)) return;
+
+            var readData = _serialPort.ReadLine();
+            if (!(readData.ToString().Length > 0)) return;
+            RecordData(readData);
+        }
+
+        private static void RecordData(string arduinoData)
+        {
+            if (!arduinoData.Contains(',')) return;
+            var data = arduinoData.Split(',');
+            if (!long.TryParse(data[0], out long longValue)) return; // 型チェック
+            if (!double.TryParse(data[1], out double doubleValue)) return;
+            MeasurementData measurementData = new MeasurementData();
+            DateTime dateTime = DateTime.Now;
+            measurementData.Time = dateTime;
+            measurementData.Elapsed = long.Parse(data[0]);
+            measurementData.Voltage = double.Parse(data[1]);
+            if (measurementData.Elapsed > _stopWatch.ElapsedMilliseconds) return; // Arduino にスタックされたデータを無視
+            DataCollections.Measurements.Add(measurementData);
+        }
+
+        private static void InitializeSerialSetting(string portId)
+        {
             _serialPort = new SerialPort
             {
                 PortName = portId,
@@ -59,94 +110,6 @@ namespace CrayfishMonitor_Desktop.Services
                 Encoding = Encoding.UTF8,
                 DtrEnable = true,
             };
-            _stopWatch.Start();
-            try
-            {
-                _serialPort.DataReceived -= DataReceive;
-                _serialPort.DataReceived += DataReceive;
-                _serialPort.Open();
-# if DEBUG
-                Debug.WriteLine("Serial Open");
-#endif
-                return true;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                return false;
-            }
-        }
-
-        public static bool SerialClose()
-        {
-            try
-            {
-                _serialPort?.Close();
-                _serialPort?.Dispose();
-                _stopWatch.Stop();
-                _stopWatch.Reset();
-#if DEBUG
-                Debug.WriteLine("Serial Close.");
-#endif
-                return false;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                return false;
-            }
-        }
-
-        public static async void DataReceive(object sender, SerialDataReceivedEventArgs e)
-        {
-            if (_serialPort is null) return;
-            if (_serialPort.IsOpen.Equals(null)) return;
-
-            var readData = _serialPort.ReadExisting();
-            var splitData = readData.Split("\n");
-
-            foreach (var datas in splitData)
-            {
-                if (datas.Length > 0 && !datas.StartsWith('.') && !datas.StartsWith(','))
-                {
-                    if (!datas.Contains(',')) continue;
-                    var data = datas.Split(',');
-                    if (!long.TryParse(data[0], out long longValue)) continue;
-                    if (!double.TryParse(data[1], out double doubleValue)) continue;
-                    MeasurementData measurementData = new MeasurementData();
-                    DateTime dateTime = DateTime.Now;
-                    measurementData.Time = dateTime;
-                    measurementData.Elapsed = long.Parse(data[0]);
-                    measurementData.Voltage = double.Parse(data[1]);
-                    DataCollections.Measurements.Add(measurementData);
-                }
-            }
-
-            /*await Task.Run(() =>
-            {
-                
-            });
-            /*var splitData = readData.Split("\n");
-            await SplitAsync(splitData);
-            foreach (var data in splitData)
-            {
-                foreach(var item in data.Split("\f"))
-                {
-
-                }
-                MeasurementData data = new MeasurementData();
-                DateTime dateTime = DateTime.Now;
-                data.Time = dateTime;
-                data.Elapsed = _stopWatch.ElapsedMilliseconds;
-                data.Voltage = double.Parse(_serialPort.ReadLine());
-                DataCollections.Measurements.Add(data);
-                //Debug.WriteLine(split);
-            }
-            /**/
-#if DEBUG
-            //Debug.WriteLine($"{_serialPort.ReadExisting()}");
-#endif
-            //_serialPort.DataReceived -= DataReceive;
         }
     }
 }
