@@ -5,8 +5,6 @@ using System.IO.Ports;
 using System.Management;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Windows;
 using CrayfishMonitor_Desktop.Models;
 
 namespace CrayfishMonitor_Desktop.Services
@@ -78,10 +76,10 @@ namespace CrayfishMonitor_Desktop.Services
 
             var readData = _serialPort.ReadLine();
             if (!(readData.ToString().Length > 0)) return;
-            RecordData(readData);
+            ReadData(readData);
         }
 
-        private static void RecordData(string arduinoData)
+        private static void ReadData(string arduinoData)
         {
             if (!arduinoData.Contains(',')) return;
             var data = arduinoData.Split(',');

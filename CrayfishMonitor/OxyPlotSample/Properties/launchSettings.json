@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "OxyPlotSample (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "OxyPlotSample (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

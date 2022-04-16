@@ -1,0 +1,1 @@
+D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\OxyPlotSample\OxyPlotSample.csproj;x64
