@@ -24,7 +24,6 @@ namespace CrayfishMonitor_Desktop.ViewModels
         // 別スレッドをキューに格納する
         DispatcherQueue dispatcherQueue = DispatcherQueue.GetForCurrentThread();
 
-
         public MeasurementChartControlViewModel()
         {
             MeasurementChart = _plotModel.MeasurementStyle(_lineSeries);

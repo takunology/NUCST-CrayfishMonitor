@@ -24,8 +24,6 @@ namespace CrayfishMonitor_Desktop.ViewModels
         public ReactiveCommand ShowDataCommand { get; } = new ReactiveCommand();
         public ReactiveProperty<PlotModel> MeasurementChart { get; private set; } = new ReactiveProperty<PlotModel>();
 
-        private PlotModel _plotModel = new PlotModel();
-        private LineSeries _lineSeries = new LineSeries();
         private Views.MonitorPage _monitorPage;
 
         public MonitorPageViewModel(Views.MonitorPage monitorPage)
@@ -53,6 +51,8 @@ namespace CrayfishMonitor_Desktop.ViewModels
             else
             {
                 MeasureButtonState.Value = SerialDeviceService.SerialClose();
+                SaveMeasurementData();
+
             }
         }
             
@@ -102,6 +102,17 @@ namespace CrayfishMonitor_Desktop.ViewModels
                 XamlRoot = _monitorPage.Content.XamlRoot
             };
             await dialog.ShowAsync();
+        }
+
+        private void SaveMeasurementData()
+        {
+            MeasurementSaveData measurementSaveData = new MeasurementSaveData();
+            measurementSaveData.Date = DateTime.Now.ToString("yyyy/MM/dd");
+            measurementSaveData.Time = DateTime.Now.ToString("hh:mm:ss");
+            measurementSaveData.DeviceName = Devices[SelectedDeviceIndex.Value].DeviceName;
+            measurementSaveData.Title = $"{measurementSaveData.Date} {measurementSaveData.Time} {measurementSaveData.DeviceName}";
+            measurementSaveData.Measurements = DataCollections.Measurements.ToList();
+            DataCollections.SaveDataList.Add(measurementSaveData);            
         }
     }
 }

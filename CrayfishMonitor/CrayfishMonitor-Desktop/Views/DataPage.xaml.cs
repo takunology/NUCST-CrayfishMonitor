@@ -23,7 +23,7 @@ namespace CrayfishMonitor_Desktop.Views
     /// </summary>
     public sealed partial class DataPage : Page
     {
-        ViewModels.DataPageViewModel ViewModel { get; set; } = new ViewModels.DataPageViewModel();
+        ViewModels.DataPageViewModel ViewModel { get; } = new ViewModels.DataPageViewModel();
         public DataPage()
         {
             this.InitializeComponent();

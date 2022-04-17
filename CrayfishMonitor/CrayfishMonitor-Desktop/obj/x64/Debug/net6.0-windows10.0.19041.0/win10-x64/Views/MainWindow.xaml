@@ -16,7 +16,7 @@
                         PaneDisplayMode="Left">
             <NavigationView.MenuItems>
                 <NavigationViewItem Icon="Play" Content="計測" Tag="MonitorPage" IsSelected="True"/>
-                <NavigationViewItem Icon="List" Content="記録データ" Tag="DataPage"/>
+                <NavigationViewItem Icon="List" Content="履歴" Tag="DataPage"/>
             </NavigationView.MenuItems>
             <NavigationView.Content>
                 <Frame x:ConnectionId='3' x:Name="frame"                                                Height="Auto" Width="Auto"/>

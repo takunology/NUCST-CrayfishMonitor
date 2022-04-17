@@ -15,3 +15,4 @@
         <oxy:PlotView Model="{Binding MeasurementChart}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
     </Grid>
 </UserControl>
+
