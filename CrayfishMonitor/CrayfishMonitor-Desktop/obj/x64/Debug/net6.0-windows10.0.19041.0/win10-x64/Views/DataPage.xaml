@@ -13,22 +13,43 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="8*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <TextBlock Text="計測履歴" FontSize="32" Margin="10"/>
         </Grid>
         <Grid Grid.Row="1">
-            <ListView x:ConnectionId='2' 
+            <ListView x:ConnectionId='5'
+                    Margin="10"
                                                                   
+                    BorderBrush="{ThemeResource SystemControlForegroundBaseMediumLowBrush}"
+                    BorderThickness="1"
+                    SelectionMode="Single"           
+                                                                                                                              
                     VerticalAlignment="Stretch"
                     HorizontalAlignment="Stretch">
                 <ListView.ItemTemplate>
                     <DataTemplate                                       >
-                        <TextBlock x:ConnectionId='4'                       FontSize="16" Margin="5"/>
+                        <Grid x:ConnectionId='7'>
+                            <TextBlock x:ConnectionId='8'                       FontSize="16" Margin="5"/>
+                        </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            
+        </Grid>
+        <Grid Grid.Row="2" Margin="10">
+            <StackPanel Orientation="Horizontal">
+                <Button x:ConnectionId='2' Content="名前をつけて保存" Width="140" Margin="0 0 10 0" 
+                        Style="{StaticResource AccentButtonStyle}"
+                                                                
+                                                                                                                              />
+                <Button x:ConnectionId='3' Content="グラフの表示" Width="100" Margin="0 0 10 0" 
+                                                                     
+                                                                                                                               />
+                <Button x:ConnectionId='4' Content="削除" Width="80" 
+                                                                                                                                
+                                                                  />
+            </StackPanel>
         </Grid>
     </Grid>
 </Page>

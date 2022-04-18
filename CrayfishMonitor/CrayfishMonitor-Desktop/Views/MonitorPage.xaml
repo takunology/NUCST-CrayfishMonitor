@@ -21,7 +21,7 @@
                 <StackPanel Orientation="Horizontal" Margin="0 20">
                     <TextBlock Text="接続先" Margin="10 5"/>
                     <ComboBox Margin="10 0"
-                          ItemsSource="{x:Bind ViewModel.DeviceName}"
+                          ItemsSource="{x:Bind ViewModel.DeviceName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                           SelectedIndex="{x:Bind ViewModel.SelectedDeviceIndex.Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
                           Width="300"/>
                     <ToggleButton Content="計測" IsEnabled="true"

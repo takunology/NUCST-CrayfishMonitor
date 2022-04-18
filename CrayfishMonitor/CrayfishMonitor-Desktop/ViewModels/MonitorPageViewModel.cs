@@ -7,34 +7,42 @@ using OxyPlot.Series;
 using Reactive.Bindings;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Threading;
+using Windows.Devices.Enumeration;
 using Windows.UI.Core;
 
 namespace CrayfishMonitor_Desktop.ViewModels
 {
-    public class MonitorPageViewModel
-    { 
-        public List<string> DeviceName { get; private set; } = new List<string>();
-        public List<SerialDeviceData>Devices { get; private set; } = new List<SerialDeviceData>(SerialDeviceService.GetDevices());
+    public class MonitorPageViewModel : INotifyPropertyChanged
+    {
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public ReadOnlyReactiveCollection<string> DeviceName { get; set; }
+        public ReactiveCollection<SerialDeviceData>Devices { get; private set; } = SerialDeviceService.GetDevices();
         public ReactivePropertySlim<int> SelectedDeviceIndex { get; private set; } = new ReactivePropertySlim<int>(0);
-        public ReactiveProperty<bool> MeasureButtonState { get; private set; } = new ReactiveProperty<bool>(false);
+        public ReactivePropertySlim<bool> MeasureButtonState { get; private set; } = new ReactivePropertySlim<bool>(false);
+        public ReactivePropertySlim<PlotModel> MeasurementChart { get; private set; } = new ReactivePropertySlim<PlotModel>();
         public ReactiveCommand MeasureCommand { get; } = new ReactiveCommand();
         public ReactiveCommand ShowDataCommand { get; } = new ReactiveCommand();
-        public ReactiveProperty<PlotModel> MeasurementChart { get; private set; } = new ReactiveProperty<PlotModel>();
 
         private Views.MonitorPage _monitorPage;
+        private DeviceWatcher _deviceWatcher = DeviceInformation.CreateWatcher();
 
         public MonitorPageViewModel(Views.MonitorPage monitorPage)
         {
             this._monitorPage = monitorPage;
-            DeviceName = Devices.Select(x => x.DeviceName).ToList();
+            DeviceName = Devices.ToReadOnlyReactiveCollection(x => x.DeviceName);
             MeasureCommand.Subscribe(_ => SerialConnect(MeasureButtonState.Value));
             ShowDataCommand.Subscribe(_ => ShowDataDialog());
+            this._deviceWatcher.Updated += (s, e) => Devices = SerialDeviceService.GetDevices();
+            this._deviceWatcher.Start();
         }
 
-        private void SerialConnect(bool toggleState)
+        private async void SerialConnect(bool toggleState)
         {
             if (toggleState is true)
             {
@@ -44,7 +52,7 @@ namespace CrayfishMonitor_Desktop.ViewModels
                 }
                 catch (Exception ex)
                 {
-                    ExceptionDialog(ex);
+                    await ContentDialogService.ShowExceptionAsync(_monitorPage, ex);
                     MeasureButtonState.Value = false;
                 }
             }
@@ -61,47 +69,18 @@ namespace CrayfishMonitor_Desktop.ViewModels
             if (DataCollections.Measurements.Count > 0)
             {
                 string datas = "";
-                foreach(var measurement in DataCollections.Measurements)
+                foreach (var measurement in DataCollections.Measurements)
                 {
                     datas += $"{measurement.Time.ToString("hh:mm:ss")} \t {measurement.Elapsed} : {measurement.Voltage} [V]\n";
                 }
-
-                ContentDialog dialog = new ContentDialog()
-                {
-                    Title = "計測データ",
-                    Content = new ScrollViewer()
-                    {
-                        Content = new TextBlock() { Text = datas }
-                    },
-                    CloseButtonText = "閉じる",
-                    XamlRoot = _monitorPage.Content.XamlRoot
-                };
-                await dialog.ShowAsync();
+           
+                await ContentDialogService.ShowScrollAsync(_monitorPage, "測定データ", datas);
             }
             else
             {
-                ContentDialog dialog = new ContentDialog()
-                {
-                    Title = "計測データがありません",
-                    Content = "測定ボタンを押して測定を行ってください。",
-                    CloseButtonText = "OK",
-                    XamlRoot = _monitorPage.Content.XamlRoot
-                };
-                await dialog.ShowAsync();
+                await ContentDialogService.ShowAsync(_monitorPage, "計測データがありません", "計測ボタンを押して測定を行ってください");
             }
            
-        }
-
-        private async void ExceptionDialog(Exception ex)
-        {
-            ContentDialog dialog = new ContentDialog()
-            {
-                Title = "エラー",
-                Content = ex.Message,
-                CloseButtonText = "閉じる",
-                XamlRoot = _monitorPage.Content.XamlRoot
-            };
-            await dialog.ShowAsync();
         }
 
         private void SaveMeasurementData()

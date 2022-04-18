@@ -43,7 +43,7 @@ namespace CrayfishMonitor_Desktop
         protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
         {
             m_window = new Views.MainWindow();
-            m_window.Title = "CrayfishMonitor";
+            m_window.Title = "CrayfishMonitor 2.0.0-preview";
             m_window.Activate();
         }
 

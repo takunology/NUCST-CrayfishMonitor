@@ -9,6 +9,7 @@ namespace CrayfishMonitor_Desktop.Views
         public MonitorPage()
         {
             this.InitializeComponent();
+            this.NavigationCacheMode = Microsoft.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
             ViewModel = new ViewModels.MonitorPageViewModel(this);
         }
     }

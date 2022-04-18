@@ -29,13 +29,13 @@
     <AppXManifest Include="D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-04-17T10:36:37.026</Modified>
+      <Modified>2022-04-18T21:07:16.938</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-04-17T10:35:59.809</Modified>
+      <Modified>2022-04-18T21:07:16.056</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\CrayfishMonitor-Desktop.runtimeconfig.json">
       <PackagePath>CrayfishMonitor-Desktop.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\CrayfishMonitor-Desktop.dll">
       <PackagePath>CrayfishMonitor-Desktop.dll</PackagePath>
-      <Modified>2022-04-17T10:36:36.076</Modified>
+      <Modified>2022-04-18T21:07:15.878</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CrayfishMonitor-Desktop.exe</PackagePath>
-      <Modified>2022-04-17T10:36:36.086</Modified>
+      <Modified>2022-04-18T21:07:15.889</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\CrayfishMonitor-Desktop.deps.json">
       <PackagePath>CrayfishMonitor-Desktop.deps.json</PackagePath>

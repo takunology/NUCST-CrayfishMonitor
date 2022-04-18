@@ -13,10 +13,11 @@
                         IsSettingsVisible="True"
                         IsBackButtonVisible="Collapsed"
                         SelectionChanged="OnSelectionChanged"
+                        OpenPaneLength="250"
                         PaneDisplayMode="Left">
             <NavigationView.MenuItems>
-                <NavigationViewItem Icon="Play" Content="計測" Tag="MonitorPage" IsSelected="True"/>
-                <NavigationViewItem Icon="List" Content="履歴" Tag="DataPage"/>
+                <NavigationViewItem Icon="Play" Content="データ計測" Tag="MonitorPage" IsSelected="True"/>
+                <NavigationViewItem Icon="List" Content="計測履歴" Tag="DataPage"/>
             </NavigationView.MenuItems>
             <NavigationView.Content>
                 <Frame x:Name="frame" Content="{x:Bind ViewModel.PageContent.Value}" Height="Auto" Width="Auto"/>

@@ -6,6 +6,7 @@ using System.Management;
 using System.Text;
 using System.Text.RegularExpressions;
 using CrayfishMonitor_Desktop.Models;
+using Reactive.Bindings;
 
 namespace CrayfishMonitor_Desktop.Services
 {
@@ -14,9 +15,9 @@ namespace CrayfishMonitor_Desktop.Services
         private static SerialPort _serialPort = null;
         private static Stopwatch _stopWatch = new Stopwatch();
 
-        public static List<SerialDeviceData> GetDevices()
+        public static ReactiveCollection<SerialDeviceData> GetDevices()
         {
-            var deviceList = new List<Models.SerialDeviceData>();
+            var deviceList = new ReactiveCollection<Models.SerialDeviceData>();
             var regexCheck =  new Regex("(COM[1-9][0-9]?[0-9]?)");
             var Win32_PnPEntity = new ManagementClass("Win32_SerialPort");
             var deviceInstances = Win32_PnPEntity.GetInstances();
