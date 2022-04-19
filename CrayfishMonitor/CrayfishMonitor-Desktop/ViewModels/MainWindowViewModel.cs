@@ -12,11 +12,11 @@ namespace CrayfishMonitor_Desktop.ViewModels
 {
     public class MainWindowViewModel
     {
-        public ReactivePropertySlim<Page> PageContent { get; set; } = new ReactivePropertySlim<Page>(new Views.MonitorPage());
+        public ReactivePropertySlim<Page> PageContent { get; set; }
 
         public MainWindowViewModel()
         {
-
+            this.PageContent = new ReactivePropertySlim<Page>(new Views.MonitorPage());
         }
     }
 }

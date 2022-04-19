@@ -1,5 +1,4 @@
 ﻿using Reactive.Bindings;
-using System.Collections.Generic;
 
 namespace CrayfishMonitor_Desktop.Models
 {

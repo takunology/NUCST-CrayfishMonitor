@@ -6,8 +6,6 @@
     xmlns:control="using:CrayfishMonitor_Desktop.Views.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:vm="using:CrayfishMonitor_Desktop.ViewModels" 
-    xmlns:oxy="using:OxyPlot"
     mc:Ignorable="d">
 
     <Grid Margin="20">

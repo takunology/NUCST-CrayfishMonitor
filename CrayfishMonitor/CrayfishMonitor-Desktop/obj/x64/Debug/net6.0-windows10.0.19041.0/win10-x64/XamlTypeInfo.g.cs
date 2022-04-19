@@ -224,7 +224,7 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[51];
+            _typeNameTable = new string[52];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -276,8 +276,9 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
             _typeNameTable[48] = "Microsoft.UI.Xaml.Window";
             _typeNameTable[49] = "CrayfishMonitor_Desktop.Views.MonitorPage";
             _typeNameTable[50] = "CrayfishMonitor_Desktop.Views.SettingsPage";
+            _typeNameTable[51] = "CrayfishMonitor_Desktop.ViewModels.SettingsPageViewModel";
 
-            _typeTable = new global::System.Type[51];
+            _typeTable = new global::System.Type[52];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -329,6 +330,7 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
             _typeTable[48] = typeof(global::Microsoft.UI.Xaml.Window);
             _typeTable[49] = typeof(global::CrayfishMonitor_Desktop.Views.MonitorPage);
             _typeTable[50] = typeof(global::CrayfishMonitor_Desktop.Views.SettingsPage);
+            _typeTable[51] = typeof(global::CrayfishMonitor_Desktop.ViewModels.SettingsPageViewModel);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -378,6 +380,7 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
         private object Activate_47_MainWindow() { return new global::CrayfishMonitor_Desktop.Views.MainWindow(); }
         private object Activate_49_MonitorPage() { return new global::CrayfishMonitor_Desktop.Views.MonitorPage(); }
         private object Activate_50_SettingsPage() { return new global::CrayfishMonitor_Desktop.Views.SettingsPage(); }
+        private object Activate_51_SettingsPageViewModel() { return new global::CrayfishMonitor_Desktop.ViewModels.SettingsPageViewModel(); }
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -775,6 +778,14 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
             case 50:   //  CrayfishMonitor_Desktop.Views.SettingsPage
                 userType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_50_SettingsPage;
+                userType.AddMemberName("ViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 51:   //  CrayfishMonitor_Desktop.ViewModels.SettingsPageViewModel
+                userType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -1439,6 +1450,16 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.SelectsOnInvoked = (global::System.Boolean)Value;
         }
+        private object get_66_SettingsPage_ViewModel(object instance)
+        {
+            var that = (global::CrayfishMonitor_Desktop.Views.SettingsPage)instance;
+            return that.ViewModel;
+        }
+        private void set_66_SettingsPage_ViewModel(object instance, object Value)
+        {
+            var that = (global::CrayfishMonitor_Desktop.Views.SettingsPage)instance;
+            that.ViewModel = (global::CrayfishMonitor_Desktop.ViewModels.SettingsPageViewModel)Value;
+        }
 
         private global::Microsoft.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -1902,6 +1923,12 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_65_NavigationViewItem_SelectsOnInvoked;
                 xamlMember.Setter = set_65_NavigationViewItem_SelectsOnInvoked;
+                break;
+            case "CrayfishMonitor_Desktop.Views.SettingsPage.ViewModel":
+                userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CrayfishMonitor_Desktop.Views.SettingsPage");
+                xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "ViewModel", "CrayfishMonitor_Desktop.ViewModels.SettingsPageViewModel");
+                xamlMember.Getter = get_66_SettingsPage_ViewModel;
+                xamlMember.Setter = set_66_SettingsPage_ViewModel;
                 break;
             }
             return xamlMember;
