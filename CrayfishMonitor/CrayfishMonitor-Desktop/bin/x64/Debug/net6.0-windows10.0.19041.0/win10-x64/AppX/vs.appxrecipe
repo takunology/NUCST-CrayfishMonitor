@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\Bio7\Documents\okawa\github\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-04-19T07:55:35.436</Modified>
+      <Modified>2022-04-25T00:36:59.007</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Bio7\Documents\okawa\github\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-04-19T07:55:34.773</Modified>
+      <Modified>2022-04-25T00:36:58.429</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Bio7\Documents\okawa\github\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\CrayfishMonitor-Desktop.runtimeconfig.json">
       <PackagePath>CrayfishMonitor-Desktop.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Bio7\Documents\okawa\github\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\CrayfishMonitor-Desktop.dll">
       <PackagePath>CrayfishMonitor-Desktop.dll</PackagePath>
-      <Modified>2022-04-19T07:55:34.502</Modified>
+      <Modified>2022-04-25T00:36:58.304</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Bio7\Documents\okawa\github\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CrayfishMonitor-Desktop.exe</PackagePath>
-      <Modified>2022-04-19T07:55:34.523</Modified>
+      <Modified>2022-04-25T00:36:58.319</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Bio7\Documents\okawa\github\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\CrayfishMonitor-Desktop.deps.json">
       <PackagePath>CrayfishMonitor-Desktop.deps.json</PackagePath>

@@ -20,7 +20,7 @@
                 <NavigationViewItem Icon="List" Content="計測履歴" Tag="DataPage"/>
             </NavigationView.MenuItems>
             <NavigationView.Content>
-                <Frame x:Name="frame" Content="{x:Bind ViewModel.PageContent.Value}" Height="Auto" Width="Auto"/>
+                <Frame x:Name="frame" Content="{x:Bind ViewModel.PageContent.Value}" Height="Auto" Width="Auto" Margin="0 10"/>
             </NavigationView.Content>
         </NavigationView>
 

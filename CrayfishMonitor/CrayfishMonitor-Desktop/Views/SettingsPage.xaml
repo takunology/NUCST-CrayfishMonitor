@@ -8,15 +8,31 @@
     mc:Ignorable="d"
     >
 
-    <Grid Margin="20">
+    <Grid Margin="20 10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
         <Grid Margin="0 10">
             <StackPanel Orientation="Vertical">
                 <TextBlock Margin="10" FontSize="32" Text="設定"/>
-                <StackPanel Orientation="Horizontal">
-                    <ComboBox Margin="10 0"
+                <TextBlock  Text="Crayfish Monitor ver2.0.0 - preview1"/>
+                <StackPanel Orientation="Vertical" Margin="10">
+                    <!--<ComboBox Margin="10 0"
                           ItemsSource="{x:Bind ViewModel.BaudRate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                           SelectedIndex="{x:Bind ViewModel.SelectedBaudRateIndex.Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
-                          Width="300"/>
+                          Width="300"/>-->
+                    <Expander IsExpanded="false"
+                              ExpandDirection="Down"
+                              VerticalAlignment="Top"
+                              Header="Arduino 設定"
+                              />
+                    <Expander IsExpanded="false"
+                              ExpandDirection="Down"
+                              VerticalAlignment="Top"
+                              Header="グラフ設定"
+                              />
                 </StackPanel>
             </StackPanel>
         </Grid>
