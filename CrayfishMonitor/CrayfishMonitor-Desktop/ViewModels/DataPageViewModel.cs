@@ -4,6 +4,8 @@ using System.IO;
 using System.Text;
 using CrayfishMonitor_Desktop.Models;
 using CrayfishMonitor_Desktop.Services;
+using Microsoft.UI.Dispatching;
+using Microsoft.UI.Xaml.Media.Animation;
 using Microsoft.Win32;
 using Reactive.Bindings;
 
@@ -28,9 +30,9 @@ namespace CrayfishMonitor_Desktop.ViewModels
         {
             this._dataPage = dataPage;
             SelectedDataItem.PropertyChanged += (s, e) => ButtonStateChange();
-            ShowChartCommand.Subscribe(_ => ShowChart());
-            SaveCommand.Subscribe(_ => DataSave());
-            RemoveCommand.Subscribe(_ => SaveDataItems.RemoveAt(SaveDataItems.IndexOf(SelectedDataItem.Value)));
+            ShowChartCommand.Subscribe(() => ShowChart());
+            SaveCommand.Subscribe(() => DataSave());
+            RemoveCommand.Subscribe(() => SaveDataItems.RemoveAt(SaveDataItems.IndexOf(SelectedDataItem.Value)));
         }
 
         private void ButtonStateChange()
@@ -78,7 +80,11 @@ namespace CrayfishMonitor_Desktop.ViewModels
 
         private void ShowChart()
         {
-
+            DataCollections.SelectedListIndex = SaveDataItems.IndexOf(SelectedDataItem.Value);
+            this._dataPage.Frame.Navigate(typeof(Views.ChartViewerPage), null, new SlideNavigationTransitionInfo()
+            {
+                Effect = SlideNavigationTransitionEffect.FromRight
+            });
         }
     }
 }

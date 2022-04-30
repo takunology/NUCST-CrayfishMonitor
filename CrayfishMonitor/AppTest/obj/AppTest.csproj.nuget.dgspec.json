@@ -1,31 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bio7\\Documents\\okawa\\github\\NUCST-CrayfishMonitor\\CrayfishMonitor\\AppTest\\AppTest.csproj": {}
+    "D:\\GitHub\\NUCST-CrayfishMonitor\\CrayfishMonitor\\AppTest\\AppTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bio7\\Documents\\okawa\\github\\NUCST-CrayfishMonitor\\CrayfishMonitor\\AppTest\\AppTest.csproj": {
+    "D:\\GitHub\\NUCST-CrayfishMonitor\\CrayfishMonitor\\AppTest\\AppTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bio7\\Documents\\okawa\\github\\NUCST-CrayfishMonitor\\CrayfishMonitor\\AppTest\\AppTest.csproj",
+        "projectUniqueName": "D:\\GitHub\\NUCST-CrayfishMonitor\\CrayfishMonitor\\AppTest\\AppTest.csproj",
         "projectName": "AppTest",
-        "projectPath": "C:\\Users\\Bio7\\Documents\\okawa\\github\\NUCST-CrayfishMonitor\\CrayfishMonitor\\AppTest\\AppTest.csproj",
-        "packagesPath": "C:\\Users\\Bio7\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bio7\\Documents\\okawa\\github\\NUCST-CrayfishMonitor\\CrayfishMonitor\\AppTest\\obj\\",
+        "projectPath": "D:\\GitHub\\NUCST-CrayfishMonitor\\CrayfishMonitor\\AppTest\\AppTest.csproj",
+        "packagesPath": "C:\\Users\\takun\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\NUCST-CrayfishMonitor\\CrayfishMonitor\\AppTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Bio7\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\takun\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "D:\\GitHub\\MinecraftConnection\\MinecraftConnection\\MinecraftConnection\\bin\\Release": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

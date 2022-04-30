@@ -58,7 +58,7 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.0.2": {
+      "Microsoft.WindowsAppSDK/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194"
@@ -329,7 +329,7 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.0.2": {
+      "Microsoft.WindowsAppSDK/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194"
@@ -543,7 +543,7 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.0.2": {
+      "Microsoft.WindowsAppSDK/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194"
@@ -757,7 +757,7 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.0.2": {
+      "Microsoft.WindowsAppSDK/1.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194"
@@ -1133,10 +1133,10 @@
         "schemas/10.0.22000.0/winrt/UapManifestSchema_v8.xsd"
       ]
     },
-    "Microsoft.WindowsAppSDK/1.0.2": {
-      "sha512": "1frlcyTPP8l+6GfslYXveEvkL9w0JuugSVUeKxmrZNS0Dg2uuNAczasuEqNd8M+nFFjlmAVMz9CsbQSFyb2Q4A==",
+    "Microsoft.WindowsAppSDK/1.0.3": {
+      "sha512": "lz0MF9OjrUaPZ11GOi1lu/GaoQrWVVojb2uZ4sly7FdkYtGeNZcKNVlhHU7fng9HQkprOLJgn4v2oAwaexV4Sw==",
       "type": "package",
-      "path": "microsoft.windowsappsdk/1.0.2",
+      "path": "microsoft.windowsappsdk/1.0.3",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1552,7 +1552,7 @@
         "license.txt",
         "manifests/Microsoft.InteractiveExperiences.manifest",
         "manifests/Microsoft.WindowsAppSdk.Foundation.manifest",
-        "microsoft.windowsappsdk.1.0.2.nupkg.sha512",
+        "microsoft.windowsappsdk.1.0.3.nupkg.sha512",
         "microsoft.windowsappsdk.nuspec",
         "runtimes/win10-arm64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll",
         "runtimes/win10-x64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll",
@@ -2088,38 +2088,43 @@
     "net6.0-windows10.0.19041": [
       "H.OxyPlot.WinUI >= 0.9.21",
       "Microsoft.Windows.SDK.BuildTools >= 10.0.22000.194",
-      "Microsoft.WindowsAppSDK >= 1.0.2",
+      "Microsoft.WindowsAppSDK >= 1.0.3",
       "ReactiveProperty >= 8.0.5",
       "System.IO.Ports >= 6.0.0",
       "System.Management >= 6.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bio7\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\takun\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bio7\\Documents\\okawa\\github\\NUCST-CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor-Desktop\\CrayfishMonitor-Desktop.csproj",
+      "projectUniqueName": "D:\\GitHub\\NUCST-CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor-Desktop\\CrayfishMonitor-Desktop.csproj",
       "projectName": "CrayfishMonitor-Desktop",
-      "projectPath": "C:\\Users\\Bio7\\Documents\\okawa\\github\\NUCST-CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor-Desktop\\CrayfishMonitor-Desktop.csproj",
-      "packagesPath": "C:\\Users\\Bio7\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bio7\\Documents\\okawa\\github\\NUCST-CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor-Desktop\\obj\\",
+      "projectPath": "D:\\GitHub\\NUCST-CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor-Desktop\\CrayfishMonitor-Desktop.csproj",
+      "packagesPath": "C:\\Users\\takun\\.nuget\\packages\\",
+      "outputPath": "D:\\GitHub\\NUCST-CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor-Desktop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Bio7\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\takun\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows10.0.19041"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "D:\\GitHub\\MinecraftConnection\\MinecraftConnection\\MinecraftConnection\\bin\\Release": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2148,7 +2153,7 @@
           },
           "Microsoft.WindowsAppSDK": {
             "target": "Package",
-            "version": "[1.0.2, )"
+            "version": "[1.0.3, )"
           },
           "ReactiveProperty": {
             "target": "Package",

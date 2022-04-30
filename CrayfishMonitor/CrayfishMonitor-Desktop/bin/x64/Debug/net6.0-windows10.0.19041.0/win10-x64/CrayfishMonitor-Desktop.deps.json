@@ -11,7 +11,7 @@
         "dependencies": {
           "H.OxyPlot.WinUI": "0.9.21",
           "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194",
-          "Microsoft.WindowsAppSDK": "1.0.2",
+          "Microsoft.WindowsAppSDK": "1.0.3",
           "ReactiveProperty": "8.0.5",
           "System.IO.Ports": "6.0.0",
           "System.Management": "6.0.0",
@@ -1104,7 +1104,7 @@
       "CommunityToolkit.WinUI/7.1.2": {
         "dependencies": {
           "CommunityToolkit.Common": "7.1.2",
-          "Microsoft.WindowsAppSDK": "1.0.2"
+          "Microsoft.WindowsAppSDK": "1.0.3"
         },
         "runtime": {
           "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {
@@ -1116,7 +1116,7 @@
       "CommunityToolkit.WinUI.UI/7.1.2": {
         "dependencies": {
           "CommunityToolkit.WinUI": "7.1.2",
-          "Microsoft.WindowsAppSDK": "1.0.2"
+          "Microsoft.WindowsAppSDK": "1.0.3"
         },
         "runtime": {
           "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {
@@ -1128,7 +1128,7 @@
       "H.OxyPlot.WinUI/0.9.21": {
         "dependencies": {
           "CommunityToolkit.WinUI.UI": "7.1.2",
-          "Microsoft.WindowsAppSDK": "1.0.2",
+          "Microsoft.WindowsAppSDK": "1.0.3",
           "OxyPlot.Core": "2.1.0"
         },
         "runtime": {
@@ -1139,7 +1139,7 @@
         }
       },
       "Microsoft.Windows.SDK.BuildTools/10.0.22000.194": {},
-      "Microsoft.WindowsAppSDK/1.0.2": {
+      "Microsoft.WindowsAppSDK/1.0.3": {
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194"
         },
@@ -1316,12 +1316,12 @@
       "path": "microsoft.windows.sdk.buildtools/10.0.22000.194",
       "hashPath": "microsoft.windows.sdk.buildtools.10.0.22000.194.nupkg.sha512"
     },
-    "Microsoft.WindowsAppSDK/1.0.2": {
+    "Microsoft.WindowsAppSDK/1.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1frlcyTPP8l+6GfslYXveEvkL9w0JuugSVUeKxmrZNS0Dg2uuNAczasuEqNd8M+nFFjlmAVMz9CsbQSFyb2Q4A==",
-      "path": "microsoft.windowsappsdk/1.0.2",
-      "hashPath": "microsoft.windowsappsdk.1.0.2.nupkg.sha512"
+      "sha512": "sha512-lz0MF9OjrUaPZ11GOi1lu/GaoQrWVVojb2uZ4sly7FdkYtGeNZcKNVlhHU7fng9HQkprOLJgn4v2oAwaexV4Sw==",
+      "path": "microsoft.windowsappsdk/1.0.3",
+      "hashPath": "microsoft.windowsappsdk.1.0.3.nupkg.sha512"
     },
     "OxyPlot.Core/2.1.0": {
       "type": "package",

@@ -32,7 +32,7 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="CrayfishMonitor 2.0.0-pre1"
+        DisplayName="CrayfishMonitor 2.0.0-preview"
         Description="CrayfishMonitor-Desktop"
         BackgroundColor="transparent"
         Square150x150Logo="Assets\Square150x150Logo.png"
@@ -45,6 +45,5 @@
 
   <Capabilities>
     <rescap:Capability Name="runFullTrust" />
-    <iot:Capability Name="lowLevelDevices"/>
   </Capabilities>
 </Package>

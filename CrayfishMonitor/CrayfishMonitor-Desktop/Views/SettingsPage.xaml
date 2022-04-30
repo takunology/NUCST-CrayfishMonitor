@@ -5,35 +5,141 @@
     xmlns:local="using:CrayfishMonitor_Desktop.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    >
+    xmlns:control="using:CrayfishMonitor_Desktop.Views.Controls"
+    mc:Ignorable="d">
 
     <Grid Margin="20 10">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="8*"/>
+            <RowDefinition Height="9*"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        <Grid Margin="0 10">
-            <StackPanel Orientation="Vertical">
-                <TextBlock Margin="10" FontSize="32" Text="設定"/>
-                <TextBlock  Text="Crayfish Monitor ver2.0.0 - preview1"/>
-                <StackPanel Orientation="Vertical" Margin="10">
-                    <!--<ComboBox Margin="10 0"
-                          ItemsSource="{x:Bind ViewModel.BaudRate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                          SelectedIndex="{x:Bind ViewModel.SelectedBaudRateIndex.Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
-                          Width="300"/>-->
-                    <Expander IsExpanded="false"
-                              ExpandDirection="Down"
-                              VerticalAlignment="Top"
-                              Header="Arduino 設定"
-                              />
-                    <Expander IsExpanded="false"
-                              ExpandDirection="Down"
-                              VerticalAlignment="Top"
-                              Header="グラフ設定"
-                              />
+        <Grid Margin="10" Grid.Row="0">
+            <TextBlock FontSize="32" Text="設定"/>
+        </Grid>
+        <Grid Margin="10" Grid.Row="1">
+            <ScrollViewer>
+                <StackPanel Orientation="Vertical" Spacing="10">
+                    <TextBlock Text="シリアル通信の設定" FontWeight="Bold" FontSize="18" Margin="0 5"/>
+                        <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}" CornerRadius="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center" Padding="15">
+                            <TextBlock Grid.Column="0" Text="通信速度" FontWeight="Bold"/>
+                            <TextBlock Grid.Column="0"
+                                       FontSize="12"
+                                       Text="シリアルポートの通信速度（ポートレート）を設定できます。" />
+                        </StackPanel>
+                        <ComboBox Margin="0 0 20 0"
+                          ItemsSource="{x:Bind ViewModel.BaudRateList, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                          SelectedValue="{x:Bind ViewModel.SelectedBaudRate.Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                          Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right"
+                          Width="120"/>
+                    </Grid>
+
+                    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}" CornerRadius="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center" Padding="15">
+                            <TextBlock Grid.Column="0" Text="ビットサイズ (bit/sec)" FontWeight="Bold"/>
+                            <TextBlock Grid.Column="0"
+                                   FontSize="12"
+                                   Text="バイトごとのデータの長さを設定できます。" />
+                        </StackPanel>
+                        <ComboBox Margin="0 0 20 0"
+                          ItemsSource="{x:Bind ViewModel.DataBitList, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                          SelectedValue="{x:Bind ViewModel.SelectedDataBits.Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                          Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right"
+                          Width="120"/>
+                    </Grid>
+
+                    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}" CornerRadius="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center" Padding="15">
+                            <TextBlock Grid.Column="0" Text="パリティビット" FontWeight="Bold"/>
+                            <TextBlock Grid.Column="0"
+                                   FontSize="12"
+                                   Text="通信の信頼性を確保（パリティチェック）するためのビットを設定します。" />
+                        </StackPanel>
+                        <ComboBox Margin="0 0 20 0"
+                          ItemsSource="{x:Bind ViewModel.ParityList, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                          SelectedValue="{x:Bind ViewModel.SelectedParity.Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                          Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right"
+                          Width="120"/>
+                    </Grid>
+
+                    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}" CornerRadius="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center" Padding="15">
+                            <TextBlock Grid.Column="0" Text="ストップビット" FontWeight="Bold"/>
+                            <TextBlock Grid.Column="0"
+                                   FontSize="12"
+                                   Text="バイトごとの通信処理の終了を示すビットを設定できます。" />
+                        </StackPanel>
+                        <ComboBox Margin="0 0 20 0"
+                          ItemsSource="{x:Bind ViewModel.StopBitList, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                          SelectedValue="{x:Bind ViewModel.SelectedStopBit.Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                          Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right"
+                          Width="120"/>
+                    </Grid>
+
+                    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}" CornerRadius="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center" Padding="15">
+                            <TextBlock Grid.Column="0" Text="エンコード" FontWeight="Bold"/>
+                            <TextBlock Grid.Column="0"
+                                   FontSize="12"
+                                   Text="データのエンコードを設定します。既定値では UTF-8 です。" />
+                        </StackPanel>
+                        <ComboBox Margin="0 0 20 0"
+                          ItemsSource="{x:Bind ViewModel.EncodingList, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                          SelectedValue="{x:Bind ViewModel.SelectedEncoding.Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                          Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right"
+                          Width="120"/>
+                    </Grid>
+
+                    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}" CornerRadius="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center" Padding="15">
+                            <TextBlock Grid.Column="0" Text="DTRシグナル" FontWeight="Bold"/>
+                            <TextBlock Grid.Column="0"
+                                   FontSize="12"
+                                   Text="シリアル通信中に、DTR (Data Terminal Ready) シグナルを有効にするかを設定できます。" />
+                        </StackPanel>
+                        <ToggleSwitch Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 0 -50 0"
+                                      IsEnabled="{x:Bind ViewModel.IsDtrEnable.Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    </Grid>
+
+                    <TextBlock Text="アプリのバージョン" FontWeight="Bold" FontSize="18" Margin="0 20 0 0"/>
+                    <TextBlock Text="Crayfish Monitor ver2.0.0 - preview"/>
+
+                    <TextBlock Text="製作者" FontWeight="Bold" FontSize="18" Margin="0 20 0 0"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Takumi Okawa (Takunology)"/>
+                        <HyperlinkButton Content="GitHub" NavigateUri="https://github.com/takunology" Margin="5 -5"/>
+                    </StackPanel>
                 </StackPanel>
+            </ScrollViewer>
+        </Grid>
+        <Grid Grid.Row="2" Margin="10">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="保存する" Width="100" Style="{StaticResource AccentButtonStyle}"/>
             </StackPanel>
         </Grid>
     </Grid>

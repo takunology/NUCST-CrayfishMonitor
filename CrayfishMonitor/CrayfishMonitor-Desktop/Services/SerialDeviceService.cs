@@ -100,14 +100,14 @@ namespace CrayfishMonitor_Desktop.Services
             _serialPort = new SerialPort
             {
                 PortName = portId,
-                BaudRate = 115200,
-                DataBits = 8,
-                Parity = Parity.None,
-                StopBits = StopBits.One,
-                WriteTimeout = 5000,
-                ReadTimeout = 5000,
-                Encoding = Encoding.UTF8,
-                DtrEnable = true,
+                BaudRate = SerialPortSetting.BaudRate,
+                DataBits = SerialPortSetting.DataBits,
+                Parity = SerialPortSetting.Parity,
+                StopBits = SerialPortSetting.StopBits,
+                WriteTimeout = SerialPortSetting.WriteTimeOut,
+                ReadTimeout = SerialPortSetting.ReadTimeOut,
+                Encoding = SerialPortSetting.Encoding,
+                DtrEnable = SerialPortSetting.DtrEnable,
             };
         }
     }

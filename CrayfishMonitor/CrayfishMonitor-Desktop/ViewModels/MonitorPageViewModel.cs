@@ -36,8 +36,8 @@ namespace CrayfishMonitor_Desktop.ViewModels
         {
             this._monitorPage = monitorPage;
             DeviceName = Devices.ToReadOnlyReactiveCollection(x => x.DeviceName);
-            MeasureCommand.Subscribe(_ => SerialConnect(MeasureButtonState.Value));
-            ShowDataCommand.Subscribe(_ => ShowDataDialog());
+            MeasureCommand.Subscribe(() => SerialConnect(MeasureButtonState.Value));
+            ShowDataCommand.Subscribe(() => ShowDataDialog());
             this._deviceWatcher.Updated += (s, e) => Devices = SerialDeviceService.GetDevices();
             this._deviceWatcher.Start();
         }

@@ -1,4 +1,5 @@
 App.xbf
+Views\ChartViewerPage.xbf
 Views\Controls\MeasurementChartControl.xbf
 Views\DataPage.xbf
 Views\MainWindow.xbf

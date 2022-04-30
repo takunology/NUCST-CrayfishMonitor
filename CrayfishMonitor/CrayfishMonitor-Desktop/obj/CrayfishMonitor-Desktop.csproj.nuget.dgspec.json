@@ -1,31 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bio7\\Documents\\okawa\\github\\NUCST-CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor-Desktop\\CrayfishMonitor-Desktop.csproj": {}
+    "D:\\GitHub\\NUCST-CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor-Desktop\\CrayfishMonitor-Desktop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bio7\\Documents\\okawa\\github\\NUCST-CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor-Desktop\\CrayfishMonitor-Desktop.csproj": {
+    "D:\\GitHub\\NUCST-CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor-Desktop\\CrayfishMonitor-Desktop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bio7\\Documents\\okawa\\github\\NUCST-CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor-Desktop\\CrayfishMonitor-Desktop.csproj",
+        "projectUniqueName": "D:\\GitHub\\NUCST-CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor-Desktop\\CrayfishMonitor-Desktop.csproj",
         "projectName": "CrayfishMonitor-Desktop",
-        "projectPath": "C:\\Users\\Bio7\\Documents\\okawa\\github\\NUCST-CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor-Desktop\\CrayfishMonitor-Desktop.csproj",
-        "packagesPath": "C:\\Users\\Bio7\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bio7\\Documents\\okawa\\github\\NUCST-CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor-Desktop\\obj\\",
+        "projectPath": "D:\\GitHub\\NUCST-CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor-Desktop\\CrayfishMonitor-Desktop.csproj",
+        "packagesPath": "C:\\Users\\takun\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\NUCST-CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor-Desktop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Bio7\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\takun\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows10.0.19041"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "D:\\GitHub\\MinecraftConnection\\MinecraftConnection\\MinecraftConnection\\bin\\Release": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -54,7 +58,7 @@
             },
             "Microsoft.WindowsAppSDK": {
               "target": "Package",
-              "version": "[1.0.2, )"
+              "version": "[1.0.3, )"
             },
             "ReactiveProperty": {
               "target": "Package",
