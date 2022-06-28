@@ -224,7 +224,7 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[54];
+            _typeNameTable = new string[56];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -252,35 +252,37 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
             _typeNameTable[24] = "CrayfishMonitor_Desktop.ViewModels.ChartViewerViewModel";
             _typeNameTable[25] = "CrayfishMonitor_Desktop.ViewModels.MeasurementChartControlViewModel";
             _typeNameTable[26] = "CrayfishMonitor_Desktop.Views.Controls.MeasurementChartControl";
-            _typeNameTable[27] = "CrayfishMonitor_Desktop.Views.DataPage";
-            _typeNameTable[28] = "Microsoft.UI.Xaml.Controls.NavigationView";
-            _typeNameTable[29] = "Microsoft.UI.Xaml.Controls.ContentControl";
-            _typeNameTable[30] = "Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible";
-            _typeNameTable[31] = "Double";
-            _typeNameTable[32] = "Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode";
-            _typeNameTable[33] = "System.Collections.Generic.IList`1<Object>";
-            _typeNameTable[34] = "Microsoft.UI.Xaml.Controls.AutoSuggestBox";
-            _typeNameTable[35] = "Microsoft.UI.Xaml.UIElement";
-            _typeNameTable[36] = "Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode";
-            _typeNameTable[37] = "Microsoft.UI.Xaml.DataTemplate";
-            _typeNameTable[38] = "Microsoft.UI.Xaml.Style";
-            _typeNameTable[39] = "Microsoft.UI.Xaml.Controls.StyleSelector";
-            _typeNameTable[40] = "Microsoft.UI.Xaml.Controls.DataTemplateSelector";
-            _typeNameTable[41] = "Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode";
-            _typeNameTable[42] = "Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus";
-            _typeNameTable[43] = "Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled";
-            _typeNameTable[44] = "Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings";
-            _typeNameTable[45] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[46] = "Microsoft.UI.Xaml.Controls.NavigationViewItem";
-            _typeNameTable[47] = "Microsoft.UI.Xaml.Controls.NavigationViewItemBase";
-            _typeNameTable[48] = "Microsoft.UI.Xaml.Controls.IconElement";
-            _typeNameTable[49] = "CrayfishMonitor_Desktop.Views.MainWindow";
-            _typeNameTable[50] = "Microsoft.UI.Xaml.Window";
-            _typeNameTable[51] = "CrayfishMonitor_Desktop.Views.MonitorPage";
-            _typeNameTable[52] = "CrayfishMonitor_Desktop.Views.SettingsPage";
-            _typeNameTable[53] = "CrayfishMonitor_Desktop.ViewModels.SettingsPageViewModel";
+            _typeNameTable[27] = "CrayfishMonitor_Desktop.Views.DataOpenPage";
+            _typeNameTable[28] = "CrayfishMonitor_Desktop.ViewModels.DataOpenPageViewModel";
+            _typeNameTable[29] = "CrayfishMonitor_Desktop.Views.DataPage";
+            _typeNameTable[30] = "Microsoft.UI.Xaml.Controls.NavigationView";
+            _typeNameTable[31] = "Microsoft.UI.Xaml.Controls.ContentControl";
+            _typeNameTable[32] = "Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible";
+            _typeNameTable[33] = "Double";
+            _typeNameTable[34] = "Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode";
+            _typeNameTable[35] = "System.Collections.Generic.IList`1<Object>";
+            _typeNameTable[36] = "Microsoft.UI.Xaml.Controls.AutoSuggestBox";
+            _typeNameTable[37] = "Microsoft.UI.Xaml.UIElement";
+            _typeNameTable[38] = "Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode";
+            _typeNameTable[39] = "Microsoft.UI.Xaml.DataTemplate";
+            _typeNameTable[40] = "Microsoft.UI.Xaml.Style";
+            _typeNameTable[41] = "Microsoft.UI.Xaml.Controls.StyleSelector";
+            _typeNameTable[42] = "Microsoft.UI.Xaml.Controls.DataTemplateSelector";
+            _typeNameTable[43] = "Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode";
+            _typeNameTable[44] = "Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus";
+            _typeNameTable[45] = "Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled";
+            _typeNameTable[46] = "Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings";
+            _typeNameTable[47] = "Microsoft.UI.Xaml.DependencyObject";
+            _typeNameTable[48] = "Microsoft.UI.Xaml.Controls.NavigationViewItem";
+            _typeNameTable[49] = "Microsoft.UI.Xaml.Controls.NavigationViewItemBase";
+            _typeNameTable[50] = "Microsoft.UI.Xaml.Controls.IconElement";
+            _typeNameTable[51] = "CrayfishMonitor_Desktop.Views.MainWindow";
+            _typeNameTable[52] = "Microsoft.UI.Xaml.Window";
+            _typeNameTable[53] = "CrayfishMonitor_Desktop.Views.MonitorPage";
+            _typeNameTable[54] = "CrayfishMonitor_Desktop.Views.SettingsPage";
+            _typeNameTable[55] = "CrayfishMonitor_Desktop.ViewModels.SettingsPageViewModel";
 
-            _typeTable = new global::System.Type[54];
+            _typeTable = new global::System.Type[56];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -308,33 +310,35 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
             _typeTable[24] = typeof(global::CrayfishMonitor_Desktop.ViewModels.ChartViewerViewModel);
             _typeTable[25] = typeof(global::CrayfishMonitor_Desktop.ViewModels.MeasurementChartControlViewModel);
             _typeTable[26] = typeof(global::CrayfishMonitor_Desktop.Views.Controls.MeasurementChartControl);
-            _typeTable[27] = typeof(global::CrayfishMonitor_Desktop.Views.DataPage);
-            _typeTable[28] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationView);
-            _typeTable[29] = typeof(global::Microsoft.UI.Xaml.Controls.ContentControl);
-            _typeTable[30] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible);
-            _typeTable[31] = typeof(global::System.Double);
-            _typeTable[32] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode);
-            _typeTable[33] = typeof(global::System.Collections.Generic.IList<global::System.Object>);
-            _typeTable[34] = typeof(global::Microsoft.UI.Xaml.Controls.AutoSuggestBox);
-            _typeTable[35] = typeof(global::Microsoft.UI.Xaml.UIElement);
-            _typeTable[36] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode);
-            _typeTable[37] = typeof(global::Microsoft.UI.Xaml.DataTemplate);
-            _typeTable[38] = typeof(global::Microsoft.UI.Xaml.Style);
-            _typeTable[39] = typeof(global::Microsoft.UI.Xaml.Controls.StyleSelector);
-            _typeTable[40] = typeof(global::Microsoft.UI.Xaml.Controls.DataTemplateSelector);
-            _typeTable[41] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode);
-            _typeTable[42] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus);
-            _typeTable[43] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled);
-            _typeTable[44] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings);
-            _typeTable[45] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[46] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItem);
-            _typeTable[47] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase);
-            _typeTable[48] = typeof(global::Microsoft.UI.Xaml.Controls.IconElement);
-            _typeTable[49] = typeof(global::CrayfishMonitor_Desktop.Views.MainWindow);
-            _typeTable[50] = typeof(global::Microsoft.UI.Xaml.Window);
-            _typeTable[51] = typeof(global::CrayfishMonitor_Desktop.Views.MonitorPage);
-            _typeTable[52] = typeof(global::CrayfishMonitor_Desktop.Views.SettingsPage);
-            _typeTable[53] = typeof(global::CrayfishMonitor_Desktop.ViewModels.SettingsPageViewModel);
+            _typeTable[27] = typeof(global::CrayfishMonitor_Desktop.Views.DataOpenPage);
+            _typeTable[28] = typeof(global::CrayfishMonitor_Desktop.ViewModels.DataOpenPageViewModel);
+            _typeTable[29] = typeof(global::CrayfishMonitor_Desktop.Views.DataPage);
+            _typeTable[30] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationView);
+            _typeTable[31] = typeof(global::Microsoft.UI.Xaml.Controls.ContentControl);
+            _typeTable[32] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible);
+            _typeTable[33] = typeof(global::System.Double);
+            _typeTable[34] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode);
+            _typeTable[35] = typeof(global::System.Collections.Generic.IList<global::System.Object>);
+            _typeTable[36] = typeof(global::Microsoft.UI.Xaml.Controls.AutoSuggestBox);
+            _typeTable[37] = typeof(global::Microsoft.UI.Xaml.UIElement);
+            _typeTable[38] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode);
+            _typeTable[39] = typeof(global::Microsoft.UI.Xaml.DataTemplate);
+            _typeTable[40] = typeof(global::Microsoft.UI.Xaml.Style);
+            _typeTable[41] = typeof(global::Microsoft.UI.Xaml.Controls.StyleSelector);
+            _typeTable[42] = typeof(global::Microsoft.UI.Xaml.Controls.DataTemplateSelector);
+            _typeTable[43] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode);
+            _typeTable[44] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus);
+            _typeTable[45] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled);
+            _typeTable[46] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings);
+            _typeTable[47] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
+            _typeTable[48] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItem);
+            _typeTable[49] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase);
+            _typeTable[50] = typeof(global::Microsoft.UI.Xaml.Controls.IconElement);
+            _typeTable[51] = typeof(global::CrayfishMonitor_Desktop.Views.MainWindow);
+            _typeTable[52] = typeof(global::Microsoft.UI.Xaml.Window);
+            _typeTable[53] = typeof(global::CrayfishMonitor_Desktop.Views.MonitorPage);
+            _typeTable[54] = typeof(global::CrayfishMonitor_Desktop.Views.SettingsPage);
+            _typeTable[55] = typeof(global::CrayfishMonitor_Desktop.ViewModels.SettingsPageViewModel);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -378,14 +382,15 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
         private object Activate_21_ChartViewerPage() { return new global::CrayfishMonitor_Desktop.Views.ChartViewerPage(); }
         private object Activate_25_MeasurementChartControlViewModel() { return new global::CrayfishMonitor_Desktop.ViewModels.MeasurementChartControlViewModel(); }
         private object Activate_26_MeasurementChartControl() { return new global::CrayfishMonitor_Desktop.Views.Controls.MeasurementChartControl(); }
-        private object Activate_27_DataPage() { return new global::CrayfishMonitor_Desktop.Views.DataPage(); }
-        private object Activate_28_NavigationView() { return new global::Microsoft.UI.Xaml.Controls.NavigationView(); }
-        private object Activate_44_NavigationViewTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings(); }
-        private object Activate_46_NavigationViewItem() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItem(); }
-        private object Activate_49_MainWindow() { return new global::CrayfishMonitor_Desktop.Views.MainWindow(); }
-        private object Activate_51_MonitorPage() { return new global::CrayfishMonitor_Desktop.Views.MonitorPage(); }
-        private object Activate_52_SettingsPage() { return new global::CrayfishMonitor_Desktop.Views.SettingsPage(); }
-        private object Activate_53_SettingsPageViewModel() { return new global::CrayfishMonitor_Desktop.ViewModels.SettingsPageViewModel(); }
+        private object Activate_27_DataOpenPage() { return new global::CrayfishMonitor_Desktop.Views.DataOpenPage(); }
+        private object Activate_29_DataPage() { return new global::CrayfishMonitor_Desktop.Views.DataPage(); }
+        private object Activate_30_NavigationView() { return new global::Microsoft.UI.Xaml.Controls.NavigationView(); }
+        private object Activate_46_NavigationViewTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings(); }
+        private object Activate_48_NavigationViewItem() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItem(); }
+        private object Activate_51_MainWindow() { return new global::CrayfishMonitor_Desktop.Views.MainWindow(); }
+        private object Activate_53_MonitorPage() { return new global::CrayfishMonitor_Desktop.Views.MonitorPage(); }
+        private object Activate_54_SettingsPage() { return new global::CrayfishMonitor_Desktop.Views.SettingsPage(); }
+        private object Activate_55_SettingsPageViewModel() { return new global::CrayfishMonitor_Desktop.ViewModels.SettingsPageViewModel(); }
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -405,7 +410,7 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
             var newItem = (global::OxyPlot.Controls.TrackerDefinition)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_33_IList(object instance, object item)
+        private void VectorAdd_35_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::System.Object>)instance;
             var newItem = (global::System.Object)item;
@@ -606,16 +611,31 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 27:   //  CrayfishMonitor_Desktop.Views.DataPage
+            case 27:   //  CrayfishMonitor_Desktop.Views.DataOpenPage
                 userType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_27_DataPage;
+                userType.Activator = Activate_27_DataOpenPage;
+                userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 28:   //  Microsoft.UI.Xaml.Controls.NavigationView
+            case 28:   //  CrayfishMonitor_Desktop.ViewModels.DataOpenPageViewModel
+                userType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 29:   //  CrayfishMonitor_Desktop.Views.DataPage
+                userType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_29_DataPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 30:   //  Microsoft.UI.Xaml.Controls.NavigationView
                 userType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
-                userType.Activator = Activate_28_NavigationView;
+                userType.Activator = Activate_30_NavigationView;
                 userType.AddMemberName("AlwaysShowHeader");
                 userType.AddMemberName("IsSettingsVisible");
                 userType.AddMemberName("IsBackButtonVisible");
@@ -656,11 +676,11 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 29:   //  Microsoft.UI.Xaml.Controls.ContentControl
+            case 31:   //  Microsoft.UI.Xaml.Controls.ContentControl
                 xamlType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 30:   //  Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible
+            case 32:   //  Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible
                 userType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Collapsed", global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible.Collapsed);
                 userType.AddEnumValue("Visible", global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible.Visible);
@@ -668,11 +688,11 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 31:   //  Double
+            case 33:   //  Double
                 xamlType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 32:   //  Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode
+            case 34:   //  Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode
                 userType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode.Auto);
                 userType.AddEnumValue("Left", global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode.Left);
@@ -682,22 +702,22 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 33:   //  System.Collections.Generic.IList`1<Object>
+            case 35:   //  System.Collections.Generic.IList`1<Object>
                 userType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.CollectionAdd = VectorAdd_33_IList;
+                userType.CollectionAdd = VectorAdd_35_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 34:   //  Microsoft.UI.Xaml.Controls.AutoSuggestBox
+            case 36:   //  Microsoft.UI.Xaml.Controls.AutoSuggestBox
                 xamlType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 35:   //  Microsoft.UI.Xaml.UIElement
+            case 37:   //  Microsoft.UI.Xaml.UIElement
                 xamlType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 36:   //  Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode
+            case 38:   //  Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode
                 userType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Minimal", global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode.Minimal);
                 userType.AddEnumValue("Compact", global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode.Compact);
@@ -705,37 +725,37 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 37:   //  Microsoft.UI.Xaml.DataTemplate
+            case 39:   //  Microsoft.UI.Xaml.DataTemplate
                 xamlType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 38:   //  Microsoft.UI.Xaml.Style
+            case 40:   //  Microsoft.UI.Xaml.Style
                 xamlType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 39:   //  Microsoft.UI.Xaml.Controls.StyleSelector
+            case 41:   //  Microsoft.UI.Xaml.Controls.StyleSelector
                 xamlType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 40:   //  Microsoft.UI.Xaml.Controls.DataTemplateSelector
+            case 42:   //  Microsoft.UI.Xaml.Controls.DataTemplateSelector
                 xamlType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 41:   //  Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode
+            case 43:   //  Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode
                 userType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("MoreLabel", global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode.MoreLabel);
                 userType.AddEnumValue("NoLabel", global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode.NoLabel);
                 xamlType = userType;
                 break;
 
-            case 42:   //  Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus
+            case 44:   //  Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus
                 userType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus.Disabled);
                 userType.AddEnumValue("Enabled", global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus.Enabled);
                 xamlType = userType;
                 break;
 
-            case 43:   //  Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled
+            case 45:   //  Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled
                 userType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("WhenSelectionFollowsFocus", global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled.WhenSelectionFollowsFocus);
                 userType.AddEnumValue("Always", global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled.Always);
@@ -743,19 +763,19 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 44:   //  Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings
+            case 46:   //  Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings
                 userType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 45:   //  Microsoft.UI.Xaml.DependencyObject
+            case 47:   //  Microsoft.UI.Xaml.DependencyObject
                 xamlType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 46:   //  Microsoft.UI.Xaml.Controls.NavigationViewItem
+            case 48:   //  Microsoft.UI.Xaml.Controls.NavigationViewItem
                 userType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItemBase"));
-                userType.Activator = Activate_46_NavigationViewItem;
+                userType.Activator = Activate_48_NavigationViewItem;
                 userType.AddMemberName("Icon");
                 userType.AddMemberName("CompactPaneLength");
                 userType.AddMemberName("HasUnrealizedChildren");
@@ -767,43 +787,43 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 47:   //  Microsoft.UI.Xaml.Controls.NavigationViewItemBase
+            case 49:   //  Microsoft.UI.Xaml.Controls.NavigationViewItemBase
                 userType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
                 userType.AddMemberName("IsSelected");
                 xamlType = userType;
                 break;
 
-            case 48:   //  Microsoft.UI.Xaml.Controls.IconElement
+            case 50:   //  Microsoft.UI.Xaml.Controls.IconElement
                 xamlType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 49:   //  CrayfishMonitor_Desktop.Views.MainWindow
+            case 51:   //  CrayfishMonitor_Desktop.Views.MainWindow
                 userType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
-                userType.Activator = Activate_49_MainWindow;
+                userType.Activator = Activate_51_MainWindow;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 50:   //  Microsoft.UI.Xaml.Window
+            case 52:   //  Microsoft.UI.Xaml.Window
                 xamlType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 51:   //  CrayfishMonitor_Desktop.Views.MonitorPage
+            case 53:   //  CrayfishMonitor_Desktop.Views.MonitorPage
                 userType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_51_MonitorPage;
+                userType.Activator = Activate_53_MonitorPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 52:   //  CrayfishMonitor_Desktop.Views.SettingsPage
+            case 54:   //  CrayfishMonitor_Desktop.Views.SettingsPage
                 userType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_52_SettingsPage;
+                userType.Activator = Activate_54_SettingsPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 53:   //  CrayfishMonitor_Desktop.ViewModels.SettingsPageViewModel
+            case 55:   //  CrayfishMonitor_Desktop.ViewModels.SettingsPageViewModel
                 userType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
@@ -1050,437 +1070,447 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
             var that = (global::CrayfishMonitor_Desktop.ViewModels.MeasurementChartControlViewModel)instance;
             return that.MeasurementChart;
         }
-        private object get_21_NavigationView_AlwaysShowHeader(object instance)
+        private object get_21_DataOpenPage_ViewModel(object instance)
+        {
+            var that = (global::CrayfishMonitor_Desktop.Views.DataOpenPage)instance;
+            return that.ViewModel;
+        }
+        private void set_21_DataOpenPage_ViewModel(object instance, object Value)
+        {
+            var that = (global::CrayfishMonitor_Desktop.Views.DataOpenPage)instance;
+            that.ViewModel = (global::CrayfishMonitor_Desktop.ViewModels.DataOpenPageViewModel)Value;
+        }
+        private object get_22_NavigationView_AlwaysShowHeader(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.AlwaysShowHeader;
         }
-        private void set_21_NavigationView_AlwaysShowHeader(object instance, object Value)
+        private void set_22_NavigationView_AlwaysShowHeader(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.AlwaysShowHeader = (global::System.Boolean)Value;
         }
-        private object get_22_NavigationView_IsSettingsVisible(object instance)
+        private object get_23_NavigationView_IsSettingsVisible(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.IsSettingsVisible;
         }
-        private void set_22_NavigationView_IsSettingsVisible(object instance, object Value)
+        private void set_23_NavigationView_IsSettingsVisible(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.IsSettingsVisible = (global::System.Boolean)Value;
         }
-        private object get_23_NavigationView_IsBackButtonVisible(object instance)
+        private object get_24_NavigationView_IsBackButtonVisible(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.IsBackButtonVisible;
         }
-        private void set_23_NavigationView_IsBackButtonVisible(object instance, object Value)
+        private void set_24_NavigationView_IsBackButtonVisible(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.IsBackButtonVisible = (global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible)Value;
         }
-        private object get_24_NavigationView_OpenPaneLength(object instance)
+        private object get_25_NavigationView_OpenPaneLength(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.OpenPaneLength;
         }
-        private void set_24_NavigationView_OpenPaneLength(object instance, object Value)
+        private void set_25_NavigationView_OpenPaneLength(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.OpenPaneLength = (global::System.Double)Value;
         }
-        private object get_25_NavigationView_PaneDisplayMode(object instance)
+        private object get_26_NavigationView_PaneDisplayMode(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.PaneDisplayMode;
         }
-        private void set_25_NavigationView_PaneDisplayMode(object instance, object Value)
+        private void set_26_NavigationView_PaneDisplayMode(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.PaneDisplayMode = (global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode)Value;
         }
-        private object get_26_NavigationView_MenuItems(object instance)
+        private object get_27_NavigationView_MenuItems(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.MenuItems;
         }
-        private object get_27_NavigationView_AutoSuggestBox(object instance)
+        private object get_28_NavigationView_AutoSuggestBox(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.AutoSuggestBox;
         }
-        private void set_27_NavigationView_AutoSuggestBox(object instance, object Value)
+        private void set_28_NavigationView_AutoSuggestBox(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.AutoSuggestBox = (global::Microsoft.UI.Xaml.Controls.AutoSuggestBox)Value;
         }
-        private object get_28_NavigationView_CompactModeThresholdWidth(object instance)
+        private object get_29_NavigationView_CompactModeThresholdWidth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.CompactModeThresholdWidth;
         }
-        private void set_28_NavigationView_CompactModeThresholdWidth(object instance, object Value)
+        private void set_29_NavigationView_CompactModeThresholdWidth(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.CompactModeThresholdWidth = (global::System.Double)Value;
         }
-        private object get_29_NavigationView_CompactPaneLength(object instance)
+        private object get_30_NavigationView_CompactPaneLength(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.CompactPaneLength;
         }
-        private void set_29_NavigationView_CompactPaneLength(object instance, object Value)
+        private void set_30_NavigationView_CompactPaneLength(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.CompactPaneLength = (global::System.Double)Value;
         }
-        private object get_30_NavigationView_ContentOverlay(object instance)
+        private object get_31_NavigationView_ContentOverlay(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.ContentOverlay;
         }
-        private void set_30_NavigationView_ContentOverlay(object instance, object Value)
+        private void set_31_NavigationView_ContentOverlay(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.ContentOverlay = (global::Microsoft.UI.Xaml.UIElement)Value;
         }
-        private object get_31_NavigationView_DisplayMode(object instance)
+        private object get_32_NavigationView_DisplayMode(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.DisplayMode;
         }
-        private object get_32_NavigationView_ExpandedModeThresholdWidth(object instance)
+        private object get_33_NavigationView_ExpandedModeThresholdWidth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.ExpandedModeThresholdWidth;
         }
-        private void set_32_NavigationView_ExpandedModeThresholdWidth(object instance, object Value)
+        private void set_33_NavigationView_ExpandedModeThresholdWidth(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.ExpandedModeThresholdWidth = (global::System.Double)Value;
         }
-        private object get_33_NavigationView_FooterMenuItems(object instance)
+        private object get_34_NavigationView_FooterMenuItems(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.FooterMenuItems;
         }
-        private object get_34_NavigationView_FooterMenuItemsSource(object instance)
+        private object get_35_NavigationView_FooterMenuItemsSource(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.FooterMenuItemsSource;
         }
-        private void set_34_NavigationView_FooterMenuItemsSource(object instance, object Value)
+        private void set_35_NavigationView_FooterMenuItemsSource(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.FooterMenuItemsSource = (global::System.Object)Value;
         }
-        private object get_35_NavigationView_Header(object instance)
+        private object get_36_NavigationView_Header(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.Header;
         }
-        private void set_35_NavigationView_Header(object instance, object Value)
+        private void set_36_NavigationView_Header(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.Header = (global::System.Object)Value;
         }
-        private object get_36_NavigationView_HeaderTemplate(object instance)
+        private object get_37_NavigationView_HeaderTemplate(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.HeaderTemplate;
         }
-        private void set_36_NavigationView_HeaderTemplate(object instance, object Value)
+        private void set_37_NavigationView_HeaderTemplate(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.HeaderTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
         }
-        private object get_37_NavigationView_IsBackEnabled(object instance)
+        private object get_38_NavigationView_IsBackEnabled(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.IsBackEnabled;
         }
-        private void set_37_NavigationView_IsBackEnabled(object instance, object Value)
+        private void set_38_NavigationView_IsBackEnabled(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.IsBackEnabled = (global::System.Boolean)Value;
         }
-        private object get_38_NavigationView_IsPaneOpen(object instance)
+        private object get_39_NavigationView_IsPaneOpen(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.IsPaneOpen;
         }
-        private void set_38_NavigationView_IsPaneOpen(object instance, object Value)
+        private void set_39_NavigationView_IsPaneOpen(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.IsPaneOpen = (global::System.Boolean)Value;
         }
-        private object get_39_NavigationView_IsPaneToggleButtonVisible(object instance)
+        private object get_40_NavigationView_IsPaneToggleButtonVisible(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.IsPaneToggleButtonVisible;
         }
-        private void set_39_NavigationView_IsPaneToggleButtonVisible(object instance, object Value)
+        private void set_40_NavigationView_IsPaneToggleButtonVisible(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.IsPaneToggleButtonVisible = (global::System.Boolean)Value;
         }
-        private object get_40_NavigationView_IsPaneVisible(object instance)
+        private object get_41_NavigationView_IsPaneVisible(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.IsPaneVisible;
         }
-        private void set_40_NavigationView_IsPaneVisible(object instance, object Value)
+        private void set_41_NavigationView_IsPaneVisible(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.IsPaneVisible = (global::System.Boolean)Value;
         }
-        private object get_41_NavigationView_IsTitleBarAutoPaddingEnabled(object instance)
+        private object get_42_NavigationView_IsTitleBarAutoPaddingEnabled(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.IsTitleBarAutoPaddingEnabled;
         }
-        private void set_41_NavigationView_IsTitleBarAutoPaddingEnabled(object instance, object Value)
+        private void set_42_NavigationView_IsTitleBarAutoPaddingEnabled(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.IsTitleBarAutoPaddingEnabled = (global::System.Boolean)Value;
         }
-        private object get_42_NavigationView_MenuItemContainerStyle(object instance)
+        private object get_43_NavigationView_MenuItemContainerStyle(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.MenuItemContainerStyle;
         }
-        private void set_42_NavigationView_MenuItemContainerStyle(object instance, object Value)
+        private void set_43_NavigationView_MenuItemContainerStyle(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.MenuItemContainerStyle = (global::Microsoft.UI.Xaml.Style)Value;
         }
-        private object get_43_NavigationView_MenuItemContainerStyleSelector(object instance)
+        private object get_44_NavigationView_MenuItemContainerStyleSelector(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.MenuItemContainerStyleSelector;
         }
-        private void set_43_NavigationView_MenuItemContainerStyleSelector(object instance, object Value)
+        private void set_44_NavigationView_MenuItemContainerStyleSelector(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.MenuItemContainerStyleSelector = (global::Microsoft.UI.Xaml.Controls.StyleSelector)Value;
         }
-        private object get_44_NavigationView_MenuItemTemplate(object instance)
+        private object get_45_NavigationView_MenuItemTemplate(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.MenuItemTemplate;
         }
-        private void set_44_NavigationView_MenuItemTemplate(object instance, object Value)
+        private void set_45_NavigationView_MenuItemTemplate(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.MenuItemTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
         }
-        private object get_45_NavigationView_MenuItemTemplateSelector(object instance)
+        private object get_46_NavigationView_MenuItemTemplateSelector(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.MenuItemTemplateSelector;
         }
-        private void set_45_NavigationView_MenuItemTemplateSelector(object instance, object Value)
+        private void set_46_NavigationView_MenuItemTemplateSelector(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.MenuItemTemplateSelector = (global::Microsoft.UI.Xaml.Controls.DataTemplateSelector)Value;
         }
-        private object get_46_NavigationView_MenuItemsSource(object instance)
+        private object get_47_NavigationView_MenuItemsSource(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.MenuItemsSource;
         }
-        private void set_46_NavigationView_MenuItemsSource(object instance, object Value)
+        private void set_47_NavigationView_MenuItemsSource(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.MenuItemsSource = (global::System.Object)Value;
         }
-        private object get_47_NavigationView_OverflowLabelMode(object instance)
+        private object get_48_NavigationView_OverflowLabelMode(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.OverflowLabelMode;
         }
-        private void set_47_NavigationView_OverflowLabelMode(object instance, object Value)
+        private void set_48_NavigationView_OverflowLabelMode(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.OverflowLabelMode = (global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode)Value;
         }
-        private object get_48_NavigationView_PaneCustomContent(object instance)
+        private object get_49_NavigationView_PaneCustomContent(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.PaneCustomContent;
         }
-        private void set_48_NavigationView_PaneCustomContent(object instance, object Value)
+        private void set_49_NavigationView_PaneCustomContent(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.PaneCustomContent = (global::Microsoft.UI.Xaml.UIElement)Value;
         }
-        private object get_49_NavigationView_PaneFooter(object instance)
+        private object get_50_NavigationView_PaneFooter(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.PaneFooter;
         }
-        private void set_49_NavigationView_PaneFooter(object instance, object Value)
+        private void set_50_NavigationView_PaneFooter(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.PaneFooter = (global::Microsoft.UI.Xaml.UIElement)Value;
         }
-        private object get_50_NavigationView_PaneHeader(object instance)
+        private object get_51_NavigationView_PaneHeader(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.PaneHeader;
         }
-        private void set_50_NavigationView_PaneHeader(object instance, object Value)
+        private void set_51_NavigationView_PaneHeader(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.PaneHeader = (global::Microsoft.UI.Xaml.UIElement)Value;
         }
-        private object get_51_NavigationView_PaneTitle(object instance)
+        private object get_52_NavigationView_PaneTitle(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.PaneTitle;
         }
-        private void set_51_NavigationView_PaneTitle(object instance, object Value)
+        private void set_52_NavigationView_PaneTitle(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.PaneTitle = (global::System.String)Value;
         }
-        private object get_52_NavigationView_PaneToggleButtonStyle(object instance)
+        private object get_53_NavigationView_PaneToggleButtonStyle(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.PaneToggleButtonStyle;
         }
-        private void set_52_NavigationView_PaneToggleButtonStyle(object instance, object Value)
+        private void set_53_NavigationView_PaneToggleButtonStyle(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.PaneToggleButtonStyle = (global::Microsoft.UI.Xaml.Style)Value;
         }
-        private object get_53_NavigationView_SelectedItem(object instance)
+        private object get_54_NavigationView_SelectedItem(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.SelectedItem;
         }
-        private void set_53_NavigationView_SelectedItem(object instance, object Value)
+        private void set_54_NavigationView_SelectedItem(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.SelectedItem = (global::System.Object)Value;
         }
-        private object get_54_NavigationView_SelectionFollowsFocus(object instance)
+        private object get_55_NavigationView_SelectionFollowsFocus(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.SelectionFollowsFocus;
         }
-        private void set_54_NavigationView_SelectionFollowsFocus(object instance, object Value)
+        private void set_55_NavigationView_SelectionFollowsFocus(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.SelectionFollowsFocus = (global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus)Value;
         }
-        private object get_55_NavigationView_SettingsItem(object instance)
+        private object get_56_NavigationView_SettingsItem(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.SettingsItem;
         }
-        private object get_56_NavigationView_ShoulderNavigationEnabled(object instance)
+        private object get_57_NavigationView_ShoulderNavigationEnabled(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.ShoulderNavigationEnabled;
         }
-        private void set_56_NavigationView_ShoulderNavigationEnabled(object instance, object Value)
+        private void set_57_NavigationView_ShoulderNavigationEnabled(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.ShoulderNavigationEnabled = (global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled)Value;
         }
-        private object get_57_NavigationView_TemplateSettings(object instance)
+        private object get_58_NavigationView_TemplateSettings(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.TemplateSettings;
         }
-        private object get_58_NavigationViewItem_Icon(object instance)
+        private object get_59_NavigationViewItem_Icon(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.Icon;
         }
-        private void set_58_NavigationViewItem_Icon(object instance, object Value)
+        private void set_59_NavigationViewItem_Icon(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.Icon = (global::Microsoft.UI.Xaml.Controls.IconElement)Value;
         }
-        private object get_59_NavigationViewItemBase_IsSelected(object instance)
+        private object get_60_NavigationViewItemBase_IsSelected(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase)instance;
             return that.IsSelected;
         }
-        private void set_59_NavigationViewItemBase_IsSelected(object instance, object Value)
+        private void set_60_NavigationViewItemBase_IsSelected(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase)instance;
             that.IsSelected = (global::System.Boolean)Value;
         }
-        private object get_60_NavigationViewItem_CompactPaneLength(object instance)
+        private object get_61_NavigationViewItem_CompactPaneLength(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.CompactPaneLength;
         }
-        private object get_61_NavigationViewItem_HasUnrealizedChildren(object instance)
+        private object get_62_NavigationViewItem_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_61_NavigationViewItem_HasUnrealizedChildren(object instance, object Value)
+        private void set_62_NavigationViewItem_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_62_NavigationViewItem_IsChildSelected(object instance)
+        private object get_63_NavigationViewItem_IsChildSelected(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.IsChildSelected;
         }
-        private void set_62_NavigationViewItem_IsChildSelected(object instance, object Value)
+        private void set_63_NavigationViewItem_IsChildSelected(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.IsChildSelected = (global::System.Boolean)Value;
         }
-        private object get_63_NavigationViewItem_IsExpanded(object instance)
+        private object get_64_NavigationViewItem_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.IsExpanded;
         }
-        private void set_63_NavigationViewItem_IsExpanded(object instance, object Value)
+        private void set_64_NavigationViewItem_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_64_NavigationViewItem_MenuItems(object instance)
+        private object get_65_NavigationViewItem_MenuItems(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.MenuItems;
         }
-        private object get_65_NavigationViewItem_MenuItemsSource(object instance)
+        private object get_66_NavigationViewItem_MenuItemsSource(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.MenuItemsSource;
         }
-        private void set_65_NavigationViewItem_MenuItemsSource(object instance, object Value)
+        private void set_66_NavigationViewItem_MenuItemsSource(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.MenuItemsSource = (global::System.Object)Value;
         }
-        private object get_66_NavigationViewItem_SelectsOnInvoked(object instance)
+        private object get_67_NavigationViewItem_SelectsOnInvoked(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.SelectsOnInvoked;
         }
-        private void set_66_NavigationViewItem_SelectsOnInvoked(object instance, object Value)
+        private void set_67_NavigationViewItem_SelectsOnInvoked(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.SelectsOnInvoked = (global::System.Boolean)Value;
         }
-        private object get_67_SettingsPage_ViewModel(object instance)
+        private object get_68_SettingsPage_ViewModel(object instance)
         {
             var that = (global::CrayfishMonitor_Desktop.Views.SettingsPage)instance;
             return that.ViewModel;
         }
-        private void set_67_SettingsPage_ViewModel(object instance, object Value)
+        private void set_68_SettingsPage_ViewModel(object instance, object Value)
         {
             var that = (global::CrayfishMonitor_Desktop.Views.SettingsPage)instance;
             that.ViewModel = (global::CrayfishMonitor_Desktop.ViewModels.SettingsPageViewModel)Value;
@@ -1633,333 +1663,339 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
                 xamlMember.Getter = get_20_MeasurementChartControlViewModel_MeasurementChart;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "CrayfishMonitor_Desktop.Views.DataOpenPage.ViewModel":
+                userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CrayfishMonitor_Desktop.Views.DataOpenPage");
+                xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "ViewModel", "CrayfishMonitor_Desktop.ViewModels.DataOpenPageViewModel");
+                xamlMember.Getter = get_21_DataOpenPage_ViewModel;
+                xamlMember.Setter = set_21_DataOpenPage_ViewModel;
+                break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.AlwaysShowHeader":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "AlwaysShowHeader", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_21_NavigationView_AlwaysShowHeader;
-                xamlMember.Setter = set_21_NavigationView_AlwaysShowHeader;
+                xamlMember.Getter = get_22_NavigationView_AlwaysShowHeader;
+                xamlMember.Setter = set_22_NavigationView_AlwaysShowHeader;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsSettingsVisible":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "IsSettingsVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_22_NavigationView_IsSettingsVisible;
-                xamlMember.Setter = set_22_NavigationView_IsSettingsVisible;
+                xamlMember.Getter = get_23_NavigationView_IsSettingsVisible;
+                xamlMember.Setter = set_23_NavigationView_IsSettingsVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsBackButtonVisible":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "IsBackButtonVisible", "Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_23_NavigationView_IsBackButtonVisible;
-                xamlMember.Setter = set_23_NavigationView_IsBackButtonVisible;
+                xamlMember.Getter = get_24_NavigationView_IsBackButtonVisible;
+                xamlMember.Setter = set_24_NavigationView_IsBackButtonVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.OpenPaneLength":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "OpenPaneLength", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_24_NavigationView_OpenPaneLength;
-                xamlMember.Setter = set_24_NavigationView_OpenPaneLength;
+                xamlMember.Getter = get_25_NavigationView_OpenPaneLength;
+                xamlMember.Setter = set_25_NavigationView_OpenPaneLength;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneDisplayMode":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "PaneDisplayMode", "Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_25_NavigationView_PaneDisplayMode;
-                xamlMember.Setter = set_25_NavigationView_PaneDisplayMode;
+                xamlMember.Getter = get_26_NavigationView_PaneDisplayMode;
+                xamlMember.Setter = set_26_NavigationView_PaneDisplayMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItems":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "MenuItems", "System.Collections.Generic.IList`1<Object>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_26_NavigationView_MenuItems;
+                xamlMember.Getter = get_27_NavigationView_MenuItems;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.AutoSuggestBox":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "AutoSuggestBox", "Microsoft.UI.Xaml.Controls.AutoSuggestBox");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_27_NavigationView_AutoSuggestBox;
-                xamlMember.Setter = set_27_NavigationView_AutoSuggestBox;
+                xamlMember.Getter = get_28_NavigationView_AutoSuggestBox;
+                xamlMember.Setter = set_28_NavigationView_AutoSuggestBox;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.CompactModeThresholdWidth":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "CompactModeThresholdWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_28_NavigationView_CompactModeThresholdWidth;
-                xamlMember.Setter = set_28_NavigationView_CompactModeThresholdWidth;
+                xamlMember.Getter = get_29_NavigationView_CompactModeThresholdWidth;
+                xamlMember.Setter = set_29_NavigationView_CompactModeThresholdWidth;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.CompactPaneLength":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "CompactPaneLength", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_29_NavigationView_CompactPaneLength;
-                xamlMember.Setter = set_29_NavigationView_CompactPaneLength;
+                xamlMember.Getter = get_30_NavigationView_CompactPaneLength;
+                xamlMember.Setter = set_30_NavigationView_CompactPaneLength;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.ContentOverlay":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "ContentOverlay", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_30_NavigationView_ContentOverlay;
-                xamlMember.Setter = set_30_NavigationView_ContentOverlay;
+                xamlMember.Getter = get_31_NavigationView_ContentOverlay;
+                xamlMember.Setter = set_31_NavigationView_ContentOverlay;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.DisplayMode":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "DisplayMode", "Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_31_NavigationView_DisplayMode;
+                xamlMember.Getter = get_32_NavigationView_DisplayMode;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.ExpandedModeThresholdWidth":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "ExpandedModeThresholdWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_32_NavigationView_ExpandedModeThresholdWidth;
-                xamlMember.Setter = set_32_NavigationView_ExpandedModeThresholdWidth;
+                xamlMember.Getter = get_33_NavigationView_ExpandedModeThresholdWidth;
+                xamlMember.Setter = set_33_NavigationView_ExpandedModeThresholdWidth;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.FooterMenuItems":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "FooterMenuItems", "System.Collections.Generic.IList`1<Object>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_33_NavigationView_FooterMenuItems;
+                xamlMember.Getter = get_34_NavigationView_FooterMenuItems;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.FooterMenuItemsSource":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "FooterMenuItemsSource", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_34_NavigationView_FooterMenuItemsSource;
-                xamlMember.Setter = set_34_NavigationView_FooterMenuItemsSource;
+                xamlMember.Getter = get_35_NavigationView_FooterMenuItemsSource;
+                xamlMember.Setter = set_35_NavigationView_FooterMenuItemsSource;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.Header":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "Header", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_35_NavigationView_Header;
-                xamlMember.Setter = set_35_NavigationView_Header;
+                xamlMember.Getter = get_36_NavigationView_Header;
+                xamlMember.Setter = set_36_NavigationView_Header;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.HeaderTemplate":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "HeaderTemplate", "Microsoft.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_36_NavigationView_HeaderTemplate;
-                xamlMember.Setter = set_36_NavigationView_HeaderTemplate;
+                xamlMember.Getter = get_37_NavigationView_HeaderTemplate;
+                xamlMember.Setter = set_37_NavigationView_HeaderTemplate;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsBackEnabled":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "IsBackEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_37_NavigationView_IsBackEnabled;
-                xamlMember.Setter = set_37_NavigationView_IsBackEnabled;
+                xamlMember.Getter = get_38_NavigationView_IsBackEnabled;
+                xamlMember.Setter = set_38_NavigationView_IsBackEnabled;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsPaneOpen":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "IsPaneOpen", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_38_NavigationView_IsPaneOpen;
-                xamlMember.Setter = set_38_NavigationView_IsPaneOpen;
+                xamlMember.Getter = get_39_NavigationView_IsPaneOpen;
+                xamlMember.Setter = set_39_NavigationView_IsPaneOpen;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsPaneToggleButtonVisible":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "IsPaneToggleButtonVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_39_NavigationView_IsPaneToggleButtonVisible;
-                xamlMember.Setter = set_39_NavigationView_IsPaneToggleButtonVisible;
+                xamlMember.Getter = get_40_NavigationView_IsPaneToggleButtonVisible;
+                xamlMember.Setter = set_40_NavigationView_IsPaneToggleButtonVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsPaneVisible":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "IsPaneVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_40_NavigationView_IsPaneVisible;
-                xamlMember.Setter = set_40_NavigationView_IsPaneVisible;
+                xamlMember.Getter = get_41_NavigationView_IsPaneVisible;
+                xamlMember.Setter = set_41_NavigationView_IsPaneVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsTitleBarAutoPaddingEnabled":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "IsTitleBarAutoPaddingEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_41_NavigationView_IsTitleBarAutoPaddingEnabled;
-                xamlMember.Setter = set_41_NavigationView_IsTitleBarAutoPaddingEnabled;
+                xamlMember.Getter = get_42_NavigationView_IsTitleBarAutoPaddingEnabled;
+                xamlMember.Setter = set_42_NavigationView_IsTitleBarAutoPaddingEnabled;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItemContainerStyle":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "MenuItemContainerStyle", "Microsoft.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_42_NavigationView_MenuItemContainerStyle;
-                xamlMember.Setter = set_42_NavigationView_MenuItemContainerStyle;
+                xamlMember.Getter = get_43_NavigationView_MenuItemContainerStyle;
+                xamlMember.Setter = set_43_NavigationView_MenuItemContainerStyle;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItemContainerStyleSelector":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "MenuItemContainerStyleSelector", "Microsoft.UI.Xaml.Controls.StyleSelector");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_43_NavigationView_MenuItemContainerStyleSelector;
-                xamlMember.Setter = set_43_NavigationView_MenuItemContainerStyleSelector;
+                xamlMember.Getter = get_44_NavigationView_MenuItemContainerStyleSelector;
+                xamlMember.Setter = set_44_NavigationView_MenuItemContainerStyleSelector;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItemTemplate":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "MenuItemTemplate", "Microsoft.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_44_NavigationView_MenuItemTemplate;
-                xamlMember.Setter = set_44_NavigationView_MenuItemTemplate;
+                xamlMember.Getter = get_45_NavigationView_MenuItemTemplate;
+                xamlMember.Setter = set_45_NavigationView_MenuItemTemplate;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItemTemplateSelector":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "MenuItemTemplateSelector", "Microsoft.UI.Xaml.Controls.DataTemplateSelector");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_45_NavigationView_MenuItemTemplateSelector;
-                xamlMember.Setter = set_45_NavigationView_MenuItemTemplateSelector;
+                xamlMember.Getter = get_46_NavigationView_MenuItemTemplateSelector;
+                xamlMember.Setter = set_46_NavigationView_MenuItemTemplateSelector;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItemsSource":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "MenuItemsSource", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_46_NavigationView_MenuItemsSource;
-                xamlMember.Setter = set_46_NavigationView_MenuItemsSource;
+                xamlMember.Getter = get_47_NavigationView_MenuItemsSource;
+                xamlMember.Setter = set_47_NavigationView_MenuItemsSource;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.OverflowLabelMode":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "OverflowLabelMode", "Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_47_NavigationView_OverflowLabelMode;
-                xamlMember.Setter = set_47_NavigationView_OverflowLabelMode;
+                xamlMember.Getter = get_48_NavigationView_OverflowLabelMode;
+                xamlMember.Setter = set_48_NavigationView_OverflowLabelMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneCustomContent":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "PaneCustomContent", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_48_NavigationView_PaneCustomContent;
-                xamlMember.Setter = set_48_NavigationView_PaneCustomContent;
+                xamlMember.Getter = get_49_NavigationView_PaneCustomContent;
+                xamlMember.Setter = set_49_NavigationView_PaneCustomContent;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneFooter":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "PaneFooter", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_49_NavigationView_PaneFooter;
-                xamlMember.Setter = set_49_NavigationView_PaneFooter;
+                xamlMember.Getter = get_50_NavigationView_PaneFooter;
+                xamlMember.Setter = set_50_NavigationView_PaneFooter;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneHeader":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "PaneHeader", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_50_NavigationView_PaneHeader;
-                xamlMember.Setter = set_50_NavigationView_PaneHeader;
+                xamlMember.Getter = get_51_NavigationView_PaneHeader;
+                xamlMember.Setter = set_51_NavigationView_PaneHeader;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneTitle":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "PaneTitle", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_51_NavigationView_PaneTitle;
-                xamlMember.Setter = set_51_NavigationView_PaneTitle;
+                xamlMember.Getter = get_52_NavigationView_PaneTitle;
+                xamlMember.Setter = set_52_NavigationView_PaneTitle;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneToggleButtonStyle":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "PaneToggleButtonStyle", "Microsoft.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_52_NavigationView_PaneToggleButtonStyle;
-                xamlMember.Setter = set_52_NavigationView_PaneToggleButtonStyle;
+                xamlMember.Getter = get_53_NavigationView_PaneToggleButtonStyle;
+                xamlMember.Setter = set_53_NavigationView_PaneToggleButtonStyle;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.SelectedItem":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "SelectedItem", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_53_NavigationView_SelectedItem;
-                xamlMember.Setter = set_53_NavigationView_SelectedItem;
+                xamlMember.Getter = get_54_NavigationView_SelectedItem;
+                xamlMember.Setter = set_54_NavigationView_SelectedItem;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.SelectionFollowsFocus":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "SelectionFollowsFocus", "Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_54_NavigationView_SelectionFollowsFocus;
-                xamlMember.Setter = set_54_NavigationView_SelectionFollowsFocus;
+                xamlMember.Getter = get_55_NavigationView_SelectionFollowsFocus;
+                xamlMember.Setter = set_55_NavigationView_SelectionFollowsFocus;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.SettingsItem":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "SettingsItem", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_55_NavigationView_SettingsItem;
+                xamlMember.Getter = get_56_NavigationView_SettingsItem;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.ShoulderNavigationEnabled":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "ShoulderNavigationEnabled", "Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_56_NavigationView_ShoulderNavigationEnabled;
-                xamlMember.Setter = set_56_NavigationView_ShoulderNavigationEnabled;
+                xamlMember.Getter = get_57_NavigationView_ShoulderNavigationEnabled;
+                xamlMember.Setter = set_57_NavigationView_ShoulderNavigationEnabled;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.TemplateSettings":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_57_NavigationView_TemplateSettings;
+                xamlMember.Getter = get_58_NavigationView_TemplateSettings;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.Icon":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "Icon", "Microsoft.UI.Xaml.Controls.IconElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_58_NavigationViewItem_Icon;
-                xamlMember.Setter = set_58_NavigationViewItem_Icon;
+                xamlMember.Getter = get_59_NavigationViewItem_Icon;
+                xamlMember.Setter = set_59_NavigationViewItem_Icon;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItemBase.IsSelected":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItemBase");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "IsSelected", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_59_NavigationViewItemBase_IsSelected;
-                xamlMember.Setter = set_59_NavigationViewItemBase_IsSelected;
+                xamlMember.Getter = get_60_NavigationViewItemBase_IsSelected;
+                xamlMember.Setter = set_60_NavigationViewItemBase_IsSelected;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.CompactPaneLength":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "CompactPaneLength", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_60_NavigationViewItem_CompactPaneLength;
+                xamlMember.Getter = get_61_NavigationViewItem_CompactPaneLength;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.HasUnrealizedChildren":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_61_NavigationViewItem_HasUnrealizedChildren;
-                xamlMember.Setter = set_61_NavigationViewItem_HasUnrealizedChildren;
+                xamlMember.Getter = get_62_NavigationViewItem_HasUnrealizedChildren;
+                xamlMember.Setter = set_62_NavigationViewItem_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.IsChildSelected":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "IsChildSelected", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_62_NavigationViewItem_IsChildSelected;
-                xamlMember.Setter = set_62_NavigationViewItem_IsChildSelected;
+                xamlMember.Getter = get_63_NavigationViewItem_IsChildSelected;
+                xamlMember.Setter = set_63_NavigationViewItem_IsChildSelected;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.IsExpanded":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_63_NavigationViewItem_IsExpanded;
-                xamlMember.Setter = set_63_NavigationViewItem_IsExpanded;
+                xamlMember.Getter = get_64_NavigationViewItem_IsExpanded;
+                xamlMember.Setter = set_64_NavigationViewItem_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.MenuItems":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "MenuItems", "System.Collections.Generic.IList`1<Object>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_64_NavigationViewItem_MenuItems;
+                xamlMember.Getter = get_65_NavigationViewItem_MenuItems;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.MenuItemsSource":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "MenuItemsSource", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_65_NavigationViewItem_MenuItemsSource;
-                xamlMember.Setter = set_65_NavigationViewItem_MenuItemsSource;
+                xamlMember.Getter = get_66_NavigationViewItem_MenuItemsSource;
+                xamlMember.Setter = set_66_NavigationViewItem_MenuItemsSource;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.SelectsOnInvoked":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "SelectsOnInvoked", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_66_NavigationViewItem_SelectsOnInvoked;
-                xamlMember.Setter = set_66_NavigationViewItem_SelectsOnInvoked;
+                xamlMember.Getter = get_67_NavigationViewItem_SelectsOnInvoked;
+                xamlMember.Setter = set_67_NavigationViewItem_SelectsOnInvoked;
                 break;
             case "CrayfishMonitor_Desktop.Views.SettingsPage.ViewModel":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CrayfishMonitor_Desktop.Views.SettingsPage");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "ViewModel", "CrayfishMonitor_Desktop.ViewModels.SettingsPageViewModel");
-                xamlMember.Getter = get_67_SettingsPage_ViewModel;
-                xamlMember.Setter = set_67_SettingsPage_ViewModel;
+                xamlMember.Getter = get_68_SettingsPage_ViewModel;
+                xamlMember.Setter = set_68_SettingsPage_ViewModel;
                 break;
             }
             return xamlMember;

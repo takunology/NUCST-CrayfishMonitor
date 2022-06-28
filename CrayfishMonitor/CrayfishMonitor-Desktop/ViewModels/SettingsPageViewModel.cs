@@ -29,7 +29,9 @@ namespace CrayfishMonitor_Desktop.ViewModels
 
         public SettingsPageViewModel()
         {
-            //SelectedDataBits.PropertyChanged += (s, e) => SaveDataBits();
+            // ページ読み込み時にデフォルトの設定項目を読み込んでおく
+            // Setting.cs を読みこまない
+            SelectedDataBits.PropertyChanged += (s, e) => SaveDataBits();
         }
 
         private static string EncodingName(Encoding encoding)

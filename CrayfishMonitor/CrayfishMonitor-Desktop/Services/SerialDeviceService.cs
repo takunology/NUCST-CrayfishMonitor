@@ -74,10 +74,16 @@ namespace CrayfishMonitor_Desktop.Services
         {
             if (_serialPort is null) return;
             if (_serialPort.IsOpen.Equals(null)) return;
+            try
+            {
+                var readData = _serialPort.ReadLine();
+                if (!(readData.ToString().Length > 0)) return;
+                ReadData(readData);
+            }
+            catch (Exception ex)
+            {
 
-            var readData = _serialPort.ReadLine();
-            if (!(readData.ToString().Length > 0)) return;
-            ReadData(readData);
+            }
         }
 
         private static void ReadData(string arduinoData)
@@ -100,7 +106,7 @@ namespace CrayfishMonitor_Desktop.Services
             _serialPort = new SerialPort
             {
                 PortName = portId,
-                BaudRate = SerialPortSetting.BaudRate,
+                BaudRate = 9600,
                 DataBits = SerialPortSetting.DataBits,
                 Parity = SerialPortSetting.Parity,
                 StopBits = SerialPortSetting.StopBits,

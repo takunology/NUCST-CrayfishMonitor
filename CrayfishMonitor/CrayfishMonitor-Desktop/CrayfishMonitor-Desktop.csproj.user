@@ -10,6 +10,9 @@
     <None Update="App.xaml">
       <SubType>Designer</SubType>
     </None>
+    <Page Update="Views\DataOpenPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\ChartViewerPage.xaml">
       <SubType>Designer</SubType>
     </Page>

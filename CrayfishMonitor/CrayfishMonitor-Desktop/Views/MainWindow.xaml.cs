@@ -20,6 +20,7 @@ namespace CrayfishMonitor_Desktop.Views
             {
                 "MonitorPage" => frame.Navigate(typeof(Views.MonitorPage)),
                 "DataPage" => frame.Navigate(typeof(Views.DataPage)),
+                "DataOpenPage" => frame.Navigate(typeof(Views.DataOpenPage)),
                 _ => frame.Navigate(typeof(Views.MonitorPage))
             };
             if (args.IsSettingsSelected) frame.Navigate(typeof(Views.SettingsPage));

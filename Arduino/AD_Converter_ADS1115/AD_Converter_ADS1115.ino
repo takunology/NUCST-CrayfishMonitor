@@ -1,6 +1,7 @@
 #include <Adafruit_ADS1X15.h>
 
 Adafruit_ADS1115 ads;
+uint32_t time = 0;
 
 void setup() {
   Serial.begin(9600);
@@ -17,7 +18,7 @@ void setup() {
 void loop() {
   int16_t input_0 = 0;
   float voltage = 0;
-
+  uint32_t elapsed = millis() - time;
   //平均化するか？
   /*for (int i = 0; i < 5; i++){
     input_0 = ads.readADC_SingleEnded(0);
@@ -28,9 +29,8 @@ void loop() {
   */
   input_0 = ads.readADC_SingleEnded(0);
   voltage += ads.computeVolts(input_0);
-  //Serial.print(input_0);
-  //Serial.print("\t");
-  Serial.println(String(voltage, 5));
+  String send_value = String(elapsed)+ "," + String(voltage, 9);
+  Serial.println(send_value);
   
   //delay(5);
 }
