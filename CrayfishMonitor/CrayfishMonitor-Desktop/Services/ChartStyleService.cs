@@ -21,7 +21,7 @@ namespace CrayfishMonitor_Desktop.Services
                 MajorGridlineStyle = LineStyle.Automatic,
                 MinorGridlineStyle = LineStyle.Dash,
                 TitleFontSize = 16,
-                Title = "Time [ms]"
+                Title = "Time [s]"
             };
 
             var axisY = new LinearAxis()

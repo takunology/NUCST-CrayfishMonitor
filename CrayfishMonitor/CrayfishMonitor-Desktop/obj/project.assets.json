@@ -5,10 +5,14 @@
       "CommunityToolkit.Common/7.1.2": {
         "type": "package",
         "compile": {
-          "lib/net5.0/CommunityToolkit.Common.dll": {}
+          "lib/net5.0/CommunityToolkit.Common.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net5.0/CommunityToolkit.Common.dll": {}
+          "lib/net5.0/CommunityToolkit.Common.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "CommunityToolkit.WinUI/7.1.2": {
@@ -18,10 +22,14 @@
           "Microsoft.WindowsAppSDK": "1.0.0"
         },
         "compile": {
-          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {}
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
         },
         "runtime": {
-          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {}
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
         }
       },
       "CommunityToolkit.WinUI.UI/7.1.2": {
@@ -31,24 +39,32 @@
           "Microsoft.WindowsAppSDK": "1.0.0"
         },
         "compile": {
-          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {}
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
         },
         "runtime": {
-          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {}
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
         }
       },
-      "H.OxyPlot.WinUI/0.9.21": {
+      "H.OxyPlot.WinUI/0.9.29": {
         "type": "package",
         "dependencies": {
           "CommunityToolkit.WinUI.UI": "7.1.2",
-          "Microsoft.WindowsAppSDK": "1.0.1",
+          "Microsoft.WindowsAppSDK": "1.1.4",
           "OxyPlot.Core": "2.1.0"
         },
         "compile": {
-          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {}
+          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {
+            "related": ".pri;.xml"
+          }
         },
         "runtime": {
-          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {}
+          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {
+            "related": ".pri;.xml"
+          }
         }
       },
       "Microsoft.Windows.SDK.BuildTools/10.0.22621.1": {
@@ -58,34 +74,62 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.1.1": {
+      "Microsoft.WindowsAppSDK/1.1.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194"
         },
         "compile": {
-          "lib/net5.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.WinUI.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppLifecycle.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.WinUI.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppLifecycle.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppNotifications.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.Resources.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.Resources.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.PushNotifications.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
           "lib/net5.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "runtime": {
-          "lib/net5.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.WinUI.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppLifecycle.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.WinUI.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppLifecycle.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppNotifications.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.Resources.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.Resources.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.PushNotifications.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
           "lib/net5.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
@@ -111,10 +155,14 @@
       "OxyPlot.Core/2.1.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/OxyPlot.dll": {}
+          "lib/netstandard2.0/OxyPlot.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/OxyPlot.dll": {}
+          "lib/netstandard2.0/OxyPlot.dll": {
+            "related": ".xml"
+          }
         }
       },
       "ReactiveProperty/8.1.2": {
@@ -125,19 +173,27 @@
           "System.Reactive": "5.0.0"
         },
         "compile": {
-          "lib/net6.0/ReactiveProperty.dll": {}
+          "lib/net6.0/ReactiveProperty.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/ReactiveProperty.dll": {}
+          "lib/net6.0/ReactiveProperty.dll": {
+            "related": ".xml"
+          }
         }
       },
       "ReactiveProperty.Core/8.1.2": {
         "type": "package",
         "compile": {
-          "lib/net6.0/ReactiveProperty.Core.dll": {}
+          "lib/net6.0/ReactiveProperty.Core.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/ReactiveProperty.Core.dll": {}
+          "lib/net6.0/ReactiveProperty.Core.dll": {
+            "related": ".xml"
+          }
         }
       },
       "runtime.linux-arm.runtime.native.System.IO.Ports/6.0.0": {
@@ -198,10 +254,14 @@
       "System.CodeDom/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.CodeDom.dll": {}
+          "lib/net6.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/System.CodeDom.dll": {}
+          "lib/net6.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -210,10 +270,14 @@
       "System.ComponentModel.Annotations/5.0.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+          "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.IO.Ports/6.0.0": {
@@ -222,10 +286,14 @@
           "runtime.native.System.IO.Ports": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.IO.Ports.dll": {}
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/System.IO.Ports.dll": {}
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -247,10 +315,14 @@
           "System.CodeDom": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Management.dll": {}
+          "lib/net6.0/System.Management.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/System.Management.dll": {}
+          "lib/net6.0/System.Management.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -265,10 +337,14 @@
       "System.Reactive/5.0.0": {
         "type": "package",
         "compile": {
-          "lib/net5.0-windows10.0.19041/System.Reactive.dll": {}
+          "lib/net5.0-windows10.0.19041/System.Reactive.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net5.0-windows10.0.19041/System.Reactive.dll": {}
+          "lib/net5.0-windows10.0.19041/System.Reactive.dll": {
+            "related": ".xml"
+          }
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App"
@@ -282,10 +358,14 @@
       "CommunityToolkit.Common/7.1.2": {
         "type": "package",
         "compile": {
-          "lib/net5.0/CommunityToolkit.Common.dll": {}
+          "lib/net5.0/CommunityToolkit.Common.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net5.0/CommunityToolkit.Common.dll": {}
+          "lib/net5.0/CommunityToolkit.Common.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "CommunityToolkit.WinUI/7.1.2": {
@@ -295,10 +375,14 @@
           "Microsoft.WindowsAppSDK": "1.0.0"
         },
         "compile": {
-          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {}
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
         },
         "runtime": {
-          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {}
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
         }
       },
       "CommunityToolkit.WinUI.UI/7.1.2": {
@@ -308,24 +392,32 @@
           "Microsoft.WindowsAppSDK": "1.0.0"
         },
         "compile": {
-          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {}
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
         },
         "runtime": {
-          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {}
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
         }
       },
-      "H.OxyPlot.WinUI/0.9.21": {
+      "H.OxyPlot.WinUI/0.9.29": {
         "type": "package",
         "dependencies": {
           "CommunityToolkit.WinUI.UI": "7.1.2",
-          "Microsoft.WindowsAppSDK": "1.0.1",
+          "Microsoft.WindowsAppSDK": "1.1.4",
           "OxyPlot.Core": "2.1.0"
         },
         "compile": {
-          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {}
+          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {
+            "related": ".pri;.xml"
+          }
         },
         "runtime": {
-          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {}
+          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {
+            "related": ".pri;.xml"
+          }
         }
       },
       "Microsoft.Windows.SDK.BuildTools/10.0.22621.1": {
@@ -335,34 +427,62 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.1.1": {
+      "Microsoft.WindowsAppSDK/1.1.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194"
         },
         "compile": {
-          "lib/net5.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.WinUI.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppLifecycle.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.WinUI.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppLifecycle.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppNotifications.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.Resources.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.Resources.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.PushNotifications.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
           "lib/net5.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "runtime": {
-          "lib/net5.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.WinUI.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppLifecycle.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.WinUI.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppLifecycle.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppNotifications.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.Resources.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.Resources.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.PushNotifications.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
           "lib/net5.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
@@ -377,10 +497,14 @@
       "OxyPlot.Core/2.1.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/OxyPlot.dll": {}
+          "lib/netstandard2.0/OxyPlot.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/OxyPlot.dll": {}
+          "lib/netstandard2.0/OxyPlot.dll": {
+            "related": ".xml"
+          }
         }
       },
       "ReactiveProperty/8.1.2": {
@@ -391,19 +515,27 @@
           "System.Reactive": "5.0.0"
         },
         "compile": {
-          "lib/net6.0/ReactiveProperty.dll": {}
+          "lib/net6.0/ReactiveProperty.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/ReactiveProperty.dll": {}
+          "lib/net6.0/ReactiveProperty.dll": {
+            "related": ".xml"
+          }
         }
       },
       "ReactiveProperty.Core/8.1.2": {
         "type": "package",
         "compile": {
-          "lib/net6.0/ReactiveProperty.Core.dll": {}
+          "lib/net6.0/ReactiveProperty.Core.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/ReactiveProperty.Core.dll": {}
+          "lib/net6.0/ReactiveProperty.Core.dll": {
+            "related": ".xml"
+          }
         }
       },
       "runtime.linux-arm.runtime.native.System.IO.Ports/6.0.0": {
@@ -434,10 +566,14 @@
       "System.CodeDom/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.CodeDom.dll": {}
+          "lib/net6.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/System.CodeDom.dll": {}
+          "lib/net6.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -446,10 +582,14 @@
       "System.ComponentModel.Annotations/5.0.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+          "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.IO.Ports/6.0.0": {
@@ -458,10 +598,14 @@
           "runtime.native.System.IO.Ports": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.IO.Ports.dll": {}
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "runtimes/win/lib/net6.0/System.IO.Ports.dll": {}
+          "runtimes/win/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -473,10 +617,14 @@
           "System.CodeDom": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Management.dll": {}
+          "lib/net6.0/System.Management.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "runtimes/win/lib/net6.0/System.Management.dll": {}
+          "runtimes/win/lib/net6.0/System.Management.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -485,10 +633,14 @@
       "System.Reactive/5.0.0": {
         "type": "package",
         "compile": {
-          "lib/net5.0-windows10.0.19041/System.Reactive.dll": {}
+          "lib/net5.0-windows10.0.19041/System.Reactive.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net5.0-windows10.0.19041/System.Reactive.dll": {}
+          "lib/net5.0-windows10.0.19041/System.Reactive.dll": {
+            "related": ".xml"
+          }
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App"
@@ -502,10 +654,14 @@
       "CommunityToolkit.Common/7.1.2": {
         "type": "package",
         "compile": {
-          "lib/net5.0/CommunityToolkit.Common.dll": {}
+          "lib/net5.0/CommunityToolkit.Common.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net5.0/CommunityToolkit.Common.dll": {}
+          "lib/net5.0/CommunityToolkit.Common.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "CommunityToolkit.WinUI/7.1.2": {
@@ -515,10 +671,14 @@
           "Microsoft.WindowsAppSDK": "1.0.0"
         },
         "compile": {
-          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {}
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
         },
         "runtime": {
-          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {}
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
         }
       },
       "CommunityToolkit.WinUI.UI/7.1.2": {
@@ -528,24 +688,32 @@
           "Microsoft.WindowsAppSDK": "1.0.0"
         },
         "compile": {
-          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {}
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
         },
         "runtime": {
-          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {}
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
         }
       },
-      "H.OxyPlot.WinUI/0.9.21": {
+      "H.OxyPlot.WinUI/0.9.29": {
         "type": "package",
         "dependencies": {
           "CommunityToolkit.WinUI.UI": "7.1.2",
-          "Microsoft.WindowsAppSDK": "1.0.1",
+          "Microsoft.WindowsAppSDK": "1.1.4",
           "OxyPlot.Core": "2.1.0"
         },
         "compile": {
-          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {}
+          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {
+            "related": ".pri;.xml"
+          }
         },
         "runtime": {
-          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {}
+          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {
+            "related": ".pri;.xml"
+          }
         }
       },
       "Microsoft.Windows.SDK.BuildTools/10.0.22621.1": {
@@ -555,34 +723,62 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.1.1": {
+      "Microsoft.WindowsAppSDK/1.1.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194"
         },
         "compile": {
-          "lib/net5.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.WinUI.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppLifecycle.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.WinUI.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppLifecycle.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppNotifications.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.Resources.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.Resources.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.PushNotifications.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
           "lib/net5.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "runtime": {
-          "lib/net5.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.WinUI.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppLifecycle.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.WinUI.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppLifecycle.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppNotifications.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.Resources.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.Resources.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.PushNotifications.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
           "lib/net5.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
@@ -597,10 +793,14 @@
       "OxyPlot.Core/2.1.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/OxyPlot.dll": {}
+          "lib/netstandard2.0/OxyPlot.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/OxyPlot.dll": {}
+          "lib/netstandard2.0/OxyPlot.dll": {
+            "related": ".xml"
+          }
         }
       },
       "ReactiveProperty/8.1.2": {
@@ -611,19 +811,27 @@
           "System.Reactive": "5.0.0"
         },
         "compile": {
-          "lib/net6.0/ReactiveProperty.dll": {}
+          "lib/net6.0/ReactiveProperty.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/ReactiveProperty.dll": {}
+          "lib/net6.0/ReactiveProperty.dll": {
+            "related": ".xml"
+          }
         }
       },
       "ReactiveProperty.Core/8.1.2": {
         "type": "package",
         "compile": {
-          "lib/net6.0/ReactiveProperty.Core.dll": {}
+          "lib/net6.0/ReactiveProperty.Core.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/ReactiveProperty.Core.dll": {}
+          "lib/net6.0/ReactiveProperty.Core.dll": {
+            "related": ".xml"
+          }
         }
       },
       "runtime.linux-arm.runtime.native.System.IO.Ports/6.0.0": {
@@ -654,10 +862,14 @@
       "System.CodeDom/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.CodeDom.dll": {}
+          "lib/net6.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/System.CodeDom.dll": {}
+          "lib/net6.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -666,10 +878,14 @@
       "System.ComponentModel.Annotations/5.0.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+          "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.IO.Ports/6.0.0": {
@@ -678,10 +894,14 @@
           "runtime.native.System.IO.Ports": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.IO.Ports.dll": {}
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "runtimes/win/lib/net6.0/System.IO.Ports.dll": {}
+          "runtimes/win/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -693,10 +913,14 @@
           "System.CodeDom": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Management.dll": {}
+          "lib/net6.0/System.Management.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "runtimes/win/lib/net6.0/System.Management.dll": {}
+          "runtimes/win/lib/net6.0/System.Management.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -705,10 +929,14 @@
       "System.Reactive/5.0.0": {
         "type": "package",
         "compile": {
-          "lib/net5.0-windows10.0.19041/System.Reactive.dll": {}
+          "lib/net5.0-windows10.0.19041/System.Reactive.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net5.0-windows10.0.19041/System.Reactive.dll": {}
+          "lib/net5.0-windows10.0.19041/System.Reactive.dll": {
+            "related": ".xml"
+          }
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App"
@@ -722,10 +950,14 @@
       "CommunityToolkit.Common/7.1.2": {
         "type": "package",
         "compile": {
-          "lib/net5.0/CommunityToolkit.Common.dll": {}
+          "lib/net5.0/CommunityToolkit.Common.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/net5.0/CommunityToolkit.Common.dll": {}
+          "lib/net5.0/CommunityToolkit.Common.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "CommunityToolkit.WinUI/7.1.2": {
@@ -735,10 +967,14 @@
           "Microsoft.WindowsAppSDK": "1.0.0"
         },
         "compile": {
-          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {}
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
         },
         "runtime": {
-          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {}
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
         }
       },
       "CommunityToolkit.WinUI.UI/7.1.2": {
@@ -748,24 +984,32 @@
           "Microsoft.WindowsAppSDK": "1.0.0"
         },
         "compile": {
-          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {}
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
         },
         "runtime": {
-          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {}
+          "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.dll": {
+            "related": ".pdb;.pri;.xml"
+          }
         }
       },
-      "H.OxyPlot.WinUI/0.9.21": {
+      "H.OxyPlot.WinUI/0.9.29": {
         "type": "package",
         "dependencies": {
           "CommunityToolkit.WinUI.UI": "7.1.2",
-          "Microsoft.WindowsAppSDK": "1.0.1",
+          "Microsoft.WindowsAppSDK": "1.1.4",
           "OxyPlot.Core": "2.1.0"
         },
         "compile": {
-          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {}
+          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {
+            "related": ".pri;.xml"
+          }
         },
         "runtime": {
-          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {}
+          "lib/net6.0-windows10.0.18362/H.OxyPlot.WinUI.dll": {
+            "related": ".pri;.xml"
+          }
         }
       },
       "Microsoft.Windows.SDK.BuildTools/10.0.22621.1": {
@@ -775,34 +1019,62 @@
           "build/Microsoft.Windows.SDK.BuildTools.targets": {}
         }
       },
-      "Microsoft.WindowsAppSDK/1.1.1": {
+      "Microsoft.WindowsAppSDK/1.1.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.Windows.SDK.BuildTools": "10.0.22000.194"
         },
         "compile": {
-          "lib/net5.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.WinUI.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppLifecycle.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.WinUI.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppLifecycle.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppNotifications.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.Resources.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.Resources.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.PushNotifications.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
           "lib/net5.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
         "runtime": {
-          "lib/net5.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.WinUI.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppLifecycle.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.InteractiveExperiences.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.WinUI.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppLifecycle.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.AppNotifications.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.Resources.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.Resources.Projection.dll": {
+            "related": ".xml"
+          },
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.PushNotifications.Projection.dll": {},
-          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.dll": {},
+          "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Power.Projection.dll": {
+            "related": ".xml"
+          },
           "lib/net5.0-windows10.0.18362.0/Microsoft.Windows.System.Projection.dll": {},
           "lib/net5.0-windows10.0.18362.0/Microsoft.WindowsAppRuntime.Bootstrap.Net.dll": {}
         },
@@ -817,10 +1089,14 @@
       "OxyPlot.Core/2.1.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/OxyPlot.dll": {}
+          "lib/netstandard2.0/OxyPlot.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/OxyPlot.dll": {}
+          "lib/netstandard2.0/OxyPlot.dll": {
+            "related": ".xml"
+          }
         }
       },
       "ReactiveProperty/8.1.2": {
@@ -831,19 +1107,27 @@
           "System.Reactive": "5.0.0"
         },
         "compile": {
-          "lib/net6.0/ReactiveProperty.dll": {}
+          "lib/net6.0/ReactiveProperty.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/ReactiveProperty.dll": {}
+          "lib/net6.0/ReactiveProperty.dll": {
+            "related": ".xml"
+          }
         }
       },
       "ReactiveProperty.Core/8.1.2": {
         "type": "package",
         "compile": {
-          "lib/net6.0/ReactiveProperty.Core.dll": {}
+          "lib/net6.0/ReactiveProperty.Core.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/ReactiveProperty.Core.dll": {}
+          "lib/net6.0/ReactiveProperty.Core.dll": {
+            "related": ".xml"
+          }
         }
       },
       "runtime.linux-arm.runtime.native.System.IO.Ports/6.0.0": {
@@ -874,10 +1158,14 @@
       "System.CodeDom/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.CodeDom.dll": {}
+          "lib/net6.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/System.CodeDom.dll": {}
+          "lib/net6.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -886,10 +1174,14 @@
       "System.ComponentModel.Annotations/5.0.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+          "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.IO.Ports/6.0.0": {
@@ -898,10 +1190,14 @@
           "runtime.native.System.IO.Ports": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.IO.Ports.dll": {}
+          "lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "runtimes/win/lib/net6.0/System.IO.Ports.dll": {}
+          "runtimes/win/lib/net6.0/System.IO.Ports.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -913,10 +1209,14 @@
           "System.CodeDom": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/System.Management.dll": {}
+          "lib/net6.0/System.Management.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "runtimes/win/lib/net6.0/System.Management.dll": {}
+          "runtimes/win/lib/net6.0/System.Management.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -925,10 +1225,14 @@
       "System.Reactive/5.0.0": {
         "type": "package",
         "compile": {
-          "lib/net5.0-windows10.0.19041/System.Reactive.dll": {}
+          "lib/net5.0-windows10.0.19041/System.Reactive.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net5.0-windows10.0.19041/System.Reactive.dll": {}
+          "lib/net5.0-windows10.0.19041/System.Reactive.dll": {
+            "related": ".xml"
+          }
         },
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App"
@@ -1002,15 +1306,15 @@
         "lib/net5.0-windows10.0.18362/CommunityToolkit.WinUI.UI.xml"
       ]
     },
-    "H.OxyPlot.WinUI/0.9.21": {
-      "sha512": "UdCkWPL8M44eNHhI6kfyXU6ehlqrp551onMXOC8wPDmroS5lLHn5x39S0TMGWkDor2LSXLM2JI6fjYCrG43hcg==",
+    "H.OxyPlot.WinUI/0.9.29": {
+      "sha512": "gYkDwsyqSKwCkwPoSlVHi2rA5DWeFwNbnk19LJNuxLh7+xymUZyrPVfgWQRrM84v+j/lk9PrbHCMM7wt+ctdYw==",
       "type": "package",
-      "path": "h.oxyplot.winui/0.9.21",
+      "path": "h.oxyplot.winui/0.9.29",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "h.oxyplot.winui.0.9.21.nupkg.sha512",
+        "h.oxyplot.winui.0.9.29.nupkg.sha512",
         "h.oxyplot.winui.nuspec",
         "lib/net5.0-windows10.0.18362/H.OxyPlot.WinUI.dll",
         "lib/net5.0-windows10.0.18362/H.OxyPlot.WinUI.pri",
@@ -1212,15 +1516,16 @@
         "schemas/10.0.22621.0/winrt/UapManifestSchema_v8.xsd"
       ]
     },
-    "Microsoft.WindowsAppSDK/1.1.1": {
-      "sha512": "ZkdwAqYT1Ob8fHsACMsOhsIcBJd7dUUbs36M0EX3xb5HmX46AXBkkSxtIHLHUNBT3V1ZsZYLL16GCvHvqqVOgw==",
+    "Microsoft.WindowsAppSDK/1.1.4": {
+      "sha512": "oPoDtk7As7PPDX+R9iloJI2qimYFSE35puWgFxxSnKG1JBOaj/VOA9QJPIxn4jACMjOspSfS47wP8lFBJvlF0Q==",
       "type": "package",
-      "path": "microsoft.windowsappsdk/1.1.1",
+      "path": "microsoft.windowsappsdk/1.1.4",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "AppxManifest.xml",
+        "NOTICE.txt",
         "WindowsAppSDK-VersionInfo.json",
         "WindowsAppSDK-VersionInfo.xml",
         "build/AppDevPackageScripts/Add-AppDevPackage.ps1",
@@ -1653,7 +1958,7 @@
         "manifests/Microsoft.InteractiveExperiences.manifest",
         "manifests/Microsoft.WindowsAppSdk.Foundation.manifest",
         "manifests/manifests/Microsoft.WindowsAppSdk.WinUI.manifest",
-        "microsoft.windowsappsdk.1.1.1.nupkg.sha512",
+        "microsoft.windowsappsdk.1.1.4.nupkg.sha512",
         "microsoft.windowsappsdk.nuspec",
         "runtimes/win10-arm64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll",
         "runtimes/win10-x64/native/Microsoft.WindowsAppRuntime.Bootstrap.dll",
@@ -1681,7 +1986,6 @@
         "tools/net472/Microsoft.Build.Utilities.Core.dll",
         "tools/net472/Microsoft.Build.dll",
         "tools/net472/Microsoft.Cci.dll",
-        "tools/net472/Microsoft.Diagnostics.Tracing.EventSource.dll",
         "tools/net472/Microsoft.UI.Xaml.Markup.Compiler.IO.dll",
         "tools/net472/Microsoft.UI.Xaml.Markup.Compiler.MSBuildInterop.dll",
         "tools/net472/Microsoft.UI.Xaml.Markup.Compiler.dll",
@@ -1689,6 +1993,7 @@
         "tools/net472/Microsoft.VisualStudio.Setup.Configuration.Interop.dll",
         "tools/net472/Microsoft.VisualStudio.Telemetry.dll",
         "tools/net472/Microsoft.VisualStudio.Utilities.Internal.dll",
+        "tools/net472/Newtonsoft.Json.dll",
         "tools/net472/System.Buffers.dll",
         "tools/net472/System.Collections.Immutable.dll",
         "tools/net472/System.Memory.dll",
@@ -1765,6 +2070,7 @@
         "tools/net5.0/Microsoft.VisualStudio.Setup.Configuration.Interop.dll",
         "tools/net5.0/Microsoft.VisualStudio.Telemetry.dll",
         "tools/net5.0/Microsoft.VisualStudio.Utilities.Internal.dll",
+        "tools/net5.0/Newtonsoft.Json.dll",
         "tools/net5.0/System.Runtime.CompilerServices.Unsafe.dll",
         "tools/net5.0/System.Text.Encodings.Web.dll",
         "tools/net5.0/System.Text.Json.dll",
@@ -2190,40 +2496,45 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows10.0.19041": [
-      "H.OxyPlot.WinUI >= 0.9.21",
+      "H.OxyPlot.WinUI >= 0.9.29",
       "Microsoft.Windows.SDK.BuildTools >= 10.0.22621.1",
-      "Microsoft.WindowsAppSDK >= 1.1.1",
+      "Microsoft.WindowsAppSDK >= 1.1.4",
       "ReactiveProperty >= 8.1.2",
       "System.IO.Ports >= 6.0.0",
       "System.Management >= 6.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bio7\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\takun\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bio7\\Documents\\okawa\\github\\NUCST-CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor-Desktop\\CrayfishMonitor-Desktop.csproj",
+      "projectUniqueName": "D:\\GitHub\\NUCST-CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor-Desktop\\CrayfishMonitor-Desktop.csproj",
       "projectName": "CrayfishMonitor-Desktop",
-      "projectPath": "C:\\Users\\Bio7\\Documents\\okawa\\github\\NUCST-CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor-Desktop\\CrayfishMonitor-Desktop.csproj",
-      "packagesPath": "C:\\Users\\Bio7\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bio7\\Documents\\okawa\\github\\NUCST-CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor-Desktop\\obj\\",
+      "projectPath": "D:\\GitHub\\NUCST-CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor-Desktop\\CrayfishMonitor-Desktop.csproj",
+      "packagesPath": "C:\\Users\\takun\\.nuget\\packages\\",
+      "outputPath": "D:\\GitHub\\NUCST-CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor-Desktop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Bio7\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\takun\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows10.0.19041"
+        "net6.0-windows10.0.19041.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "D:\\GitHub\\MinecraftConnection\\MinecraftConnection\\MinecraftConnection\\bin\\Release": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2244,7 +2555,7 @@
         "dependencies": {
           "H.OxyPlot.WinUI": {
             "target": "Package",
-            "version": "[0.9.21, )"
+            "version": "[0.9.29, )"
           },
           "Microsoft.Windows.SDK.BuildTools": {
             "target": "Package",
@@ -2252,7 +2563,7 @@
           },
           "Microsoft.WindowsAppSDK": {
             "target": "Package",
-            "version": "[1.1.1, )"
+            "version": "[1.1.4, )"
           },
           "ReactiveProperty": {
             "target": "Package",
@@ -2273,50 +2584,51 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-arm64",
-            "version": "[6.0.6, 6.0.6]"
+            "version": "[6.0.8, 6.0.8]"
           },
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-            "version": "[6.0.6, 6.0.6]"
+            "version": "[6.0.8, 6.0.8]"
           },
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
-            "version": "[6.0.6, 6.0.6]"
+            "version": "[6.0.8, 6.0.8]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-arm64",
-            "version": "[6.0.6, 6.0.6]"
+            "version": "[6.0.8, 6.0.8]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-x64",
-            "version": "[6.0.6, 6.0.6]"
+            "version": "[6.0.8, 6.0.8]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-x86",
-            "version": "[6.0.6, 6.0.6]"
+            "version": "[6.0.8, 6.0.8]"
           },
           {
             "name": "Microsoft.Windows.SDK.NET.Ref",
-            "version": "[10.0.19041.25, 10.0.19041.25]"
+            "version": "[10.0.19041.26, 10.0.19041.26]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-arm64",
-            "version": "[6.0.6, 6.0.6]"
+            "version": "[6.0.8, 6.0.8]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-            "version": "[6.0.6, 6.0.6]"
+            "version": "[6.0.8, 6.0.8]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
-            "version": "[6.0.6, 6.0.6]"
+            "version": "[6.0.8, 6.0.8]"
           }
         ],
         "frameworkReferences": {
@@ -2327,7 +2639,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

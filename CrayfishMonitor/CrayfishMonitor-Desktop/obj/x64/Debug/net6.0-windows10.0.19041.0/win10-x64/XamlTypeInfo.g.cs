@@ -450,8 +450,8 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
             case 4:   //  OxyPlot.PlotView
                 userType = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("OxyPlot.PlotViewBase"));
                 userType.Activator = Activate_4_PlotView;
-                userType.AddMemberName("HandleRightClicks");
                 userType.AddMemberName("DisconnectCanvasWhileUpdating");
+                userType.AddMemberName("HandleRightClicks");
                 userType.AddMemberName("TextMeasurementMethod");
                 xamlType = userType;
                 break;
@@ -910,25 +910,25 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
             var that = (global::OxyPlot.PlotViewBase)instance;
             that.Model = (global::OxyPlot.PlotModel)Value;
         }
-        private object get_2_PlotView_HandleRightClicks(object instance)
-        {
-            var that = (global::OxyPlot.PlotView)instance;
-            return that.HandleRightClicks;
-        }
-        private void set_2_PlotView_HandleRightClicks(object instance, object Value)
-        {
-            var that = (global::OxyPlot.PlotView)instance;
-            that.HandleRightClicks = (global::System.Boolean)Value;
-        }
-        private object get_3_PlotView_DisconnectCanvasWhileUpdating(object instance)
+        private object get_2_PlotView_DisconnectCanvasWhileUpdating(object instance)
         {
             var that = (global::OxyPlot.PlotView)instance;
             return that.DisconnectCanvasWhileUpdating;
         }
-        private void set_3_PlotView_DisconnectCanvasWhileUpdating(object instance, object Value)
+        private void set_2_PlotView_DisconnectCanvasWhileUpdating(object instance, object Value)
         {
             var that = (global::OxyPlot.PlotView)instance;
             that.DisconnectCanvasWhileUpdating = (global::System.Boolean)Value;
+        }
+        private object get_3_PlotView_HandleRightClicks(object instance)
+        {
+            var that = (global::OxyPlot.PlotView)instance;
+            return that.HandleRightClicks;
+        }
+        private void set_3_PlotView_HandleRightClicks(object instance, object Value)
+        {
+            var that = (global::OxyPlot.PlotView)instance;
+            that.HandleRightClicks = (global::System.Boolean)Value;
         }
         private object get_4_PlotView_TextMeasurementMethod(object instance)
         {
@@ -1537,18 +1537,18 @@ namespace CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo
                 xamlMember.Getter = get_1_PlotViewBase_Model;
                 xamlMember.Setter = set_1_PlotViewBase_Model;
                 break;
+            case "OxyPlot.PlotView.DisconnectCanvasWhileUpdating":
+                userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OxyPlot.PlotView");
+                xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "DisconnectCanvasWhileUpdating", "Boolean");
+                xamlMember.Getter = get_2_PlotView_DisconnectCanvasWhileUpdating;
+                xamlMember.Setter = set_2_PlotView_DisconnectCanvasWhileUpdating;
+                break;
             case "OxyPlot.PlotView.HandleRightClicks":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OxyPlot.PlotView");
                 xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "HandleRightClicks", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_2_PlotView_HandleRightClicks;
-                xamlMember.Setter = set_2_PlotView_HandleRightClicks;
-                break;
-            case "OxyPlot.PlotView.DisconnectCanvasWhileUpdating":
-                userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OxyPlot.PlotView");
-                xamlMember = new global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlMember(this, "DisconnectCanvasWhileUpdating", "Boolean");
-                xamlMember.Getter = get_3_PlotView_DisconnectCanvasWhileUpdating;
-                xamlMember.Setter = set_3_PlotView_DisconnectCanvasWhileUpdating;
+                xamlMember.Getter = get_3_PlotView_HandleRightClicks;
+                xamlMember.Setter = set_3_PlotView_HandleRightClicks;
                 break;
             case "OxyPlot.PlotView.TextMeasurementMethod":
                 userType = (global::CrayfishMonitor_Desktop.CrayfishMonitor_Desktop_XamlTypeInfo.XamlUserType)GetXamlTypeByName("OxyPlot.PlotView");

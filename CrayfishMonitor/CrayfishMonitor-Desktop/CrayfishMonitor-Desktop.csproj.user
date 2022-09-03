@@ -4,7 +4,7 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup>
-    <ActiveDebugProfile>CrayfishMonitor-Desktop (Package)</ActiveDebugProfile>
+    <ActiveDebugProfile>CrayfishMonitor-Desktop (Unpackaged)</ActiveDebugProfile>
   </PropertyGroup>
   <ItemGroup>
     <None Update="App.xaml">
