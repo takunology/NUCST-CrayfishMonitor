@@ -1342,9 +1342,10 @@ D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\
 D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.AppNotifications.Projection.dll
 D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.PushNotifications.Projection.dll
 D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.System.Projection.dll
-D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_6.0.822.36306.dll
 D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Microsoft.UI.Xaml.Controls.pri
 D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Views\DataOpenPage.g.i.cs
 D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Views\DataOpenPage.g.cs
 D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Views\DataOpenPage.xaml
 D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Views\DataOpenPage.xbf
+D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\System.Diagnostics.EventLog.Messages.dll
+D:\GitHub\NUCST-CrayfishMonitor\CrayfishMonitor\CrayfishMonitor-Desktop\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\mscordaccore_amd64_amd64_6.0.1122.52304.dll

@@ -30,7 +30,7 @@ namespace CrayfishMonitor_Desktop.ViewModels
             {
                 foreach (var measurement in savedata.Measurements)
                 {
-                    _lineSeries.Points.Add(new DataPoint((double)measurement.Elapsed / 1000, measurement.Voltage));
+                    _lineSeries.Points.Add(new DataPoint((double)measurement.Elapsed, measurement.Voltage));
                 }
                 _plotModel.InvalidatePlot(true);
             }

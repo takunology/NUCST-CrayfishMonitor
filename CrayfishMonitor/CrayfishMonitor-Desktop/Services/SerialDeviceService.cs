@@ -95,7 +95,7 @@ namespace CrayfishMonitor_Desktop.Services
             MeasurementData measurementData = new MeasurementData();
             DateTime dateTime = DateTime.Now;
             measurementData.Time = dateTime;
-            measurementData.Elapsed = double.Parse(data[0]) / 1000;
+            measurementData.Elapsed = long.Parse(data[0]);
             measurementData.Voltage = double.Parse(data[1]);
             if (measurementData.Elapsed > _stopWatch.Elapsed.Seconds) return; // Arduino にスタックされたデータを無視
             DataCollections.Measurements.Add(measurementData);

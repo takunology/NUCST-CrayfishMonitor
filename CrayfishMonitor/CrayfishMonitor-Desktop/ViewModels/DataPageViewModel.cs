@@ -68,7 +68,7 @@ namespace CrayfishMonitor_Desktop.ViewModels
                     {
                         writer.WriteLine("Time,Elapsed[s],Voltage[V]");
                         SelectedDataItem.Value.Measurements.ForEach(data =>
-                            writer.WriteLine($"{data.Time.ToString("HH:mm:ss")},{string.Format("{0:f3}",(float)data.Elapsed/1000)},{data.Voltage}"));
+                            writer.WriteLine($"{data.Time.ToString("HH:mm:ss")},{string.Format("{0:f3}",data.Elapsed)},{data.Voltage}"));
                     }
                 }
             }

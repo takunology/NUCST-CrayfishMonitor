@@ -42,7 +42,7 @@ namespace CrayfishMonitor_Desktop.ViewModels
             };
         }
 
-        private void DrawChart(double dataX, double dataY)
+        private void DrawChart(long dataX, double dataY)
         {
             _lineSeries.Points.Add(new DataPoint(dataX, dataY));
             if (_lineSeries.Points.Count > 1000)
