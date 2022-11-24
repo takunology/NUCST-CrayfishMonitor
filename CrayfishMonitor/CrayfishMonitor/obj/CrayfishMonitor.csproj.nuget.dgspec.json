@@ -1,30 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\NUCST-Project-FG2\\CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor.csproj": {}
+    "C:\\Users\\takun\\Desktop\\CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\NUCST-Project-FG2\\CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor.csproj": {
-      "version": "1.2.0",
+    "C:\\Users\\takun\\Desktop\\CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor.csproj": {
+      "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\NUCST-Project-FG2\\CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor.csproj",
+        "projectUniqueName": "C:\\Users\\takun\\Desktop\\CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor.csproj",
         "projectName": "CrayfishMonitor",
-        "projectPath": "D:\\GitHub\\NUCST-Project-FG2\\CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor.csproj",
+        "projectPath": "C:\\Users\\takun\\Desktop\\CrayfishMonitor\\CrayfishMonitor\\CrayfishMonitor.csproj",
         "packagesPath": "C:\\Users\\takun\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\NUCST-Project-FG2\\CrayfishMonitor\\CrayfishMonitor\\obj\\",
+        "outputPath": "C:\\Users\\takun\\Desktop\\CrayfishMonitor\\CrayfishMonitor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\takun\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net6.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -48,21 +46,17 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
-            "MathNet.Numerics": {
+            "ScottPlot.WPF": {
               "target": "Package",
-              "version": "[4.15.0, )"
-            },
-            "OxyPlot.Wpf": {
-              "target": "Package",
-              "version": "[2.1.0, )"
-            },
-            "ReactiveProperty": {
-              "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[4.1.16, )"
             },
             "System.IO.Ports": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[7.0.0, )"
+            },
+            "System.Management": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -71,7 +65,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -83,7 +78,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

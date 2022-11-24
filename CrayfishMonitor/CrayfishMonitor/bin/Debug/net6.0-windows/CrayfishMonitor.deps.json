@@ -6,78 +6,23 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "CrayfishMonitor/1.2.0": {
+      "CrayfishMonitor/1.0.0": {
         "dependencies": {
-          "MathNet.Numerics": "4.15.0",
-          "OxyPlot.Wpf": "2.1.0",
-          "ReactiveProperty": "8.0.0",
-          "System.IO.Ports": "6.0.0"
+          "ScottPlot.WPF": "4.1.16",
+          "System.IO.Ports": "7.0.0",
+          "System.Management": "7.0.0"
         },
         "runtime": {
           "CrayfishMonitor.dll": {}
         }
       },
-      "MathNet.Numerics/4.15.0": {
-        "runtime": {
-          "lib/netstandard2.0/MathNet.Numerics.dll": {
-            "assemblyVersion": "4.15.0.0",
-            "fileVersion": "4.15.0.0"
-          }
-        }
-      },
-      "OxyPlot.Core/2.1.0": {
-        "runtime": {
-          "lib/netstandard2.0/OxyPlot.dll": {
-            "assemblyVersion": "2.1.0.0",
-            "fileVersion": "2.1.0.0"
-          }
-        }
-      },
-      "OxyPlot.Wpf/2.1.0": {
+      "Microsoft.NETCore.Platforms/5.0.0": {},
+      "Microsoft.Win32.SystemEvents/5.0.0": {
         "dependencies": {
-          "OxyPlot.Core": "2.1.0",
-          "OxyPlot.Wpf.Shared": "2.1.0"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/OxyPlot.Wpf.dll": {
-            "assemblyVersion": "2.1.0.0",
-            "fileVersion": "2.1.0.0"
-          }
+          "Microsoft.NETCore.Platforms": "5.0.0"
         }
       },
-      "OxyPlot.Wpf.Shared/2.1.0": {
-        "dependencies": {
-          "OxyPlot.Core": "2.1.0"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/OxyPlot.Wpf.Shared.dll": {
-            "assemblyVersion": "2.1.0.0",
-            "fileVersion": "2.1.0.0"
-          }
-        }
-      },
-      "ReactiveProperty/8.0.0": {
-        "dependencies": {
-          "ReactiveProperty.Core": "8.0.0",
-          "System.ComponentModel.Annotations": "5.0.0",
-          "System.Reactive": "5.0.0"
-        },
-        "runtime": {
-          "lib/net6.0/ReactiveProperty.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.0.0"
-          }
-        }
-      },
-      "ReactiveProperty.Core/8.0.0": {
-        "runtime": {
-          "lib/net6.0/ReactiveProperty.Core.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.0.0"
-          }
-        }
-      },
-      "runtime.linux-arm.runtime.native.System.IO.Ports/6.0.0": {
+      "runtime.linux-arm.runtime.native.System.IO.Ports/7.0.0": {
         "runtimeTargets": {
           "runtimes/linux-arm/native/libSystem.IO.Ports.Native.so": {
             "rid": "linux-arm",
@@ -86,7 +31,7 @@
           }
         }
       },
-      "runtime.linux-arm64.runtime.native.System.IO.Ports/6.0.0": {
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/7.0.0": {
         "runtimeTargets": {
           "runtimes/linux-arm64/native/libSystem.IO.Ports.Native.so": {
             "rid": "linux-arm64",
@@ -95,7 +40,7 @@
           }
         }
       },
-      "runtime.linux-x64.runtime.native.System.IO.Ports/6.0.0": {
+      "runtime.linux-x64.runtime.native.System.IO.Ports/7.0.0": {
         "runtimeTargets": {
           "runtimes/linux-x64/native/libSystem.IO.Ports.Native.so": {
             "rid": "linux-x64",
@@ -104,16 +49,16 @@
           }
         }
       },
-      "runtime.native.System.IO.Ports/6.0.0": {
+      "runtime.native.System.IO.Ports/7.0.0": {
         "dependencies": {
-          "runtime.linux-arm.runtime.native.System.IO.Ports": "6.0.0",
-          "runtime.linux-arm64.runtime.native.System.IO.Ports": "6.0.0",
-          "runtime.linux-x64.runtime.native.System.IO.Ports": "6.0.0",
-          "runtime.osx-arm64.runtime.native.System.IO.Ports": "6.0.0",
-          "runtime.osx-x64.runtime.native.System.IO.Ports": "6.0.0"
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "7.0.0",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "7.0.0",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "7.0.0",
+          "runtime.osx-arm64.runtime.native.System.IO.Ports": "7.0.0",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "7.0.0"
         }
       },
-      "runtime.osx-arm64.runtime.native.System.IO.Ports/6.0.0": {
+      "runtime.osx-arm64.runtime.native.System.IO.Ports/7.0.0": {
         "runtimeTargets": {
           "runtimes/osx-arm64/native/libSystem.IO.Ports.Native.dylib": {
             "rid": "osx-arm64",
@@ -122,7 +67,7 @@
           }
         }
       },
-      "runtime.osx-x64.runtime.native.System.IO.Ports/6.0.0": {
+      "runtime.osx-x64.runtime.native.System.IO.Ports/7.0.0": {
         "runtimeTargets": {
           "runtimes/osx-x64/native/libSystem.IO.Ports.Native.dylib": {
             "rid": "osx-x64",
@@ -131,152 +76,191 @@
           }
         }
       },
-      "System.ComponentModel.Annotations/5.0.0": {},
-      "System.IO.Ports/6.0.0": {
+      "ScottPlot/4.1.16": {
         "dependencies": {
-          "runtime.native.System.IO.Ports": "6.0.0"
+          "System.Drawing.Common": "5.0.0"
+        },
+        "runtime": {
+          "lib/net5.0/ScottPlot.dll": {
+            "assemblyVersion": "4.1.16.0",
+            "fileVersion": "4.1.16.0"
+          }
+        }
+      },
+      "ScottPlot.WPF/4.1.16": {
+        "dependencies": {
+          "ScottPlot": "4.1.16",
+          "System.Drawing.Common": "5.0.0"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/ScottPlot.WPF.dll": {
+            "assemblyVersion": "4.1.16.0",
+            "fileVersion": "4.1.16.0"
+          }
+        }
+      },
+      "System.CodeDom/7.0.0": {
+        "runtime": {
+          "lib/net6.0/System.CodeDom.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
+          }
+        }
+      },
+      "System.Drawing.Common/5.0.0": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "5.0.0"
+        }
+      },
+      "System.IO.Ports/7.0.0": {
+        "dependencies": {
+          "runtime.native.System.IO.Ports": "7.0.0"
         },
         "runtime": {
           "lib/net6.0/System.IO.Ports.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.21.52210"
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
           }
         },
         "runtimeTargets": {
           "runtimes/unix/lib/net6.0/System.IO.Ports.dll": {
             "rid": "unix",
             "assetType": "runtime",
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.21.52210"
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
           },
           "runtimes/win/lib/net6.0/System.IO.Ports.dll": {
             "rid": "win",
             "assetType": "runtime",
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.21.52210"
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
           }
         }
       },
-      "System.Reactive/5.0.0": {
+      "System.Management/7.0.0": {
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
         "runtime": {
-          "lib/net5.0/System.Reactive.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.1"
+          "lib/net6.0/System.Management.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "7.0.22.51805"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Management.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "7.0.22.51805"
           }
         }
       }
     }
   },
   "libraries": {
-    "CrayfishMonitor/1.2.0": {
+    "CrayfishMonitor/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "MathNet.Numerics/4.15.0": {
+    "Microsoft.NETCore.Platforms/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cP4QgPPiU7boMyL8npvuQyVGVYUd/JQY1AWa+Wl2f//fuJN40qwt9ABRazunZIcDLHg3SSlgD/e+3Lnp69jNTg==",
-      "path": "mathnet.numerics/4.15.0",
-      "hashPath": "mathnet.numerics.4.15.0.nupkg.sha512"
+      "sha512": "sha512-VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==",
+      "path": "microsoft.netcore.platforms/5.0.0",
+      "hashPath": "microsoft.netcore.platforms.5.0.0.nupkg.sha512"
     },
-    "OxyPlot.Core/2.1.0": {
+    "Microsoft.Win32.SystemEvents/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jG+Ct3T59fXDG2LE1hyUaXqH7i+h5Nfway1iB0+0NaY2mvDsz8Row/BKjiBWCt5NHp3+q9JSMiD2wpin2hh3kw==",
-      "path": "oxyplot.core/2.1.0",
-      "hashPath": "oxyplot.core.2.1.0.nupkg.sha512"
+      "sha512": "sha512-Bh6blKG8VAKvXiLe2L+sEsn62nc1Ij34MrNxepD2OCrS5cpCwQa9MeLyhVQPQ/R4Wlzwuy6wMK8hLb11QPDRsQ==",
+      "path": "microsoft.win32.systemevents/5.0.0",
+      "hashPath": "microsoft.win32.systemevents.5.0.0.nupkg.sha512"
     },
-    "OxyPlot.Wpf/2.1.0": {
+    "runtime.linux-arm.runtime.native.System.IO.Ports/7.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-behQPbPDbV5+OerxO1E2iKH7dNaDN4OFSCzWF8Dy296p9CG/RFd4KyOEHDmcckZ7mYp5KQ4BMLD+WtQLjDSQvQ==",
-      "path": "oxyplot.wpf/2.1.0",
-      "hashPath": "oxyplot.wpf.2.1.0.nupkg.sha512"
+      "sha512": "sha512-CBvgRaF+M0xGLDv2Geb/0v0LEADheH8aK72GRAUJdnqnJVsQO60ki1XO8M3keEhnjm+T5NvLm41pNXAVYAPiSg==",
+      "path": "runtime.linux-arm.runtime.native.system.io.ports/7.0.0",
+      "hashPath": "runtime.linux-arm.runtime.native.system.io.ports.7.0.0.nupkg.sha512"
     },
-    "OxyPlot.Wpf.Shared/2.1.0": {
+    "runtime.linux-arm64.runtime.native.System.IO.Ports/7.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ign36iiFEadBUNF7SVgsPn3DCqP1VWjISRVgEChW5M4LNyC9Lz8iOPy1mypQG/imdn0mCQppTjju+0a4k+yTsA==",
-      "path": "oxyplot.wpf.shared/2.1.0",
-      "hashPath": "oxyplot.wpf.shared.2.1.0.nupkg.sha512"
+      "sha512": "sha512-5VCyRCtCIYU8FR/W8oo7ouFuJ8tmAg9ddsuXhfCKZfZrbaVZSKxkmNBa6fxkfYPueD0jQfOvwFBmE5c6zalCSw==",
+      "path": "runtime.linux-arm64.runtime.native.system.io.ports/7.0.0",
+      "hashPath": "runtime.linux-arm64.runtime.native.system.io.ports.7.0.0.nupkg.sha512"
     },
-    "ReactiveProperty/8.0.0": {
+    "runtime.linux-x64.runtime.native.System.IO.Ports/7.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-yrh44vbEgXNhQ3Ckzf2pfHzZjO0mtEFlejZ6Xpv0UFFevzV+wbSVJqLYdO7Kp7WszReSccky0KHWU+IPTOWlQQ==",
-      "path": "reactiveproperty/8.0.0",
-      "hashPath": "reactiveproperty.8.0.0.nupkg.sha512"
+      "sha512": "sha512-DV9dWDUs23OoZqMWl5IhLr3D+b9koDiSHQxFKdYgWnQbnthv8c/yDjrlrI8nMrDc71RAKCO8jlUojzuPMX04gg==",
+      "path": "runtime.linux-x64.runtime.native.system.io.ports/7.0.0",
+      "hashPath": "runtime.linux-x64.runtime.native.system.io.ports.7.0.0.nupkg.sha512"
     },
-    "ReactiveProperty.Core/8.0.0": {
+    "runtime.native.System.IO.Ports/7.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Q61RHxqT2NlT1FvHhU5jC9JBXVWxrafnPJM3rTVvaEC7qfVLdux2qyqwdLdq3poTKE4Mys+d6XheR4IHTrPb5w==",
-      "path": "reactiveproperty.core/8.0.0",
-      "hashPath": "reactiveproperty.core.8.0.0.nupkg.sha512"
+      "sha512": "sha512-L4Ivegqc3B0Fee7VifFy2JST9nndm+uvJ0viLIZUaImDfnr+JmRin9Tbqd56KuMtm0eVxHpNOWZBPtKrA/1h5Q==",
+      "path": "runtime.native.system.io.ports/7.0.0",
+      "hashPath": "runtime.native.system.io.ports.7.0.0.nupkg.sha512"
     },
-    "runtime.linux-arm.runtime.native.System.IO.Ports/6.0.0": {
+    "runtime.osx-arm64.runtime.native.System.IO.Ports/7.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-75q52H7CSpgIoIDwXb9o833EvBZIXJ0mdPhz1E6jSisEXUBlSCPalC29cj3EXsjpuDwr0dj1LRXZepIQH/oL4Q==",
-      "path": "runtime.linux-arm.runtime.native.system.io.ports/6.0.0",
-      "hashPath": "runtime.linux-arm.runtime.native.system.io.ports.6.0.0.nupkg.sha512"
+      "sha512": "sha512-jFwh4sKSXZ7al5XrItEO4GdGWa6XNxvNx+LhEHjrSzOwawO1znwJ+Dy+VjnrkySX9Qi4bnHNLoiqOXbqMuka4g==",
+      "path": "runtime.osx-arm64.runtime.native.system.io.ports/7.0.0",
+      "hashPath": "runtime.osx-arm64.runtime.native.system.io.ports.7.0.0.nupkg.sha512"
     },
-    "runtime.linux-arm64.runtime.native.System.IO.Ports/6.0.0": {
+    "runtime.osx-x64.runtime.native.System.IO.Ports/7.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-xn2bMThmXr3CsvOYmS8ex2Yz1xo+kcnhVg2iVhS9PlmqjZPAkrEo/I40wjrBZH/tU4kvH0s1AE8opAvQ3KIS8g==",
-      "path": "runtime.linux-arm64.runtime.native.system.io.ports/6.0.0",
-      "hashPath": "runtime.linux-arm64.runtime.native.system.io.ports.6.0.0.nupkg.sha512"
+      "sha512": "sha512-X4LrHEfke/z9+z+iuVr35NlkhdZldY8JGNMYUN+sfPK/U/6TcE+vP44I0Yv0ir1v0bqIzq3v6Qdv1c1vmp8s4g==",
+      "path": "runtime.osx-x64.runtime.native.system.io.ports/7.0.0",
+      "hashPath": "runtime.osx-x64.runtime.native.system.io.ports.7.0.0.nupkg.sha512"
     },
-    "runtime.linux-x64.runtime.native.System.IO.Ports/6.0.0": {
+    "ScottPlot/4.1.16": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-16nbNXwv0sC+gLGIuecri0skjuh6R1maIJggsaNP7MQBcbVcEfWFUOkEnsnvoLEjy0XerfibuRptfQ8AmdIcWA==",
-      "path": "runtime.linux-x64.runtime.native.system.io.ports/6.0.0",
-      "hashPath": "runtime.linux-x64.runtime.native.system.io.ports.6.0.0.nupkg.sha512"
+      "sha512": "sha512-N5OZPHfYyCDCvlhxMFVc5glzuGrZuenes2tVgYQY7rK+UBxXNR+ThJvKkdeBXvAijDWZzLOUZ+weqwthxlHlFQ==",
+      "path": "scottplot/4.1.16",
+      "hashPath": "scottplot.4.1.16.nupkg.sha512"
     },
-    "runtime.native.System.IO.Ports/6.0.0": {
+    "ScottPlot.WPF/4.1.16": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-KaaXlpOcuZjMdmyF5wzzx3b+PRKIzt6A5Ax9dKenPDQbVJAFpev+casD0BIig1pBcbs3zx7CqWemzUJKAeHdSQ==",
-      "path": "runtime.native.system.io.ports/6.0.0",
-      "hashPath": "runtime.native.system.io.ports.6.0.0.nupkg.sha512"
+      "sha512": "sha512-YKpjGBM3Fkhx2LoyUX1tZiW732A7/EUKL006E5EEby6dgPPSzoRAoEebVjn7tlxwsRrNq5VwdRdgND5m20cn7g==",
+      "path": "scottplot.wpf/4.1.16",
+      "hashPath": "scottplot.wpf.4.1.16.nupkg.sha512"
     },
-    "runtime.osx-arm64.runtime.native.System.IO.Ports/6.0.0": {
+    "System.CodeDom/7.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-fXG12NodG1QrCdoaeSQ1gVnk/koi4WYY4jZtarMkZeQMyReBm1nZlSRoPnUjLr2ZR36TiMjpcGnQfxymieUe7w==",
-      "path": "runtime.osx-arm64.runtime.native.system.io.ports/6.0.0",
-      "hashPath": "runtime.osx-arm64.runtime.native.system.io.ports.6.0.0.nupkg.sha512"
+      "sha512": "sha512-GLltyqEsE5/3IE+zYRP5sNa1l44qKl9v+bfdMcwg+M9qnQf47wK3H0SUR/T+3N4JEQXF3vV4CSuuo0rsg+nq2A==",
+      "path": "system.codedom/7.0.0",
+      "hashPath": "system.codedom.7.0.0.nupkg.sha512"
     },
-    "runtime.osx-x64.runtime.native.System.IO.Ports/6.0.0": {
+    "System.Drawing.Common/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/As+zPY49+dSUXkh+fTUbyPhqrdGN//evLxo4Vue88pfh1BHZgF7q4kMblTkxYvwR6Vi03zSYxysSFktO8/SDQ==",
-      "path": "runtime.osx-x64.runtime.native.system.io.ports/6.0.0",
-      "hashPath": "runtime.osx-x64.runtime.native.system.io.ports.6.0.0.nupkg.sha512"
+      "sha512": "sha512-SztFwAnpfKC8+sEKXAFxCBWhKQaEd97EiOL7oZJZP56zbqnLpmxACWA8aGseaUExciuEAUuR9dY8f7HkTRAdnw==",
+      "path": "system.drawing.common/5.0.0",
+      "hashPath": "system.drawing.common.5.0.0.nupkg.sha512"
     },
-    "System.ComponentModel.Annotations/5.0.0": {
+    "System.IO.Ports/7.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-dMkqfy2el8A8/I76n2Hi1oBFEbG1SfxD2l5nhwXV3XjlnOmwxJlQbYpJH4W51odnU9sARCSAgv7S3CyAFMkpYg==",
-      "path": "system.componentmodel.annotations/5.0.0",
-      "hashPath": "system.componentmodel.annotations.5.0.0.nupkg.sha512"
+      "sha512": "sha512-0nWQjM5IofaIGpvkifN+LLuYwBG6BHlpmphLhhOJepcW12G8qToGuNDRgBzeTVBZzp33wVsESSZ8hUOCfq+8QA==",
+      "path": "system.io.ports/7.0.0",
+      "hashPath": "system.io.ports.7.0.0.nupkg.sha512"
     },
-    "System.IO.Ports/6.0.0": {
+    "System.Management/7.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-dRyGI7fUESar5ZLIpiBOaaNLW7YyOBGftjj5Of+xcduC/Rjl7RjhEnWDvvNBmHuF3d0tdXoqdVI/yrVA8f00XA==",
-      "path": "system.io.ports/6.0.0",
-      "hashPath": "system.io.ports.6.0.0.nupkg.sha512"
-    },
-    "System.Reactive/5.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-erBZjkQHWL9jpasCE/0qKAryzVBJFxGHVBAvgRN1bzM0q2s1S4oYREEEL0Vb+1kA/6BKb5FjUZMp5VXmy+gzkQ==",
-      "path": "system.reactive/5.0.0",
-      "hashPath": "system.reactive.5.0.0.nupkg.sha512"
+      "sha512": "sha512-A4jed4QUviDOm7fJNKAJObEAEkEUXmkGL/w0iyCYTzrl1rezTj8LGFHfsVst4Vb9JwFcTpboiDrvdST48avBpw==",
+      "path": "system.management/7.0.0",
+      "hashPath": "system.management.7.0.0.nupkg.sha512"
     }
   }
 }

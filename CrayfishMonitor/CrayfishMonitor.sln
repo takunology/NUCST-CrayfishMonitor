@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
+VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrayfishMonitor", "CrayfishMonitor\CrayfishMonitor.csproj", "{95ECC192-577F-4169-B8FE-554A11CEFB4B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrayfishMonitor", "CrayfishMonitor\CrayfishMonitor.csproj", "{3F954AB4-3FA7-432D-93A6-737FE8976026}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{95ECC192-577F-4169-B8FE-554A11CEFB4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{95ECC192-577F-4169-B8FE-554A11CEFB4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{95ECC192-577F-4169-B8FE-554A11CEFB4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{95ECC192-577F-4169-B8FE-554A11CEFB4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F954AB4-3FA7-432D-93A6-737FE8976026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F954AB4-3FA7-432D-93A6-737FE8976026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F954AB4-3FA7-432D-93A6-737FE8976026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F954AB4-3FA7-432D-93A6-737FE8976026}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FAA72CBC-A573-49D7-B373-9CCB505DE93E}
+		SolutionGuid = {5ED56EFF-2C29-4B7F-B433-353978CFC45D}
 	EndGlobalSection
 EndGlobal

@@ -1,20 +1,20 @@
 ﻿CrayfishMonitor
-1.2.0.0
+1.0.0.0
 
 winexe
 C#
 .cs
-D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\obj\Debug\net6.0-windows\
+C:\Users\takun\Desktop\CrayfishMonitor\CrayfishMonitor\obj\Debug\net6.0-windows\
 CrayfishMonitor
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\GitHub\NUCST-Project-FG2\CrayfishMonitor\CrayfishMonitor\App.xaml
-51501621164
+C:\Users\takun\Desktop\CrayfishMonitor\CrayfishMonitor\App.xaml
+11407045341
 
-21-1196002436
-202-1197986549
-Views\AnalysisChartControl.xaml;Views\AnalysisControl.xaml;Views\ArduinoChartControl.xaml;Views\ArduinoSettingsControl.xaml;Views\MainWindow.xaml;
+6-1596257392
+1992132597558
+MainWindow.xaml;
 
 False
 
