@@ -1,26 +1,16 @@
-﻿using System;
+using Microsoft.Win32;
+using ScottPlot;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.IO.Ports;
 using System.Management;
-using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Diagnostics;
-using ScottPlot;
-using System.Threading;
-using ScottPlot.Plottable;
-using Microsoft.Win32;
-using System.IO;
 
 namespace CrayfishMonitor
 {
@@ -45,22 +35,6 @@ namespace CrayfishMonitor
 
         private void SerialDeviceSetup()
         {
-            /*try
-            {
-                SerialPortList.Clear();
-                string[] ports = SerialPort.GetPortNames();
-                foreach (string port in ports)
-                {
-                    this.SerialPortList.Add(port);
-                }
-                SerialPorts.ItemsSource = SerialPortList;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "COMポートを読み込めません", MessageBoxButton.OK, MessageBoxImage.Error);
-                return;
-            }*/
-
             var regexCheck = new Regex("(COM[1-9][0-9]?[0-9]?)");
             var Win32_PnPEntity = new ManagementClass("Win32_SerialPort");
             var deviceInstances = Win32_PnPEntity.GetInstances();
@@ -87,13 +61,15 @@ namespace CrayfishMonitor
         {
             if(StatusLabel.Content == "接続中")
             {
-                StatusLabel.Content = "完了";
+                StatusLabel.Content = "切断中";
+                _measurementButton.Background = new SolidColorBrush(Colors.LightGray);
                 Disconnect();
             }
             else
             {
                 Connect();
                 StatusLabel.Content = "接続中";
+                _measurementButton.Background = new SolidColorBrush(Colors.LightBlue);
                 _serialPort.DataReceived += new SerialDataReceivedEventHandler(GetData);
             }
             
@@ -168,8 +144,15 @@ namespace CrayfishMonitor
                 {
                     if (MeasurementDataList.Count % 10 == 0)
                     {
-                        Chart.Plot.AxisAutoX();
-                        Chart.Render();
+                        if(AutoScaleBox.IsChecked.Value)
+                        {
+                            Chart.Plot.AxisAutoX();
+                        }
+                        try
+                        {
+                            Chart.Render();
+                        }
+                        catch (Exception ex) { }
                     }
                 });
             });
@@ -220,6 +203,42 @@ namespace CrayfishMonitor
             catch (Exception ex)
             {
                 MessageBox.Show($"保存できませんでした。\n詳細:\n{ex}", "保存エラー", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void OpenButton(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var dialog = new OpenFileDialog();
+                dialog.Filter = "CSVファイル (*.csv)|*.csv";
+
+                if (dialog.ShowDialog() == true)
+                {
+                    using (StreamReader reader = new StreamReader(File.OpenRead(dialog.FileName)))
+                    {
+                        reader.ReadLine(); //1行目は項目なので捨てる
+                        //var elapsed = new List<long>();
+                        //var voltage = new List<double>();
+                        //var measurementData = new MeasurementData();
+                        plotList = new();
+                        while (!reader.EndOfStream)
+                        {
+                            var line = reader.ReadLine();
+                            var values = line.Split(',');
+                            //measurementData.Elapsed = long.Parse(values[0]);
+                            //measurementData.Voltage = double.Parse(values[1]);
+                            plotList.Add(double.Parse(values[0])/1000, double.Parse(values[1]));
+                        }
+                    }
+                    Chart.Plot.AxisAutoX();
+                    Chart.Render();
+                }
+                else return;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"ファイル読み込み時にエラーが発生しました。\n詳細:\n{ex}", "ファイルオープンエラー", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }
