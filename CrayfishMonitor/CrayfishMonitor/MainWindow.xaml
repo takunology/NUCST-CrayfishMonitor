@@ -15,16 +15,18 @@
         <Grid Grid.Row="0">
             <StackPanel Orientation="Horizontal" Margin="10">
                 <ComboBox Padding="10 0" Margin="10 0" Name="SerialPorts" Width="70"/>
-                <Button Content="計測" Click="MeasurementButton" Padding="10 0" Margin="5 0"/>
+                <Button Content="計測" Name="_measurementButton" Click="MeasurementButton" Padding="10 0" Margin="5 0"/>
                 <Button Content="リセット" Click="ResetButton" Padding="10 0" Margin="5 0"/>
                 <Button Content="データ保存" Click="DataSaveButton" Padding="10 0" Margin="5 0"/>
+                <Button Content="データ読み込み" Click="OpenButton" Padding="10 0" Margin="5 0"/>
+                <CheckBox Content="オートスケール" Margin="5 0" IsChecked="False" Name="AutoScaleBox"/>
             </StackPanel>
         </Grid>
         <Grid Grid.Row="1">
             <WpfPlot Name="Chart"/>
         </Grid>
         <Grid Grid.Row="2" Margin="10 0">
-            <Label Content="完了" Name="StatusLabel"/>
+            <Label Content="切断中" Name="StatusLabel"/>
         </Grid>
     </Grid>
 </Window>
