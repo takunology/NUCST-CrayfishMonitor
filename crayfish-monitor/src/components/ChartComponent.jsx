@@ -9,7 +9,7 @@ for(let i = 0; i < 1000; i++) {
   data_y.push(Math.random() * 100);
 }
 
-function ChartComponent() {
+function ChartComponent({title}) {
   const option = {
     textStyle: {
       fontSize: 14
