@@ -16,7 +16,7 @@ root.render(
     <aside className=''>
       <SideBar/>
     </aside>
-    <div className='mainpage'>
+    <div className='mainpage bg-gray-100 dark:bg-gray-900'>
       <Routes>
         <Route path='/' element={<DashBoard/>}/>
         <Route path='/data' element={<Reference/>}/>

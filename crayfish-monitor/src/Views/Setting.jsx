@@ -1,7 +1,7 @@
 function Setting () {
     return (
     <div className='row'>
-        <h1>データ参照</h1>
+        <h1 className="dark:text-white text-2xl">設定</h1>
     </div>
     );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import ReactECharts from "echarts-for-react"
+import { color } from "echarts";
 
 let data_x = new Array();
 let data_y = new Array();
@@ -9,10 +10,11 @@ for(let i = 0; i < 1000; i++) {
   data_y.push(Math.random() * 100);
 }
 
-function ChartComponent({title}) {
+function ChartComponent({data_x, data_y}) {
   const option = {
     textStyle: {
-      fontSize: 14
+      fontSize: 14,
+      color: '#a9a9a9'
     },
     xAxis: {
       type: 'category',
@@ -21,7 +23,7 @@ function ChartComponent({title}) {
     },
     yAxis: {
       type: 'value',
-      name: 'Voltage [V]'
+      name: 'Voltage [V]',
     },
     series: [{
         data: data_y,
@@ -29,6 +31,7 @@ function ChartComponent({title}) {
         name: '個体A',
         symbol: 'none',
         sampling: 'lttb',
+        color: '#00bfff'
       }
     ],
     toolbox: {
@@ -45,7 +48,7 @@ function ChartComponent({title}) {
           id: 'dataZoomX',
           type: 'slider',
           xAxisIndex: [0],
-          filterMode: 'filter'
+          filterMode: 'filter',
       },
       {
           id: 'dataZoomY',
